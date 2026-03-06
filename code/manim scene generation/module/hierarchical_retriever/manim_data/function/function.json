@@ -1,0 +1,729 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "prepare_animation",
+      "description": "准备动画对象，用于播放。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "anim": {
+            "type": "Animation | mobject._AnimationBuilder",
+            "description": "一个 Animation 对象或 AnimationBuilder 对象。"
+          }
+        },
+        "required": [
+          "anim"
+        ]
+      },
+      "returns": {
+        "type": "Animation",
+        "description": "准备好的 Animation 对象。"
+      },
+      "example": "from manim import *\n\nclass PrepareAnimationExample(Scene):\n    def construct(self):\n        # 创建动画对象\n        mobject = Square()\n        anim = Animation(mobject)\n\n        # 准备动画\n        prepared_anim = prepare_animation(anim)\n\n        # 添加并播放准备好的动画\n        self.add(mobject)\n        self.play(prepared_anim)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "override_animation",
+      "description": "覆盖指定类型的动画类。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "animation_class": {
+            "type": "type[Animation]",
+            "description": "要覆盖的动画类类型。"
+          }
+        },
+        "required": [
+          "animation_class"
+        ]
+      },
+      "returns": {
+        "type": "Callable[[Callable], Callable]",
+        "description": "一个装饰器函数，用于覆盖指定的动画行为。"
+      },
+      "example": "from manim import *\n\nclass CustomAnimation(Animation):\n    def interpolate(self, alpha):\n        super().interpolate(alpha)\n        print(f\"Interpolating at {alpha}\")\n\n@override_animation(CustomAnimation)\n    def custom_interpolate_function(self, alpha):\n        print(f\"Custom interpolation at {alpha}\")\n        return CustomAnimation.interpolate(self, alpha)\n\nclass OverrideAnimationExample(Scene):\n    def construct(self):\n        # 创建动画对象\n        mobject = Square()\n        anim = CustomAnimation(mobject)\n\n        # 添加并播放自定义覆盖的动画\n        self.add(mobject)\n        self.play(anim)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "assert_is_mobject_method",
+      "description": "断言给定的方法是 Mobject 类的一个有效方法，确保方法的类型正确。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "Callable",
+            "description": "要检查的方法。"
+          }
+        },
+        "required": [
+          "method"
+        ]
+      },
+      "example": "from manim import *\n\nclass AssertIsMobjectMethodExample(Scene):\n    def construct(self):\n        method = Square().shift\n        assert_is_mobject_method(method)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "always",
+      "description": "创建一个 Mobject 的 updater，它会持续执行指定的方法。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "Callable",
+            "description": "要持续执行的方法。"
+          },
+          "args": {
+            "type": "tuple",
+            "description": "方法的可变参数。"
+          },
+          "kwargs": {
+            "type": "dict",
+            "description": "其他可选参数。"
+          }
+        },
+        "required": [
+          "method"
+        ]
+      },
+      "example": "from manim import *\n\nclass AlwaysExample(Scene):\n    def construct(self):\n        square = Square()\n        always(square.shift, RIGHT * 0.1)\n        self.add(square)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "f_always",
+      "description": "以动态生成的参数持续执行给定的方法，通常用于随着时间变化的方法调用。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "Callable[[Mobject], None]",
+            "description": "要持续执行的方法，输入为 Mobject。"
+          },
+          "arg_generators": {
+            "type": "tuple",
+            "description": "参数生成器，动态生成的方法参数。"
+          },
+          "kwargs": {
+            "type": "dict",
+            "description": "其他可选参数。"
+          }
+        },
+        "required": [
+          "method"
+        ]
+      },
+      "example": "from manim import *\n\nclass FAlwaysExample(Scene):\n    def construct(self):\n        square = Square()\n        f_always(square.move_to, lambda: self.mouse_point.get_center())\n        self.add(square)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "always_redraw",
+      "description": "创建一个 Mobject 的 updater，它会根据给定的函数每一帧都重新绘制该对象。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "func": {
+            "type": "Callable[[], Mobject]",
+            "description": "返回 Mobject 的函数。"
+          }
+        },
+        "required": [
+          "func"
+        ]
+      },
+      "example": "from manim import *\n\nclass AlwaysRedrawExample(Scene):\n    def construct(self):\n        circle = always_redraw(lambda: Circle().move_to(self.mouse_point.get_center()))\n        self.add(circle)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "always_shift",
+      "description": "让一个 Mobject 在场景中以给定方向和速率持续移动。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mobject": {
+            "type": "Mobject",
+            "description": "要移动的 Mobject 对象。"
+          },
+          "direction": {
+            "type": "np.ndarray[np.float64]",
+            "description": "移动的方向，默认为 RIGHT。"
+          },
+          "rate": {
+            "type": "float",
+            "description": "移动的速率，默认为 0.1。"
+          }
+        },
+        "required": [
+          "mobject"
+        ]
+      },
+      "example": "from manim import *\n\nclass AlwaysShiftExample(Scene):\n    def construct(self):\n        square = Square()\n        always_shift(square, direction=RIGHT, rate=0.1)\n        self.add(square)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "always_rotate",
+      "description": "让一个 Mobject 在场景中以给定的速率持续旋转。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mobject": {
+            "type": "Mobject",
+            "description": "要旋转的 Mobject 对象。"
+          },
+          "rate": {
+            "type": "float",
+            "description": "旋转的速率，默认为每帧 20 度。"
+          },
+          "kwargs": {
+            "type": "dict",
+            "description": "其他可选参数。"
+          }
+        },
+        "required": [
+          "mobject"
+        ]
+      },
+      "example": "from manim import *\n\nclass AlwaysRotateExample(Scene):\n    def construct(self):\n        square = Square()\n        always_rotate(square, rate=20 * DEGREES)\n        self.add(square)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "turn_animation_into_updater",
+      "description": "将一个动画转换为一个持续更新的 updater，动画可以选择性循环。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "animation": {
+            "type": "Animation",
+            "description": "要转换为 updater 的动画对象。"
+          },
+          "cycle": {
+            "type": "bool",
+            "description": "是否循环执行动画，默认为 False。"
+          },
+          "kwargs": {
+            "type": "dict",
+            "description": "其他可选参数。"
+          }
+        },
+        "required": [
+          "animation"
+        ]
+      },
+      "example": "from manim import *\n\nclass TurnAnimationIntoUpdaterExample(Scene):\n    def construct(self):\n        square = Square()\n        anim = Rotate(square, angle=PI)\n        turn_animation_into_updater(anim, cycle=True)\n        self.add(square)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "cycle_animation",
+      "description": "让一个动画循环执行，直到场景结束。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "animation": {
+            "type": "Animation",
+            "description": "要循环执行的动画对象。"
+          },
+          "kwargs": {
+            "type": "dict",
+            "description": "其他可选参数。"
+          }
+        },
+        "required": [
+          "animation"
+        ]
+      },
+      "example": "from manim import *\n\nclass CycleAnimationExample(Scene):\n    def construct(self):\n        square = Square()\n        anim = Rotate(square, angle=PI)\n        cycle_animation(anim)\n        self.add(square)\n        self.wait(2)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_det_text",
+      "description": "获取矩阵的行列式文本。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "matrix": {
+            "type": "Matrix",
+            "description": "矩阵对象。"
+          },
+          "determinant": {
+            "type": "int | str | None",
+            "description": "行列式值。",
+            "default": "None"
+          },
+          "background_rect": {
+            "type": "bool",
+            "description": "是否添加背景矩形。",
+            "default": "False"
+          },
+          "initial_scale_factor": {
+            "type": "float",
+            "description": "初始缩放因子。",
+            "default": 2
+          }
+        },
+        "required": [
+          "matrix"
+        ]
+      },
+      "returns": {
+        "type": "Mobject",
+        "description": "返回包含行列式文本的 Mobject。"
+      },
+      "example": "from manim import *\n\nclass DetTextExample(Scene):\n    def construct(self):\n        matrix = Matrix([[1, 2], [3, 4]])\n        det_text = get_det_text(matrix, determinant=det(matrix))\n        self.add(matrix, det_text)\n        self.wait()"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "override_animate",
+      "description": "覆盖动画函数，使 Mobject 支持通过 Animate 来创建自定义动画。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "types.FunctionType",
+            "description": "要覆盖的动画方法。"
+          }
+        },
+        "required": [
+          "method"
+        ]
+      },
+      "returns": {
+        "type": "types.FunctionType",
+        "description": "返回更新后的方法。"
+      },
+      "example": "from manim import *\n\nclass OverrideAnimateExample(Scene):\n    def construct(self):\n        square = Square()\n        self.add(square)\n        # 使用自定义动画\n        self.play(square.animate.shift(RIGHT))"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "color_to_rgb",
+      "description": "将可解析的颜色对象转换为 RGB 数组。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "ParsableManimColor",
+            "description": "可解析的颜色对象，如字符串、ManimColor 等。"
+          }
+        },
+        "required": [
+          "color"
+        ]
+      },
+      "returns": {
+        "type": "RGB_Array_Float",
+        "description": "返回表示颜色的 RGB 数组 (float 类型)。"
+      },
+      "example": "from manim import *\n\nclass ColorToRGBExample(Scene):\n    def construct(self):\n        color = \"RED\"\n        rgb = color_to_rgb(color)\n        print(rgb)  # 输出 RGB 值"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "color_to_rgba",
+      "description": "将可解析的颜色对象转换为带透明度的 RGBA 数组。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "ParsableManimColor",
+            "description": "可解析的颜色对象，如字符串、ManimColor 等。"
+          },
+          "alpha": {
+            "type": "float",
+            "description": "透明度值，默认为 1。",
+            "default": "1.0"
+          }
+        },
+        "required": [
+          "color"
+        ]
+      },
+      "returns": {
+        "type": "RGBA_Array_Float",
+        "description": "返回表示颜色的 RGBA 数组 (float 类型)。"
+      },
+      "example": "from manim import *\n\nclass ColorToRGBAExample(Scene):\n    def construct(self):\n        color = \"BLUE\"\n        rgba = color_to_rgba(color, alpha=0.5)\n        print(rgba)  # 输出 RGBA 值"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "color_to_int_rgb",
+      "description": "将可解析的颜色对象转换为整型 RGB 数组。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "ParsableManimColor",
+            "description": "可解析的颜色对象，如字符串、ManimColor 等。"
+          }
+        },
+        "required": [
+          "color"
+        ]
+      },
+      "returns": {
+        "type": "RGB_Array_Int",
+        "description": "返回表示颜色的 RGB 整型数组。"
+      },
+      "example": "from manim import *\n\nclass ColorToIntRGBExample(Scene):\n    def construct(self):\n        color = \"GREEN\"\n        int_rgb = color_to_int_rgb(color)\n        print(int_rgb)  # 输出整型 RGB 值"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "color_to_int_rgba",
+      "description": "将可解析的颜色对象转换为带透明度的整型 RGBA 数组。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "ParsableManimColor",
+            "description": "可解析的颜色对象，如字符串、ManimColor 等。"
+          },
+          "alpha": {
+            "type": "float",
+            "description": "透明度值，默认为 1.0。",
+            "default": "1.0"
+          }
+        },
+        "required": [
+          "color"
+        ]
+      },
+      "returns": {
+        "type": "RGBA_Array_Int",
+        "description": "返回表示颜色的整型 RGBA 数组。"
+      },
+      "example": "from manim import *\n\nclass ColorToIntRGBAExample(Scene):\n    def construct(self):\n        color = \"PURPLE\"\n        int_rgba = color_to_int_rgba(color, alpha=0.7)\n        print(int_rgba)  # 输出整型 RGBA 值"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "rgb_to_color",
+      "description": "将 RGB 数组或元组转换为 ManimColor 对象。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "rgb": {
+            "type": "RGB_Array_Float | RGB_Tuple_Float | RGB_Array_Int | RGB_Tuple_Int",
+            "description": "RGB 数组或元组，表示颜色的红、绿、蓝通道值。"
+          }
+        },
+        "required": [
+          "rgb"
+        ]
+      },
+      "returns": {
+        "type": "ManimColor",
+        "description": "返回 ManimColor 对象。"
+      },
+      "example": "from manim import *\n\nclass RGBToColorExample(Scene):\n    def construct(self):\n        rgb = (0.1, 0.6, 0.8)\n        color = rgb_to_color(rgb)\n        square = Square().set_color(color)\n        self.add(square)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "rgba_to_color",
+      "description": "将 RGBA 数组或元组转换为 ManimColor 对象。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "rgba": {
+            "type": "RGBA_Array_Float | RGBA_Tuple_Float | RGBA_Array_Int | RGBA_Tuple_Int",
+            "description": "RGBA 数组或元组，表示颜色的红、绿、蓝通道值和透明度。"
+          }
+        },
+        "required": [
+          "rgba"
+        ]
+      },
+      "returns": {
+        "type": "ManimColor",
+        "description": "返回 ManimColor 对象。"
+      },
+      "example": "from manim import *\n\nclass RGBAToColorExample(Scene):\n    def construct(self):\n        rgba = (0.1, 0.6, 0.8, 0.5)\n        color = rgba_to_color(rgba)\n        circle = Circle().set_color(color)\n        self.add(circle)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "rgb_to_hex",
+      "description": "将 RGB 数组或元组转换为十六进制颜色字符串。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "rgb": {
+            "type": "RGB_Array_Float | RGB_Tuple_Float | RGB_Array_Int | RGB_Tuple_Int",
+            "description": "RGB 数组或元组，表示颜色的红、绿、蓝通道值。"
+          }
+        },
+        "required": [
+          "rgb"
+        ]
+      },
+      "returns": {
+        "type": "str",
+        "description": "返回十六进制颜色字符串。"
+      },
+      "example": "from manim import *\n\nclass RGBToHexExample(Scene):\n    def construct(self):\n        rgb = (0.2, 0.4, 0.6)\n        hex_code = rgb_to_hex(rgb)\n        print(hex_code)  # 输出十六进制颜色值"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hex_to_rgb",
+      "description": "将十六进制颜色字符串转换为 RGB 数组。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "hex_code": {
+            "type": "str",
+            "description": "十六进制颜色字符串。"
+          }
+        },
+        "required": [
+          "hex_code"
+        ]
+      },
+      "returns": {
+        "type": "RGB_Array_Float",
+        "description": "返回 RGB 数组。"
+      },
+      "example": "from manim import *\n\nclass HexToRGBExample(Scene):\n    def construct(self):\n        hex_code = \"#3498db\"\n        rgb = hex_to_rgb(hex_code)\n        print(rgb)  # 输出 RGB 数组"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "invert_color",
+      "description": "返回颜色的反色。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "ManimColorT",
+            "description": "ManimColor 对象。"
+          }
+        },
+        "required": [
+          "color"
+        ]
+      },
+      "returns": {
+        "type": "ManimColorT",
+        "description": "返回反色的 ManimColor 对象。"
+      },
+      "example": "from manim import *\n\nclass InvertColorExample(Scene):\n    def construct(self):\n        color = ManimColor(\"YELLOW\")\n        inverted_color = invert_color(color)\n        print(inverted_color)  # 输出反色"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "interpolate_arrays",
+      "description": "插值两个数组，根据给定的 alpha 值返回插值结果。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "arr1": {
+            "type": "npt.NDArray[Any]",
+            "description": "第一个数组。"
+          },
+          "arr2": {
+            "type": "npt.NDArray[Any]",
+            "description": "第二个数组。"
+          },
+          "alpha": {
+            "type": "float",
+            "description": "插值因子，介于 0 到 1 之间。"
+          }
+        },
+        "required": [
+          "arr1",
+          "arr2",
+          "alpha"
+        ]
+      },
+      "returns": {
+        "type": "np.ndarray",
+        "description": "返回插值后的数组。"
+      },
+      "example": "from manim import *\n\nclass InterpolateArraysExample(Scene):\n    def construct(self):\n        arr1 = np.array([0, 0, 0])\n        arr2 = np.array([1, 1, 1])\n        alpha = 0.5\n        result = interpolate_arrays(arr1, arr2, alpha)\n        print(result)  # 输出插值结果"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "color_gradient",
+      "description": "根据参考颜色生成一个颜色渐变。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reference_colors": {
+            "type": "Sequence[ParsableManimColor]",
+            "description": "颜色参考列表。"
+          },
+          "length_of_output": {
+            "type": "int",
+            "description": "渐变输出的长度。"
+          }
+        },
+        "required": [
+          "reference_colors",
+          "length_of_output"
+        ]
+      },
+      "returns": {
+        "type": "list[ManimColor] | ManimColor",
+        "description": "返回生成的颜色渐变列表或颜色。"
+      },
+      "example": "from manim import *\n\nclass ColorGradientExample(Scene):\n    def construct(self):\n        colors = [\"RED\", \"GREEN\", \"BLUE\"]\n        gradient = color_gradient(colors, length_of_output=10)\n        print(gradient)  # 输出颜色渐变"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "interpolate_color",
+      "description": "插值两个颜色，根据给定的 alpha 值返回插值后的颜色。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "color1": {
+            "type": "ManimColorT",
+            "description": "第一个颜色。"
+          },
+          "color2": {
+            "type": "ManimColor",
+            "description": "第二个颜色。"
+          },
+          "alpha": {
+            "type": "float",
+            "description": "插值因子，介于 0 到 1 之间。"
+          }
+        },
+        "required": [
+          "color1",
+          "color2",
+          "alpha"
+        ]
+      },
+      "returns": {
+        "type": "ManimColorT",
+        "description": "返回插值后的颜色。"
+      },
+      "example": "from manim import *\n\nclass InterpolateColorExample(Scene):\n    def construct(self):\n        color1 = BLUE\n        color2 = RED\n        alpha = 0.5\n        interpolated_color = interpolate_color(color1, color2, alpha)\n        circle = Circle().set_color(interpolated_color)\n        self.add(circle)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "average_color",
+      "description": "计算多个颜色的平均值。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "colors": {
+            "type": "ParsableManimColor",
+            "description": "可解析的颜色列表。"
+          }
+        },
+        "required": [
+          "colors"
+        ]
+      },
+      "returns": {
+        "type": "ManimColor",
+        "description": "返回平均颜色。"
+      },
+      "example": "from manim import *\n\nclass AverageColorExample(Scene):\n    def construct(self):\n        colors = [BLUE, RED, GREEN]\n        avg_color = average_color(*colors)\n        square = Square().set_color(avg_color)\n        self.add(square)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "random_bright_color",
+      "description": "生成一个随机的明亮颜色。",
+      "parameters": {},
+      "returns": {
+        "type": "ManimColor",
+        "description": "返回随机明亮颜色。"
+      },
+      "example": "from manim import *\n\nclass RandomBrightColorExample(Scene):\n    def construct(self):\n        random_color = random_bright_color()\n        square = Square().set_color(random_color)\n        self.add(square)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "random_color",
+      "description": "生成一个随机颜色。",
+      "parameters": {},
+      "returns": {
+        "type": "ManimColor",
+        "description": "返回随机颜色。"
+      },
+      "example": "from manim import *\n\nclass RandomColorExample(Scene):\n    def construct(self):\n        color = random_color()\n        circle = Circle().set_color(color)\n        self.add(circle)"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_shaded_rgb",
+      "description": "基于光照模型计算带阴影的 RGB 值。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "rgb": {
+            "type": "npt.NDArray[Any]",
+            "description": "输入颜色的 RGB 值。"
+          },
+          "point": {
+            "type": "npt.NDArray[Any]",
+            "description": "物体表面上的点的坐标。"
+          },
+          "unit_normal_vect": {
+            "type": "npt.NDArray[Any]",
+            "description": "表面的法向量。"
+          },
+          "light_source": {
+            "type": "npt.NDArray[Any]",
+            "description": "光源的位置。"
+          }
+        },
+        "required": [
+          "rgb",
+          "point",
+          "unit_normal_vect",
+          "light_source"
+        ]
+      },
+      "returns": {
+        "type": "RGBA_Array_Float",
+        "description": "返回计算出的带阴影的 RGBA 值。"
+      },
+      "example": "from manim import *\n\nclass ShadedColorExample(Scene):\n    def construct(self):\n        rgb = np.array([1.0, 0.0, 0.0])\n        point = np.array([1, 1, 1])\n        normal_vect = np.array([0, 0, 1])\n        light_source = np.array([5, 5, 5])\n        shaded_rgb = get_shaded_rgb(rgb, point, normal_vect, light_source)\n        rectangle = Rectangle().set_color(shaded_rgb)\n        self.add(rectangle)"
+    }
+  }
+]

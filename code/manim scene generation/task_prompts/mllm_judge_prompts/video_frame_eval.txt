@@ -1,0 +1,97 @@
+You are tasked with evaluating ONE single video frame from a theorem explanation video. You may not have any context beyond the theorem description. You must score the required dimension(s) and output **exactly one JSON object**.
+
+## Input
+
+* topic: {topic}
+* description: {description}
+* Video frame (single image): {video_frame}
+
+## Core Grading Policy (MANDATORY)
+
+* **Default is strict**: if something is not clearly visible/judgeable in this frame, treat it as **not satisfied**.
+* **High scores are rare**:
+
+  * **5** only if the frame is exceptionally clean and readable with near-zero issues.
+  * **4** only if issues are truly minor and do not affect readability.
+* If uncertain, **round down**.
+* You MUST apply the **Score Caps** below.
+
+## What You Must Do
+
+1. Read {description} and infer the intended topic only from that text. If vague, explicitly state the limitation.
+2. Inspect {video_frame} and evaluate only what is visible in this single snapshot.
+3. Score the dimension(s) (1–5) with concrete single-frame evidence.
+4. Output JSON ONLY in the required schema.
+
+---
+
+## Dimension: Visual Quality (Single Frame) (1–5)
+
+### Evidence Requirements (MANDATORY)
+
+* The comprehensive_evaluation MUST cite concrete, visible observations from THIS frame (e.g., “text edges are jagged/pixelated,” “contrast is low,” “banding in background gradient,” “fonts mismatch between title and labels”).
+
+### Checklist (STRICT)
+
+A) Style Coherence (within this frame)
+
+* Fonts consistent (no obvious mixed font families/styles unless clearly intentional)
+* Stroke widths consistent (lines/axes/diagrams not mismatched)
+* Color usage coherent (no random clashing colors; consistent palette)
+* Diagram styling matches text styling (labels and geometry/graphs feel like one system)
+
+B) Readability / Sharpness
+
+* Contrast adequate between text and background
+* Text/math symbols legible at normal viewing (not tiny, not faint)
+* No excessive blur; anti-aliasing acceptable (not overly jagged or smeared)
+
+C) Still-frame Artifacts
+
+* Compression artifacts: blockiness, ringing/halos, mosquito noise
+* Banding in gradients, pixelation, smeared edges
+* Any artifact that reduces legibility must be noted and penalized
+
+### Score Caps (MANDATORY)
+
+* If {video_frame} is missing/unreadable → **score = 1**
+* If any key text is not readable due to blur/low resolution/low contrast → **score ≤ 2**
+* If noticeable artifacts are present and affect readability (pixelation, ringing, banding) → **score ≤ 3**
+* If style inconsistencies are obvious (mixed fonts, mismatched stroke widths, clashing colors) → **score ≤ 3**
+* If only minor issues exist and readability is fully preserved → **score ≤ 4**
+* Score **5** is allowed only when: crisp text + strong contrast + minimal artifacts + coherent styling (all clearly satisfied)
+
+### Scoring Anchors (STRICT)
+
+* 5: Crisp and clean; excellent contrast; no meaningful artifacts; coherent styling throughout.
+* 4: Very good; tiny artifacts or slight softness, but everything remains comfortably readable.
+* 3: Acceptable; noticeable softness/artifacts/style inconsistencies, yet still readable.
+* 2: Poor; artifacts/blur/contrast issues significantly harm readability.
+* 1: Unusable/unjudgeable frame (missing, corrupted, or cannot see content).
+
+---
+
+## Scoring Instructions (MANDATORY)
+
+* Score must be an integer in [1,2,3,4,5].
+* Do NOT assume anything about other frames (no continuity/motion assumptions).
+* Use ONLY provided inputs; do NOT invent theorem details or visual elements.
+* If {description} is missing/too vague: explicitly state the limitation (but do not add extra dimensions).
+* Output MUST be JSON ONLY: exactly one valid JSON object and nothing else.
+* JSON must be strictly parseable: double quotes, no trailing commas.
+
+## Output Format (JSON ONLY)
+
+{
+"overall_analysis": "[1–2 sentences: strict general assessment based on description + what is visible/judgeable in this frame]",
+"evaluation": {
+"visual_quality": {
+"comprehensive_evaluation": "[Concrete single-frame evidence for style coherence/readability/artifacts, and any applied caps]",
+"score": [1-5]
+}
+}
+}
+
+Start evaluation now:
+description of the theorem: {description}
+Video frame: {video_frame}

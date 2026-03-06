@@ -1,0 +1,101 @@
+You are an expert in educational video production and Manim animation.
+
+**Reminder (Resolve the Continuity Constraint):**
+- The *implementation* of each scene must be self-contained (no code/state dependency required from other scenes).
+- However, the *video narrative* is continuous. Therefore, each scene vision/storyboard MUST specify:
+  - An **Input Anchor**: what the audience is assumed to still “remember/see” conceptually from the previous scene (even if re-created in this scene).
+  - An **Output Anchor**: what visual anchor should remain or be reintroduced to smoothly set up the next scene.
+  - A **Transition Suggestion**: a brief Manim-style transition idea (e.g., Transform/Fade/Shift/Camera move) to connect with adjacent scenes (conceptual only).
+
+Create a scene_vision_storyboard plan for Scene, thinking in Manim terms, and strictly adhering to the defined spatial constraints.
+
+topic: {topic}
+description: {description}
+
+scene_plan:
+{scene_plan}
+
+The following manim plugins are relevant to the scene:
+{relevant_plugins}
+
+**Spatial Constraints (Strictly Enforced):**
+- **Safe area margins:** 0.5 units on all sides from the scene edges. All objects must stay within these margins (including text bounding boxes).
+- **Minimum spacing:** 0.3 units between any two Manim objects (edge-to-edge). This applies to text, shapes, graphs, and VGroups.
+
+**Positioning Requirements:**
+1) Safe area margins (0.5 units).
+2) Minimum spacing between objects (0.3 units).
+3) Relative positioning only (`next_to`, `align_to`, `shift`) from `ORIGIN`, margins, or object references. **No absolute coordinates allowed.**
+4) Transition buffers (`Wait`) between sub-scenes and major animation beats.
+
+**Text Policy (Minimize text + prevent overflow):**
+- Use as little text as possible; prefer visuals, math notation, and transformations.
+- Use `MathTex` ONLY for math; use `Tex` for non-math.
+- If text > 10 words, MUST split into multiple lines and/or reduce size (describe this explicitly).
+- Call out any likely bounding-box overflow risks and how you mitigate them (line breaks, scaling, re-layout into side-notes zone).
+
+**Focus:**
+- Explain/visualize the theorem deeply (no promotion, no quizzes; examples are allowed).
+- Provide detailed visual descriptions in Manim terms to guide human implementation.
+- Use VGroups to manage layout/spacing/animation cleanly.
+
+**Common Mistakes:**
+- `Triangle` is equilateral; use `Polygon` for right triangles.
+
+**Manim Plugins:**
+- You may suggest plugins ONLY if they significantly simplify implementation.
+- If suggested, include:
+  "**Plugin Suggestion:** <plugin_name> (<version if known>) - <benefit>"
+
+You MUST generate the scene_vision_storyboard plan in the following format (from ```xml to </SCENE_VISION_STORYBOARD_PLAN>```):
+
+```xml
+<SCENE_VISION_STORYBOARD_PLAN>
+[SCENE_VISION]
+1.  **scene_plan**:
+    - Scene story, key takeaway, video role (how it fits into the continuous narrative).
+    - **Input Anchor (conceptual continuity):** What is assumed from the previous scene, and how it is reintroduced or re-created in this scene without code dependency.
+    - **Output Anchor (conceptual continuity):** What should remain or be reintroduced to set up the next scene.
+    - **Transition Suggestion (conceptual):** A brief Manim-style transition idea to adjacent scenes (e.g., Transform the anchor equation into the next scene’s diagram).
+    - **Visual learning objectives for viewers (Manim-specific):**
+        - State objectives as visuals using explicit Manim classes (e.g., `Axes`, `Dot`, `Line`, `VGroup`, `MathTex`, `Polygon`).
+        - If a plugin object class is relevant, mention it.
+    - How Manim visuals & animations support learning:
+        - Mention how `VGroup` structure supports clarity and spacing (>= 0.3).
+        - Mention safe area strategy (0.5 margin): where title/main/side-notes live.
+    - Key concepts to emphasize visually using hierarchy and spatial arrangement:
+        - Explicitly enforce `MathTex` vs `Tex` usage.
+        - When mixing text inside `MathTex`, use `\\text{{}}`.
+
+[STORYBOARD]
+1.  **Visual Flow & Pacing (Manim Animation Sequence)**:
+    - Describe the overall sequence of visuals and animations in Manim terms.
+    - Specify timing style (approx run_time ranges) and where `Wait()` buffers occur and why.
+
+2.  **Sub-scene Breakdown**:
+    - Divide into SUB_1, SUB_2, ... Each Sub-scene must:
+        - Have one primary Visual Element.
+        - Include explicit layout notes (zones + relative positioning references).
+        - Include a step-by-step Animation Sequence with approximate run_time and Wait buffers.
+        - Explicitly mention safe margins and spacing compliance.
+
+    [SUB_1] {sub_1_title}
+    - Visual Element: ...
+    - Layout Sketch (text-based, optional): ...
+    - Objects (Manim classes): ...
+    - Positioning (relative only): reference=..., method=..., direction=..., buff>=0.3
+    - Animation Sequence (step-by-step):
+        1) ...
+        2) ...
+    - Pacing / Buffer:
+        - Wait(t)=... ; reason=...
+    - Text usage + overflow prevention:
+        - (If any text) `Tex` vs `MathTex`, line breaks, scaling, placement in side-notes zone.
+    - End-of-Sub continuity:
+        - What stays on screen for SUB_2 and why.
+
+    [SUB_2] {sub_2_title}
+    - ... (same fields)
+
+    ...
+</SCENE_VISION_STORYBOARD_PLAN>

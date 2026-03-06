@@ -1,0 +1,120 @@
+You are an expert in educational video production, instructional design, and {topic}. Design a high-quality educational video that provides an in-depth explanation of {topic} using Manim-friendly visuals (no external assets).
+
+========================
+<BASE_INFORMATION>
+topic: {topic}
+description: {description}
+Target audience (optional): If provided, adapt language and examples to that level; otherwise assume a general motivated learner with basic prerequisite knowledge.
+Total duration limit: < 15 minutes
+</BASE_INFORMATION>
+========================
+
+TASK:
+Plan 3–7 scenes for ONE continuous educational video. Scenes must build progressively from fundamentals to advanced understanding, with strong teaching clarity and low cognitive load. The overall visual grammar must remain consistent, with later scenes allowed to be slightly more complex.
+
+========================
+PEDAGOGY & STRUCTURE (MANDATORY)
+========================
+A) Overall video structure coverage (must be covered across SCENE_1..N exactly once each in a sensible order):
+- Hook: 5–10% of total duration
+- Context: 10–15%
+- Core Content: 60–70%
+- Practice/Application: 10–15%
+- Summary: 5–10%
+
+B) Teaching sequence coverage (must appear across SCENE_1..N in logical order; can span multiple scenes):
+1) Activate (connect to prior knowledge)
+2) Present (introduce concept)
+3) Guide (worked example / thinking process)
+4) Practice (guided application)
+5) Apply (real-world style integration)
+
+C) Cognitive load constraints:
+- Total NEW concepts per video ≤ 7.
+- NEW concepts per Scene ≤ 2.
+- In EACH scene, explicitly list NEW concepts as short bullet phrases inside Scene Purpose OR Scene description using:
+  - "NEW: ..."
+- Avoid clutter: each scene layout should naturally support at most 4 key on-screen elements at a time (title excluded).
+  If more is needed, plan for sequential reveal and say so explicitly in Scene description.
+
+D) Pacing and chunking:
+- Total video duration must be under 15 minutes.
+- Provide an estimated time range per scene so totals remain < 15 minutes.
+- Each Scene must include at least one planned processing pause moment in Scene description
+  (e.g., “after formula appears, pause for 0.5–1s for processing”).
+
+E) Engagement techniques (lightweight, no quiz session):
+- Each Scene must include at least one engagement move in Scene description:
+  a guiding question, a prediction prompt, or a real-world analogy.
+- No promotional elements, no subscribe messages, no external links/resources.
+- No quiz sessions (worked examples and application examples are allowed and encouraged).
+
+========================
+CONTINUITY REQUIREMENTS (MANDATORY)
+========================
+- Treat the whole video as ONE continuous narrative.
+- Each scene must explicitly connect to the previous scene AND set up the next scene.
+- In EACH Scene Purpose, include:
+  - "Connection from previous: ..."
+  - "Hook to next: ..."
+- Reuse at least one recurring visual anchor across scenes (e.g., a diagram, axes, a key equation) that evolves via transformation.
+
+========================
+MANIM & LAYOUT REQUIREMENTS (MANDATORY)
+========================
+- No external assets: do not import external files (images, audio, video).
+- Assume implementation will use only Manim built-in primitives, MathTex/Tex, shapes, axes/graphs.
+- Spatial constraints:
+  - Safe area margins: 0.5 units on all sides from scene edges.
+  - Minimum spacing: 0.3 units between any two Manim objects (edge-to-edge).
+- In Scene Layout, describe a consistent layout grammar using zones:
+  - Title zone (top)
+  - Main visualization zone (center)
+  - Side-notes zone (left or right)
+  Describe positioning conceptually (relative) and ensure margins/spacing are respected and overlap is avoided.
+
+========================
+CONTENT SCOPE (MANDATORY)
+========================
+- Focus on in-depth explanation of the theorem/topic.
+- Include at least one worked example AND at least one application-oriented example across the full video.
+
+========================
+OUTPUT FORMAT (MUST MATCH EXACTLY)
+========================
+Please generate the scene_plan in the EXACT format below (do not add extra tags, do not change headers, keep consistent formatting):
+
+```xml
+<SCENE_PLAN>
+    <SCENE_1>
+    Scene Title: [Title (2–5 words)]
+    Scene Purpose: [Learning objective + Connection from previous: ... + Hook to next: ... + NEW: ... (≤2 items)]
+    Scene description: [Detailed content plan; include at least one engagement move + one processing pause moment; mention sequential reveal if >4 elements would be needed]
+    Scene Layout: [Spatial layout using zones and relative positioning; explicitly mention safe area 0.5 and minimum spacing 0.3 compliance; avoid overlap]
+    Estimated Duration: [e.g., 2:00–2:30]
+    </SCENE_1>
+
+    <SCENE_2>
+    Scene Title: [Title (2–5 words)]
+    Scene Purpose: [Learning objective + Connection from previous: ... + Hook to next: ... + NEW: ... (≤2 items)]
+    Scene description: [Detailed content plan; include at least one engagement move + one processing pause moment; mention sequential reveal if >4 elements would be needed]
+    Scene Layout: [Spatial layout using zones and relative positioning; explicitly mention safe area 0.5 and minimum spacing 0.3 compliance; avoid overlap]
+    Estimated Duration: [e.g., 2:00–2:30]
+    </SCENE_2>
+
+    ...
+</SCENE_PLAN>
+````
+
+FINAL CHECK (do not output this checklist; use it internally):
+
+* 3–7 scenes
+* Total duration < 15 minutes
+* Structure coverage exactly once: Hook/Context/Core/Practice/Summary
+* Teaching sequence in order: Activate/Present/Guide/Practice/Apply
+* NEW concepts: ≤2 per scene, ≤7 total, explicitly marked "NEW: ..."
+* Each scene has an engagement move + a processing pause moment
+* Layout uses zones; respects safe area 0.5 and spacing 0.3; no overlap
+* Recurring visual anchor reused via transformation
+* No external assets, no promos, no external links, no quiz sessions
+

@@ -1,0 +1,149 @@
+[
+  {
+    "type": "class",
+    "class": {
+      "name": "Tex",
+      "description": "表示普通 LaTeX 表达式的对象，继承自 MathTex。",
+      "methods": [
+        {
+          "name": "__init__",
+          "description": "初始化 Tex 对象，设置 LaTeX 表达式和环境。",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tex_strings": {
+                "type": "tuple",
+                "description": "多个 LaTeX 表达式字符串。"
+              },
+              "arg_separator": {
+                "type": "str",
+                "description": "表达式之间的分隔符，默认值为 \"\"。",
+                "default": ""
+              },
+              "tex_environment": {
+                "type": "str",
+                "description": "LaTeX 环境，默认值为 \"center\"。",
+                "default": "center"
+              },
+              "kwargs": {
+                "type": "object",
+                "description": "其他可选参数。"
+              }
+            },
+            "required": [
+              "tex_strings"
+            ]
+          },
+          "example": "from manim import *\n\nclass TexExample(Scene):\n    def construct(self):\n        tex = Tex(r\"Hello, LaTeX!\", r\"\\frac{1}{2}\")\n        self.add(tex)\n        self.wait()"
+        },
+        {
+          "name": "next_to",
+          "description": ""
+        },
+        {
+          "name": "align_to",
+          "description": ""
+        }
+      ]
+    }
+  },
+  {
+    "type": "class",
+    "class": {
+      "name": "MathTex",
+      "description": "表示数学 LaTeX 表达式的对象，继承自 SingleStringMathTex。",
+      "methods": [
+        {
+          "name": "__init__",
+          "description": "初始化 MathTex 对象，支持多个 LaTeX 表达式并设置相关参数。",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tex_strings": {
+                "type": "tuple",
+                "description": "多个 LaTeX 表达式字符串。"
+              },
+              "arg_separator": {
+                "type": "str",
+                "description": "表达式之间的分隔符，默认值为 \" \"。",
+                "default": " "
+              },
+              "substrings_to_isolate": {
+                "type": "Iterable[str] | None",
+                "description": "需要分隔的子字符串集合，默认为 None。",
+                "default": null
+              },
+              "tex_to_color_map": {
+                "type": "dict[str, ManimColor]",
+                "description": "表达式中的颜色映射，默认为 None。",
+                "default": null
+              },
+              "tex_environment": {
+                "type": "str",
+                "description": "LaTeX 环境，默认值为 \"align*\"。",
+                "default": "align*"
+              },
+              "kwargs": {
+                "type": "object",
+                "description": "其他可选参数。"
+              }
+            },
+            "required": [
+              "tex_strings"
+            ]
+          },
+          "example": "from manim import *\n\nclass MathTexExample(Scene):\n    def construct(self):\n        math_tex = MathTex(r\"a^2 + b^2 = c^2\", r\"\\frac{1}{2}\")\n        self.add(math_tex)\n        self.wait()"
+        },
+        {
+          "name": "set_color_by_tex",
+          "description": "根据 LaTeX 表达式设置颜色。",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tex": {
+                "type": "str",
+                "description": "LaTeX 表达式。"
+              },
+              "color": {
+                "type": "ManimColor",
+                "description": "需要设置的颜色。"
+              },
+              "kwargs": {
+                "type": "object",
+                "description": "其他可选参数。"
+              }
+            }
+          },
+          "example": "from manim import *\n\nclass SetColorByTexExample(Scene):\n    def construct(self):\n        math_tex = MathTex(r\"a^2 + b^2 = c^2\")\n        math_tex.set_color_by_tex(\"a^2\", RED)\n        self.add(math_tex)\n        self.wait()"
+        }
+      ]
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "make_title",
+      "description": ""
+    }
+  },
+  {
+    "type": "constant",
+    "constant": {
+      "name": "BLACK",
+      "value": "#000000",
+      "description": "颜色：黑色"
+    }
+  },
+  {
+    "type": "constant",
+    "constant": {
+      "name": "UP",
+      "value": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "description": "GEOMETRY 子项：上方向向量"
+    }
+  }
+]

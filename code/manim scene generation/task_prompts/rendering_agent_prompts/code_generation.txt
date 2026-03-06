@@ -1,0 +1,881 @@
+你是 **Manim Community Edition** 数学教育视频的资深开发者与调试者。你的任务是：根据我粘贴到占位符里的“规划层输入”，生成一份 **完整、可执行、单文件** 的 Manim 脚本（一个 `.py` 文件）。
+你必须严格遵守以下规则；不确定就用最稳的写法（能跑 > 完美）。
+
+================================================
+0) 输入占位符（只能使用这些，禁止杜撰）
+================================================
+
+topic: `{topic}`
+description: `{description}`
+scene_plan: `{scene_plan}`
+scene_vision_storyboard: `{scene_vision_storyboard}`
+scene_implementation:
+`{scene_implementation}`
+scene_technical_implementation: `{scene_technical_implementation}`
+rag_information（Manim 参考信息）:
+`{rag_information}`
+geometric_parameter_control_module_information: `{"geometric_parameter_control_module_information"}`
+(Optional) scene_animation:
+`{scene_animation}`
+(Optional) scene_narration:
+`{scene_narration}`
+
+================================================
+0.5) 运行环境与版本固定（强制）
+================================================
+
+你的代码必须以以下版本为唯一目标环境（不得假设其它版本特性）：
+- Manim Community Edition: v0.19.0（固定）
+- manim_voiceover: 已安装（但允许 import 失败时回退 Scene 保证可渲染）
+- Python: 3.x
+
+【ManimCE v0.19.0 关键兼容硬规则（必须）】
+A) 严禁任何 bounding box 旧接口（高频必现崩溃）：
+   - 禁止出现字符串： "get_bounding_box" 或 "bounding_box"
+   - 所有 inside_safe_area / bbox_intersects / overlap 检测必须基于：
+     1) m.get_all_points() 计算 AABB
+     2) points 为空则回退：m.get_center() + width/height 近似
+
+B) 所有布局与扫描只使用 v0.19.0 公共 API：
+   - 允许：get_all_points / get_center / width / height / to_edge / to_corner / next_to / shift / arrange / align_to
+   - 不依赖新版本才有的属性/方法
+
+================================================
+1) 绝对输出规则（必须）
+================================================
+
+你最终只能输出 **一个** Python 代码块，且只能有这一段：
+
+```python
+# complete runnable single-file code
+````
+
+禁止任何解释/分析/标题/额外文字。
+禁止输出第二个代码块。
+禁止输出“我将如何做”的描述。只输出最终代码。
+
+================================================
+2) 总目标（必须全部满足）
+==============
+
+1. 输出一个可直接运行的 `.py` 单文件脚本（Manim Community Edition v0.19.0）。
+2. 将规划层所有 **SCENE_i / SUB_j** 实现为 **stage 方法**（见第 3 节）。
+3. `{scene_narration}` 非空 ⇒ 必须启用 **Voiceover + KokoroService + 英文字幕（字幕必须修正）**（见第 6/12 节）。
+4. 严格布局（best-effort，但必须自动避让）：
+
+   * 安全边距 safe margin：距屏幕四边 ≥ 0.5
+   * 最小间距 min spacing：任意两个对象 AABB 间距 ≥ 0.3（AABB 必须来自 get_all_points/回退）
+5. 禁止外部素材：图片/音频/视频/字体/SVG/URL 一律不允许。
+6. 禁止绝对坐标数组：禁止 move_to([x,y,0]) / set_x / set_y 等
+
+   * 仅允许相对布局：next_to / align_to / shift / to_edge / to_corner / arrange / move_to(ORIGIN) / VGroup
+7. `self.next_section()` 总数 ≤ 8（靠合并动画，不靠删 next_section）。
+8. 必须能从任意工作目录运行：确保能 import 项目根目录下的 `utils`（见第 5 节 bootstrap）。
+9. 【终结硬规则】必须“强防重叠”：
+
+   * 图形↔图形、文字↔图形、文字↔文字
+   * 换场残留叠加（上一段没删导致叠字/覆盖）
+   * 必须被代码结构彻底消灭（见第 9/10/14 节）
+
+================================================
+3) 规划 vs 代码（强制）
+===============
+
+* “多场景”只存在于规划层（scene_plan / storyboard）
+* 代码文件里只能有 **一个主 Scene 类**
+* 主类内部用多个 stage 方法实现所有规划场景
+* `construct()` 必须严格按规划顺序调用 stage 方法
+* 每个 stage 必须留下明确末态供下一 stage 承接（锚点对象保留/Transform）
+
+STAGE 命名硬规则：
+
+* 每个规划层 SCENE_i 对应至少一个方法：`def stage_scene{i}(self, helper): ...`
+* 若规划层该场景含子场景 SUB_j：`def stage_scene{i}_sub{j}(self, helper): ...`
+* `construct()` 内严格顺序调用：scene1_sub1 -> scene1_sub2 -> ... -> scene2...
+
+================================================
+4) 单一 Scene 类规则（绝对）
+===================
+
+4.1 只允许一个 Scene 类
+
+* 文件中只能有 1 个继承 `Scene` 或 `VoiceoverScene` 的主类
+* 允许额外 helper 类（helper 不可以继承 Scene）
+
+4.2 类名自动推导（确定性）
+主类名必须是：`{AutoDerivedName}Scene`
+推导算法：
+
+1. 优先用 topic，否则用 description，否则用 "Generated"
+2. `_`、`-` 替换为空格
+3. 分词；每个词只保留 `[A-Za-z0-9]`
+4. PascalCase 拼接；空则 Generated
+5. 末尾加 Scene
+
+================================================
+5) 必须的 imports + sys.path bootstrap（必须）
+=======================================
+
+脚本顶部必须包含并保持顺序（imports 后、导入 KokoroService 前）：
+
+```python
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.kokoro_voiceover import KokoroService
+```
+
+不得改变 KokoroService 的 import 路径。
+
+================================================
+6) Voiceover + 字幕（narration 非空就必须）
+==================================
+
+若 `{scene_narration}` 非空：
+
+* 必须 try/except 导入 VoiceoverScene 并回退（保证可渲染）：
+
+```python
+try:
+    from manim_voiceover import VoiceoverScene
+    HAS_VO = True
+except Exception:
+    VoiceoverScene = Scene
+    HAS_VO = False
+```
+
+* construct() 必须 try/except 调用：
+  `self.set_speech_service(KokoroService())`
+
+字幕（必须）：
+
+* 英文、单行、不换行
+* 底部居中，buff=0.5，安全区内
+* 半透明底板
+* 过长自动缩放适配安全宽度
+* 每段 voiceover：开始显示字幕；音频结束后才 FadeOut；不允许残留
+* 字幕文本必须先 helper.fix_transcript 修正（标点/大小写/空格），但不得改词
+* 字幕必须纳入 slot（slot="subtitle"），用 slot_put/slot_clear 管理
+
+================================================
+7) 英文画面文字规则（绝对）
+===============
+
+所有屏幕可见文字必须英文（数学符号与单字母变量除外）。
+若规划中出现中文显示文本，必须翻译成自然英文（只改字符串，不改逻辑）。
+
+================================================
+8) TeX/LaTeX 策略（默认启用，但要可回退）
+===========================
+
+文件顶部必须提供：
+
+```python
+USE_LATEX = True
+DEBUG_LAYOUT = False
+```
+
+必须实现统一“文字工厂”：
+
+* USE_LATEX=True：允许 Tex/MathTex
+* USE_LATEX=False：所有可见文字一律 Text（数学也用纯文本）
+
+================================================
+9) 【核心】对象生命周期协议（彻底消灭残留/叠字）
+==========================
+
+Scene 必须维护容器（必须存在）：
+
+* self._persist: list
+* self._temps: list
+* self._slots: dict[str, Mobject]
+* self._title_mobj: Optional[Mobject]
+* self._stage_local_texts: list[Mobject]
+
+Scene 必须提供接口（名字固定，必须使用）：
+
+* slot_put(slot: str, m: Mobject, method="transform"|"fade") -> Mobject
+* slot_clear(slot: str, fade=True) -> None
+* temp_show(m: Mobject, anim="fade"|"write", rt=0.6) -> None
+* temp_clear(fade=True) -> None
+
+硬规则：
+
+* 所有 TEMP 文字/标注必须用 temp_show；并在 stage 末尾 temp_clear 清掉
+* 所有 SLOT 类文字必须用 slot_put 更新（禁止 temp_show 显示 SLOT）
+* 字幕必须 slot="subtitle"
+* 同位置更新文字必须复用同一个 slot key（禁止叠加）
+
+每个 stage 强制清场协议：
+
+* stage 开头：self.temp_clear()
+* stage 结束：若出现过 TEMP，必须再 self.temp_clear()
+
+================================================
+10) 【HARD+++】Anti-Overlap 自动避让（必须实现并强制路由）
+=========================================
+
+helper 必须提供 API（名字固定）：
+
+* fix_transcript(text)
+* safe_rect()
+* fit_to_safe_width(mobj)
+* inside_safe_area(mobj, margin=0.5)  (基于 get_all_points AABB，严禁 bounding_box)
+* bbox_intersects(a, b, pad=0.12~0.15) (基于 get_all_points AABB，严禁 bounding_box)
+* make_text(kind, text, scale_hint=1.0)
+* build_subtitle(text)
+* place_text(mobj, anchor, avoid, prefer, min_gap=0.3, margin=0.5)
+
+place_text 强制策略（按顺序）：
+(A) fit_to_safe_width；仍冲突则最多 5 次 scale(0.92)
+(B) 初始候选：next_to/四角/to_edge（基于 prefer）
+(C) 对角深搜：step1=0.32 max8；失败 step2=0.22 max10（UR/UL/DR/DL）
+(D) 八方向深搜：step1=0.32 max8；失败 step2=0.22 max10（UR/UL/DR/DL/U/D/L/R）
+(E) 成功条件：inside_safe_area=True 且与 avoid 全部不相交
+(F) 最终失败：再缩放 0.95 重试(C)，仍失败则选遮挡最少位置，并加入注释：
+# TODO(CONSTRAINT): auto-placement failed; overlap risk remains
+
+强制路由：
+
+* 所有可见文字（title/subtitle/caption/label/corner note/公式等）在 add/play 前必须 place_text。
+
+================================================
+11) self.next_section 规则（严格）
+============================
+
+* 必须使用 self.next_section()
+* FadeOut/Remove/Uncreate 前必须先 next_section
+* 每个 section 至少一次 play 或 wait
+* 总 next_section 次数 ≤ 8（用 AnimationGroup/Succession 合并动画）
+
+================================================
+12) 音频-视频强制对齐（音频主时钟）
+====================
+
+当 narration 非空且 HAS_VO=True：
+
+* 动画 run_time 绑定 tracker.duration
+* 结束不足必须 wait 补齐
+* 字幕在补齐期间仍显示，结束后才 slot_clear
+
+强制模板（必须使用）：
+
+```python
+MIN_T = 1.2
+raw_vo = "..."
+vo_text = helper.fix_transcript(raw_vo)
+with self.voiceover(text=vo_text) as tracker:
+    sub = helper.build_subtitle(vo_text)
+    sub = helper.place_text(sub, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer="bottom")
+    self.slot_put("subtitle", sub, method="fade")
+
+    rt = max(MIN_T, float(getattr(tracker, "duration", MIN_T)))
+    self.play(..., run_time=rt)
+    remain = max(0.0, float(getattr(tracker, "duration", 0.0)) - rt)
+    if remain > 0:
+        self.wait(remain)
+
+    self.slot_clear("subtitle", fade=True)
+```
+
+长旁白必须拆分（>25~35 英文词 或 多步骤）。
+
+若 narration 非空但 HAS_VO=False：
+
+* 必须模拟：每段至少 1.2s
+* 字幕仍 slot_put/slot_clear
+* next_section ≤ 8
+
+================================================
+13) DEBUG_LAYOUT（必须）
+====================
+
+DEBUG_LAYOUT=True 时：
+
+* 绘制安全区框
+* 绘制关键对象 AABB + name tag（轻量，不遮挡）
+
+================================================
+14) 【HARD+++】自动扫描器 + REBUILD FIX（必须实现 + 必须调用）
+=============================================
+
+Scene 内必须实现并调用：
+
+* _auto_scan(helper, scope, try_fix=True)
+* _rebuild_fix(helper, targets, reason)
+
+必须调用点：
+
+1. stage 开头：_auto_scan(... "stage_begin")
+2. 每次 slot_put 后：_auto_scan(... "after_slot")
+3. 每次 temp_show 后：_auto_scan(... "after_temp")
+4. stage 末尾：_auto_scan(... "stage_end")
+
+扫描判定：
+
+* 越界：inside_safe_area(margin=0.5) True
+* 重叠：bbox_intersects(pad=0.12~0.15) 视为冲突
+
+发现冲突且 try_fix=True：
+
+* 必须 _rebuild_fix Step1~Step5 修复并复扫
+
+REBUILD FIX（按序）：
+Step1: 重新 place + shrink（最多 2 次）
+Step2: prefer 换区（bottom -> DR -> UR -> DL -> UL）
+Step3: SLOT 重建（slot_put 覆盖）
+Step4: TEMP 清场重建（temp_clear -> 必要 temps 重建）
+Step5: 显示类型降级（不改词）：Tex/MathTex -> Text，并注释：
+
+# TODO(CONSTRAINT): layout forced fallback Text for stability
+
+全失败才允许：
+
+# TODO(CONSTRAINT): overlap persists even after REBUILD FIX; manual layout needed
+
+================================================
+15) 必须生成的代码骨架（固定）
+=================
+
+最终代码必须包含：
+
+1. imports（manim / typing / re / numpy）
+2. sys.path bootstrap（必须在 KokoroService import 前）
+3. USE_LATEX / DEBUG_LAYOUT
+4. Scene_Helper（含 get_all_points AABB，严禁 bounding_box）
+5. 主 Scene 类（{AutoDerivedName}Scene）
+
+   * 生命周期容器与接口
+   * auto_scan / rebuild_fix Step1~Step5
+   * stage_scene{i}/stage_scene{i}_sub{j}
+   * construct：按规划顺序调用 stage；narration 非空 set_speech_service
+
+================================================
+16) 现在开始生成（必须按输入实现）
+===================
+
+你将收到 topic/description/scene_plan/Implementation Plan/(Optional) scene_animation/(Optional) narration/Rag/plugins。
+
+生成要求：
+
+* 必须解析 scene_plan 里的 SCENE_i / SUB_j 并生成对应 stage 方法
+* 画面内容必须来自 scene_plan + scene_implementation（可补足过渡，但不得新增知识点）
+* 所有屏幕可见文字必须英文
+* narration 非空：旁白覆盖关键步骤；字幕同源并 fix_transcript
+* 若无法识别任何内容，也必须输出可运行最小骨架（仍满足所有硬结构与 bbox 禁令）
+
+================================================
+17) 自检（只在代码注释中完成，不输出额外文字）
+=========================
+
+在代码注释中自检：
+
+* 代码中不包含子串：get_bounding_box 或 bounding_box
+* slot_put/temp_show 前均经过 place_text
+* 每个 stage begin/end 均调用 auto_scan
+* 每个 stage begin 均 temp_clear
+* next_section ≤ 8
+* narration 非空：try/except set_speech_service(KokoroService())
+* subtitle 走 slot，且无残留
+
+================================================
+18) 最终输出要求（再次强调）
+================
+
+你必须输出 ONLY 一段 Python 代码（一个代码块），不允许输出任何额外文字。
+
+````
+
+---
+
+## 2) 代码例子骨架（示范结构；真实生成时要替换为你的 scene_plan/scene_implementation 内容）
+
+> 这是“例子骨架”，你可以放进提示词里作为示范，也可以单独给模型参考。
+> 重点：**完全不使用 get_bounding_box / bounding_box**，全部 bbox 走 `get_all_points()` AABB（回退 center+width/height）。
+
+```python
+from __future__ import annotations
+
+from manim import *
+from typing import Optional, List, Dict, Callable, Tuple
+import re
+import numpy as np
+
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.kokoro_voiceover import KokoroService
+
+try:
+    from manim_voiceover import VoiceoverScene
+    HAS_VO = True
+except Exception:
+    VoiceoverScene = Scene
+    HAS_VO = False
+
+USE_LATEX = True
+DEBUG_LAYOUT = False
+
+
+class Scene_Helper:
+    def __init__(self, scene: Scene):
+        self.scene = scene
+
+    # ---------- transcript fix (YouTube-like, do NOT change word choice) ----------
+    def fix_transcript(self, text: str) -> str:
+        s = (text or "").replace("\n", " ").strip()
+        s = " ".join(s.split())
+        if not s:
+            return s
+        if s[0].isalpha():
+            s = s[0].upper() + s[1:]
+        if s[-1].isalnum():
+            s += "."
+        s = re.sub(r"([,.!?])(\w)", r"\1 \2", s)
+        return s
+
+    def normalize_one_line(self, text: str) -> str:
+        return " ".join((text or "").replace("\n", " ").split())
+
+    # ---------- robust AABB (ManimCE v0.19.0 safe) ----------
+    def _aabb_xy(self, m: Mobject, pad: float = 0.0) -> Tuple[float, float, float, float]:
+        # NEVER use get_bounding_box()/bounding_box in ManimCE v0.19.0
+        try:
+            pts = np.array(m.get_all_points())
+        except Exception:
+            pts = np.empty((0, 3))
+
+        if pts.size == 0:
+            c = np.array(m.get_center())
+            w = float(getattr(m, "width", 0.0))
+            h = float(getattr(m, "height", 0.0))
+            x0, x1 = float(c[0] - w / 2), float(c[0] + w / 2)
+            y0, y1 = float(c[1] - h / 2), float(c[1] + h / 2)
+        else:
+            x0, x1 = float(pts[:, 0].min()), float(pts[:, 0].max())
+            y0, y1 = float(pts[:, 1].min()), float(pts[:, 1].max())
+
+        return (x0 - pad, x1 + pad, y0 - pad, y1 + pad)
+
+    def safe_rect(self) -> Rectangle:
+        r = Rectangle(width=config.frame_width - 1.0, height=config.frame_height - 1.0)
+        r.set_stroke(GREY_B, width=1).set_fill(opacity=0)
+        return r
+
+    def inside_safe_area(self, m: Mobject, margin: float = 0.5) -> bool:
+        left = -config.frame_width / 2 + margin
+        right = config.frame_width / 2 - margin
+        bottom = -config.frame_height / 2 + margin
+        top = config.frame_height / 2 - margin
+        x0, x1, y0, y1 = self._aabb_xy(m, pad=0.0)
+        return (x0 >= left and x1 <= right and y0 >= bottom and y1 <= top)
+
+    def bbox_intersects(self, a: Mobject, b: Mobject, pad: float = 0.14) -> bool:
+        ax0, ax1, ay0, ay1 = self._aabb_xy(a, pad=pad)
+        bx0, bx1, by0, by1 = self._aabb_xy(b, pad=pad)
+        return not (ax1 < bx0 or bx1 < ax0 or ay1 < by0 or by1 < ay0)
+
+    def fit_to_safe_width(self, m: Mobject) -> Mobject:
+        safe_w = config.frame_width - 1.0
+        if m.width > safe_w:
+            m.scale(safe_w / m.width)
+        return m
+
+    # ---------- text factory ----------
+    def _tex_or_text(self, s: str) -> Mobject:
+        if not USE_LATEX:
+            return Text(s)
+        # simple heuristic: math-ish -> MathTex, else Tex
+        if re.search(r"[=+\-*/^\\]", s):
+            return MathTex(s)
+        return Tex(s)
+
+    def make_text(self, kind: str, text: str, scale_hint: float = 1.0) -> Mobject:
+        s = self.normalize_one_line(text)
+        base = {
+            "title": 0.85,
+            "corner": 0.55,
+            "step": 0.65,
+            "caption": 0.55,
+            "label": 0.60,
+        }.get(kind, 0.6)
+        m = self._tex_or_text(s)
+        if isinstance(m, (Text, Tex, MathTex)):
+            m.set_color(WHITE)
+        m.scale(base * scale_hint)
+        return self.fit_to_safe_width(m)
+
+    def build_subtitle(self, text: str) -> VGroup:
+        s = self.normalize_one_line(text)
+        t = Text(s, color=WHITE).scale(0.55)
+        bg = Rectangle(height=t.height + 0.25, width=min(config.frame_width - 1.0, t.width + 0.6))
+        bg.set_fill(BLACK, opacity=0.55).set_stroke(width=0)
+        g = VGroup(bg, t)
+        t.move_to(bg.get_center())
+        g.to_edge(DOWN, buff=0.5)
+        if g.width > (config.frame_width - 1.0):
+            g.scale((config.frame_width - 1.0) / g.width)
+        return g
+
+    # ---------- placement / anti-overlap ----------
+    def _accept(self, m: Mobject, avoid: List[Mobject], margin: float, pad: float) -> bool:
+        if not self.inside_safe_area(m, margin=margin):
+            return False
+        for x in avoid:
+            if x is m:
+                continue
+            if self.bbox_intersects(m, x, pad=pad):
+                return False
+        return True
+
+    def _candidate_fns(self, m: Mobject, anchor: Optional[Mobject], prefer: str) -> List[Callable[[], None]]:
+        c: List[Callable[[], None]] = []
+        if prefer == "title":
+            c.append(lambda: m.to_edge(UP, buff=0.5))
+        if prefer == "bottom":
+            c.append(lambda: m.to_edge(DOWN, buff=0.5))
+        if prefer == "corner_ur":
+            c.append(lambda: m.to_corner(UR, buff=0.5))
+        if prefer == "corner_ul":
+            c.append(lambda: m.to_corner(UL, buff=0.5))
+        if prefer == "corner_dr":
+            c.append(lambda: m.to_corner(DR, buff=0.5))
+        if prefer == "corner_dl":
+            c.append(lambda: m.to_corner(DL, buff=0.5))
+
+        if anchor is not None:
+            c.extend([
+                lambda: m.next_to(anchor, DOWN, buff=0.35),
+                lambda: m.next_to(anchor, UP, buff=0.35),
+                lambda: m.next_to(anchor, LEFT, buff=0.35),
+                lambda: m.next_to(anchor, RIGHT, buff=0.35),
+            ])
+
+        c.extend([
+            lambda: m.to_corner(UR, buff=0.5),
+            lambda: m.to_corner(UL, buff=0.5),
+            lambda: m.to_corner(DR, buff=0.5),
+            lambda: m.to_corner(DL, buff=0.5),
+        ])
+        return c
+
+    def _deep_search(self, m: Mobject, avoid: List[Mobject], margin: float, pad: float,
+                     dirs: List[np.ndarray], step: float, max_steps: int) -> bool:
+        for dvec in dirs:
+            for _ in range(max_steps):
+                m.shift(dvec * step)
+                if self._accept(m, avoid, margin, pad):
+                    return True
+        return False
+
+    def _least_overlap_score(self, m: Mobject, avoid: List[Mobject], pad: float) -> int:
+        cnt = 0
+        for x in avoid:
+            if x is m:
+                continue
+            if self.bbox_intersects(m, x, pad=pad):
+                cnt += 1
+        return cnt
+
+    def place_text(self, m: Mobject, anchor: Optional[Mobject], avoid: List[Mobject], prefer: str,
+                   min_gap: float = 0.3, margin: float = 0.5) -> Mobject:
+        pad = 0.14
+        self.fit_to_safe_width(m)
+
+        # (A) shrink up to 5
+        for _ in range(5):
+            if self._accept(m, avoid, margin, pad):
+                return m
+            m.scale(0.92)
+
+        candidates = self._candidate_fns(m, anchor, prefer)
+        diag_dirs = [UP + RIGHT, UP + LEFT, DOWN + RIGHT, DOWN + LEFT]
+        eight_dirs = [UP + RIGHT, UP + LEFT, DOWN + RIGHT, DOWN + LEFT, UP, DOWN, LEFT, RIGHT]
+
+        # (B)(C)(D)
+        for fn in candidates:
+            fn()
+            if self._accept(m, avoid, margin, pad):
+                return m
+            if self._deep_search(m, avoid, margin, pad, diag_dirs, 0.32, 8):
+                return m
+            if self._deep_search(m, avoid, margin, pad, diag_dirs, 0.22, 10):
+                return m
+            if self._deep_search(m, avoid, margin, pad, eight_dirs, 0.32, 8):
+                return m
+            if self._deep_search(m, avoid, margin, pad, eight_dirs, 0.22, 10):
+                return m
+
+        # (F) final fallback: least overlap among corners
+        best_corner = UR
+        best_score = 10**9
+        for corner in [UR, DR, UL, DL]:
+            test = m.copy()
+            test.to_corner(corner, buff=0.5)
+            score = self._least_overlap_score(test, avoid, pad)
+            if score < best_score:
+                best_score = score
+                best_corner = corner
+        m.to_corner(best_corner, buff=0.5)
+        # TODO(CONSTRAINT): auto-placement failed; overlap risk remains
+        return m
+
+    def debug_overlay(self, named: List[Tuple[str, Mobject]]) -> VGroup:
+        g = VGroup()
+        if not DEBUG_LAYOUT:
+            return g
+        g.add(self.safe_rect())
+        for name, m in named:
+            try:
+                box = SurroundingRectangle(m, buff=0.02)
+                box.set_stroke(YELLOW, width=1)
+                tag = Text(name, color=YELLOW).scale(0.35)
+                tag.next_to(box, UP, buff=0.05)
+                g.add(box, tag)
+            except Exception:
+                pass
+        return g
+
+
+class GeneratedScene(VoiceoverScene):
+    # NOTE: in real generation, class name must be auto-derived from topic/description.
+    def construct(self):
+        helper = Scene_Helper(self)
+        self._helper = helper
+
+        self._persist: List[Mobject] = []
+        self._temps: List[Mobject] = []
+        self._slots: Dict[str, Mobject] = {}
+        self._title_mobj: Optional[Mobject] = None
+        self._stage_local_texts: List[Mobject] = []
+
+        # voiceover service (only when narration non-empty in real generation)
+        try:
+            self.set_speech_service(KokoroService())
+        except Exception:
+            pass
+
+        # Example stage order
+        self.stage_scene1(helper)
+        self.stage_scene2(helper)
+
+    # ---------------- SLOT / TEMP ----------------
+    def slot_put(self, slot: str, m: Mobject, method: str = "transform") -> Mobject:
+        old = self._slots.get(slot)
+        prefer = "title" if slot == "title" else "bottom" if slot == "subtitle" else "corner_ur"
+        m = self._helper.place_text(m, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer=prefer)
+
+        if old is None:
+            self.play(FadeIn(m), run_time=0.35)
+            self._slots[slot] = m
+            self._auto_scan(self._helper, scope="after_slot", try_fix=True)
+            return m
+
+        if method == "transform":
+            self.play(Transform(old, m), run_time=0.35)
+            self._slots[slot] = old
+            self._auto_scan(self._helper, scope="after_slot", try_fix=True)
+            return old
+
+        self.play(FadeOut(old), FadeIn(m), run_time=0.35)
+        self._slots[slot] = m
+        self._auto_scan(self._helper, scope="after_slot", try_fix=True)
+        return m
+
+    def slot_clear(self, slot: str, fade: bool = True) -> None:
+        old = self._slots.get(slot)
+        if old is None:
+            return
+        self.next_section()
+        if fade:
+            self.play(FadeOut(old), run_time=0.3)
+        else:
+            self.remove(old)
+        del self._slots[slot]
+
+    def temp_show(self, m: Mobject, anim: str = "fade", rt: float = 0.6) -> None:
+        if m not in self._temps:
+            self._temps.append(m)
+        m = self._helper.place_text(m, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer="corner_dr")
+        if anim == "write":
+            self.play(Write(m), run_time=rt)
+        else:
+            self.play(FadeIn(m), run_time=rt)
+        self._auto_scan(self._helper, scope="after_temp", try_fix=True)
+
+    def temp_clear(self, fade: bool = True) -> None:
+        if not self._temps:
+            return
+        self.next_section()
+        if fade:
+            self.play(*[FadeOut(x) for x in self._temps], run_time=0.45)
+        else:
+            self.remove(*self._temps)
+        self._temps = []
+
+    # ---------------- AUTO SCAN ----------------
+    def _auto_scan(self, helper: Scene_Helper, scope: str, try_fix: bool = True) -> None:
+        all_objs = list(self._slots.values()) + list(self._temps) + list(self._persist)
+        text_like: List[Mobject] = []
+        for m in list(self._stage_local_texts) + list(self._slots.values()) + list(self._temps):
+            if isinstance(m, (Text, Tex, MathTex, VGroup)):
+                text_like.append(m)
+
+        bad: List[Mobject] = []
+        for t in text_like:
+            if not helper.inside_safe_area(t, margin=0.5):
+                bad.append(t)
+                continue
+            for other in all_objs:
+                if other is t:
+                    continue
+                if helper.bbox_intersects(t, other, pad=0.14):
+                    bad.append(t)
+                    break
+
+        if bad and try_fix:
+            self._rebuild_fix(helper, bad, reason=f"auto-scan:{scope}")
+            # re-scan once (silent)
+
+    # ---------------- REBUILD FIX (Step1~Step5) ----------------
+    def _rebuild_fix(self, helper: Scene_Helper, targets: List[Mobject], reason: str) -> None:
+        avoid_base = list(self._slots.values()) + list(self._persist)
+
+        slot_of: Dict[int, str] = {id(v): k for k, v in self._slots.items()}
+        temps_snapshot = list(self._temps)
+
+        def ok(m: Mobject) -> bool:
+            if not helper.inside_safe_area(m, margin=0.5):
+                return False
+            for x in avoid_base:
+                if x is m:
+                    continue
+                if helper.bbox_intersects(m, x, pad=0.14):
+                    return False
+            return True
+
+        # Step1: re-place + shrink (max 2)
+        for t in targets:
+            for _ in range(2):
+                helper.place_text(t, anchor=None, avoid=avoid_base, prefer="bottom")
+                if ok(t):
+                    return
+                t.scale(0.95)
+
+        # Step2: force prefer zones
+        prefs = ["bottom", "corner_dr", "corner_ur", "corner_dl", "corner_ul"]
+        for t in targets:
+            for p in prefs:
+                helper.place_text(t, anchor=None, avoid=avoid_base, prefer=p)
+                if ok(t):
+                    return
+
+        # Step3: SLOT rebuild
+        for t in targets:
+            s = slot_of.get(id(t))
+            if s is None:
+                continue
+            raw = getattr(t, "text", None)
+            if raw is None:
+                raw = getattr(t, "tex_string", None)
+            if raw is None:
+                raw = str(t)
+            rebuilt = helper.make_text("caption" if s != "title" else "title", helper.normalize_one_line(raw), 1.0)
+            rebuilt = helper.place_text(rebuilt, anchor=None, avoid=[x for x in avoid_base if x is not t],
+                                        prefer=("title" if s == "title" else "bottom" if s == "subtitle" else "corner_ur"))
+            self.slot_put(s, rebuilt, method="fade")
+            return
+
+        # Step4: TEMP clear and rebuild minimal
+        if temps_snapshot:
+            try:
+                self.temp_clear(fade=True)
+            except Exception:
+                self._temps = []
+            for t in temps_snapshot:
+                if t not in targets:
+                    continue
+                rebuilt = t.copy()
+                rebuilt = helper.place_text(rebuilt, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer="corner_dr")
+                self.temp_show(rebuilt, anim="fade", rt=0.25)
+            return
+
+        # Step5: type downgrade Tex/MathTex -> Text
+        for t in targets:
+            if isinstance(t, (Tex, MathTex)):
+                raw = getattr(t, "tex_string", None)
+                if raw is None:
+                    raw = str(t)
+                downgraded = Text(helper.normalize_one_line(raw), color=WHITE).scale(0.58)
+                downgraded = helper.place_text(downgraded, anchor=None, avoid=avoid_base, prefer="bottom")
+                s = slot_of.get(id(t))
+                if s is not None:
+                    self.slot_put(s, downgraded, method="fade")
+                else:
+                    self.temp_show(downgraded, anim="fade", rt=0.25)
+                # TODO(CONSTRAINT): layout forced fallback Text for stability
+                return
+
+        # TODO(CONSTRAINT): overlap persists even after REBUILD FIX; manual layout needed
+
+    # ---------------- stages (example only) ----------------
+    def _swap_title(self, helper: Scene_Helper, text: str) -> None:
+        title = helper.make_text("title", text, 1.0)
+        title = helper.place_text(title, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer="title")
+        self._stage_local_texts.append(title)
+        self._title_mobj = self.slot_put("title", title, method="transform")
+
+    def stage_scene1(self, helper: Scene_Helper):
+        self._stage_local_texts = []
+        self._auto_scan(helper, scope="stage_begin", try_fix=True)
+        self.temp_clear()
+
+        self.next_section()
+        self._swap_title(helper, "Scene 1: Example Structure")
+
+        anchor = Circle(radius=1.2).set_stroke(BLUE, 4).set_fill(opacity=0)
+        anchor.next_to(self._slots["title"], DOWN, buff=0.5)
+        self.play(Create(anchor), run_time=0.8)
+        self._persist.append(anchor)
+
+        raw_vo = "This is an example voiceover line for timing alignment"
+        vo_text = helper.fix_transcript(raw_vo)
+
+        if HAS_VO:
+            with self.voiceover(text=vo_text) as tracker:
+                sub = helper.build_subtitle(vo_text)
+                sub = helper.place_text(sub, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer="bottom")
+                self._stage_local_texts.append(sub)
+                self.slot_put("subtitle", sub, method="fade")
+
+                rt = max(1.2, float(getattr(tracker, "duration", 1.2)))
+                self.play(Indicate(anchor), run_time=rt)
+                remain = max(0.0, float(getattr(tracker, "duration", 0.0)) - rt)
+                if remain > 0:
+                    self.wait(remain)
+                self.slot_clear("subtitle", fade=True)
+        else:
+            self.play(Indicate(anchor), run_time=1.2)
+
+        note = helper.make_text("caption", "Temporary note.", 1.0)
+        note = helper.place_text(note, anchor=anchor, avoid=list(self._slots.values()) + self._persist, prefer="corner_ur")
+        self._stage_local_texts.append(note)
+        self.temp_show(note, anim="fade", rt=0.4)
+
+        self._auto_scan(helper, scope="stage_end", try_fix=True)
+        self.temp_clear()
+
+    def stage_scene2(self, helper: Scene_Helper):
+        self._stage_local_texts = []
+        self._auto_scan(helper, scope="stage_begin", try_fix=True)
+        self.temp_clear()
+
+        self.next_section()
+        self._swap_title(helper, "Scene 2: Slot Update")
+
+        corner = helper.make_text("corner", "Corner note updated.", 1.0)
+        corner = helper.place_text(corner, anchor=None, avoid=list(self._slots.values()) + self._persist, prefer="corner_ur")
+        self._stage_local_texts.append(corner)
+        self.slot_put("corner_note", corner, method="transform")
+
+        self._auto_scan(helper, scope="stage_end", try_fix=True)
+        self.temp_clear()
+````

@@ -1,0 +1,26 @@
+{
+  "Semantic layer": {
+    "topic": "",
+    "description": "",
+    "scene_plan": "",
+    "scene_vision_storyboard": "",
+    "scene_implementation": "",
+    "scene_technical_implementation": "",
+    "scene_animation": "",
+    "scene_technical_implementation_extractor": "",
+    "rag_information": "",
+    "scene_narration": "",
+    "scene_code": "",
+    "fix_error_code": "",
+    "error_message": "",
+    "geometric_parameter_control_module_information": "",
+    "geometric_constraint_correction_module_information": ""
+  },
+  "Geometric structure layer": {
+    "geometric_structure_extraction": "",
+    "geometric_structure_extraction_corrected": ""
+  },
+  "Visual representation layer": {
+    "base64_list": []
+  }
+}

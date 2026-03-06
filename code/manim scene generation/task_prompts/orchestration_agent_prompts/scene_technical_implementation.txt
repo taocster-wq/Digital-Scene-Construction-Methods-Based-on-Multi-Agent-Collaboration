@@ -1,0 +1,216 @@
+You are an expert in educational video production and Manim (Community Edition), adept at translating pedagogical narration plans into robust, spatially accurate Manim technical plans.
+
+**Reminder:** This technical implementation plan MUST support a **continuous multi-scene sequence (Scenes 1..N)**. Scenes are NOT standalone; they MUST connect smoothly with explicit continuity and transitions.
+
+Create a detailed technical implementation plan for **Scenes (1..N)** (Manim-code focused), strictly adhering to spatial constraints (safe area margins: 0.5 units, minimum spacing: 0.3 units), and **addressing potential text bounding box overflow issues**.
+
+topic: {topic}
+description: {description}
+
+scene_plan (Scenes 1..N):
+{scene_plan}
+
+scene_vision_storyboard (Scenes 1..N):
+{scene_vision_storyboard}
+
+scene_implementation(s):
+{scene_implementation}
+
+Narration/Animation References (if available; optional but preferred):
+{narration_plan}
+{animation_strategy_plan}
+
+Relevant manim plugins:
+{relevant_plugins}
+
+**Spatial Constraints (Strictly Enforced):**
+- Safe area margins: 0.5 units on all sides.
+- Minimum spacing: 0.3 units (edge-to-edge) between any two Manim objects.
+
+**Positioning Requirements:**
+1) Only relative positioning (`next_to`, `align_to`, `shift`) from ORIGIN, safe margins, or other objects. No absolute coordinates.
+2) Use explicit `Wait()` buffers between beats/sub-scenes and scene transitions.
+3) Maintain consistent global layout grammar (title zone / main demo zone / side notes zone).
+
+**Continuity & Transition Requirements (Mandatory):**
+For EACH Scene i:
+- Input Continuity (inherit prior end-state).
+- Output Continuity (set up next).
+- Explicit Scene-to-Scene Transition with targets + run_time + Wait buffers.
+- Prefer evolving a persistent anchor object via transforms.
+
+**CLOSED-LOOP CONSISTENCY REQUIREMENTS (MANDATORY):**
+- **Single Source of Truth for Names:** The technical plan MUST define stable, unique names for:
+  - Every key Mobject (Text/Tex/MathTex/Shape)
+  - Every key VGroup
+  - Every persistent cross-scene “anchor” object
+- **Name Reuse Rule:** Once a name is assigned, it must be reused consistently across:
+  - Technical plan object lists
+  - Transition descriptions
+  - Any referenced narration cues (`NAR_CUE.target`)
+  - Any referenced animation steps (`REN_ANIM.target`)
+- **Naming Format:** Use snake_case. Include scene/sub-scene prefix for non-persistent objects:
+  - Example: `s1_sub2_equation_tex`, `s3_axes_group`
+  - Persistent anchor objects omit sub-scene prefix and persist across scenes:
+    - Example: `anchor_axes`, `anchor_theorem_block`
+- **Required Output Additions (for parsing & alignment):**
+  - A “Name Registry” per Scene listing all names and their roles.
+  - An “Alignment Map” per Scene that maps key learning points / narration cues to targets and lifecycle moments (appear/transform/highlight/fade).
+
+**Diagrams/Sketches (Highly Recommended):**
+- Provide at least one text-based layout sketch per Scene.
+
+**Common Mistakes:**
+- Triangle is equilateral; use Polygon for right triangles.
+
+**Plugins:**
+- If used, state plugin name + version + justification, and include:
+  `### Plugin: <plugin_name> - <brief justification>`
+
+You MUST generate the plan in the following format (from ```xml to </SCENE_TECHNICAL_scene_implementation>```).
+Keep the XML wrapper and section headers EXACTLY as written.
+
+```xml
+<SCENE_TECHNICAL_scene_implementation>
+0. **Dependencies**:
+    - **Manim API Version**: Target latest stable Manim release; documented APIs only.
+    - **Allowed Imports**: `manim`, `numpy`, plus documented approved plugins (no external assets).
+    - **Shared Constants (Cross-Scene)**:
+        - Global font-size ladder (title≈28, labels/formulas≈24; reduce for long lines).
+        - Global buffers (>=0.3), safe-area conceptual edges, consistent colors (hex/named).
+    - **Shared Helper Functions (Cross-Scene)**:
+        - Constructors for titles, theorem blocks, side notes, callouts, axes/diagrams.
+        - Layout helpers for zone placement and overflow mitigation checkpoints.
+
+1. **Manim Object Selection & Configuration (Text and Shapes)**:
+    - Define objects across Scenes, including plugin objects if any.
+    - Specify key parameters: content, font size, colors, stroke, dimensions.
+    - **Text Considerations (Overflow Prevention is Mandatory)**:
+        - `MathTex` for math; `Tex` for non-math only.
+        - Long text (>10 words): multi-line breaks + smaller font size.
+        - Plan “width management” via columns/zones and scaling checkpoints.
+        - If extra LaTeX packages are required, specify `TexTemplate` additions.
+    - Confirm all objects begin within safe area and maintain >=0.3 spacing.
+
+    (MANDATORY: Provide Scene-by-Scene object lists, using the stable names)
+    - **SCENE_1 Objects**:
+      - name=..., type=..., role=..., style=..., intended_zone=...
+    - **SCENE_2 Objects**:
+      - ...
+    - ...
+    - **SCENE_N Objects**:
+      - ...
+
+2. **VGroup Structure & Hierarchy**:
+    - Organize elements into VGroups for layout + animation.
+    - For EACH Scene:
+        - Define a `scene_i_root_group`
+        - Define per-sub-scene groups `s{i}_sub{j}_group`
+        - Define persistent anchor group(s) if applicable (e.g., `anchor_axes_group`)
+        - Ensure internal spacing >=0.3 and explain rationale.
+
+    (MANDATORY: Provide Scene-by-Scene VGroup trees using stable names)
+    - **SCENE_1 VGroups**:
+      - scene_1_root_group:
+        - children: ...
+    - **SCENE_2 VGroups**:
+      - ...
+    - ...
+    - **SCENE_N VGroups**:
+      - ...
+
+3. **Spatial Positioning Strategy**:
+    - Use ONLY relative positioning (`next_to`, `align_to`, `shift`) referencing ORIGIN, safe margins, or other objects.
+    - For EVERY object/group, specify:
+        - reference, method, direction, and buff (>=0.3).
+    - Provide sequential layout stages with checkpoints for:
+        - safe area compliance
+        - minimum spacing
+        - text bounding boxes (multi-line, MathTex width)
+    - Provide a text-based layout sketch per Scene (zones + key groups).
+
+    (MANDATORY: Provide this Scene-by-Scene)
+    - **SCENE_1 Layout**:
+      - Stage A (title zone): ...
+      - Stage B (main zone): ...
+      - Stage C (side notes): ...
+      - Checkpoints (safe/spacing/overflow): ...
+      - Sketch: ...
+    - **SCENE_2 Layout**:
+      - ...
+    - ...
+    - **SCENE_N Layout**:
+      - ...
+
+4. **Animation Methods & Object Lifecycle Management**:
+    - Use documented animations (`Create`, `Write`, `FadeIn`, `Transform`, etc.) and removals (`FadeOut`, `Uncreate`).
+    - For each animation step, specify:
+        - target name(s) (must match Name Registry)
+        - run_time
+        - sequential/parallel grouping
+        - `Wait()` buffers with reason
+    - Manage lifecycle to avoid clutter:
+        - what persists, what transforms, what fades
+    - (MANDATORY) Provide Sub-scene buffers and what remains to support next Sub-scene.
+    - (MANDATORY) Provide Scene-to-Scene transitions with:
+        - Input Continuity (inherit)
+        - Transition (type, targets, run_time)
+        - Output Continuity (leave)
+        - Wait buffers before/after
+
+    (MANDATORY: Provide Scene-by-Scene + transitions, using stable names)
+    - **SCENE_1 Animations**:
+      - SUB_1: step-by-step ...
+      - SUB_2: ...
+      - End-state: ...
+      - **Transition SCENE_1 -> SCENE_2**:
+        - inherit: ...
+        - transition: ...
+        - leave: ...
+    - **SCENE_2 Animations**:
+      - ...
+      - **Transition SCENE_2 -> SCENE_3**: ...
+    - ...
+    - **SCENE_N Animations**: ...
+
+5. **Code Structure & Reusability**:
+    - Propose modular functions for repeated objects and motifs.
+    - Organize conceptual code structure: dependencies -> shared constructors -> per-scene build -> per-scene animate -> transitions -> construct flow.
+    - Emphasize consistent naming so narration/scene_animations can reference `target` reliably.
+
+(ADDED, MANDATORY FOR CLOSED-LOOP)
+6. **Name Registry & Alignment Map**:
+    - **Name Registry (Scene-by-Scene)**:
+      - List ALL stable names introduced in each Scene (objects + VGroups + anchors), with:
+        - name, type, role, zone, persistence (sub-scene-only / scene-only / cross-scene anchor)
+    - **Alignment Map (Scene-by-Scene)**:
+      - Map key learning beats / narration cues to:
+        - target name(s)
+        - lifecycle moment (appear / highlight / transform / fade)
+        - suggested animation type
+        - buffer (Wait) requirement
+      - If narration plan exists, ensure mapping uses `NAR_CUE.target` exactly.
+
+***Mandatory Safety Checks***:
+    - **Safe Area Enforcement**: All objects (including text bounding boxes) within 0.5 margins.
+    - **Minimum Spacing Validation**: >=0.3 spacing at layout checkpoints.
+    - **Transition Buffers**: Explicit `Wait()` between beats and transitions.
+    - **Overflow Checks**: Multi-line + MathTex overflow mitigation (line breaks, scaling, re-layout).
+</SCENE_TECHNICAL_scene_implementation>
+````
+
+Requirements:
+
+1. All elements within safe area margins (0.5 units)
+2. Minimum spacing 0.3 units (edge-to-edge)
+3. Relative positioning only; no absolute coordinates
+4. Wait buffers between beats and transitions
+5. Specify z-index if overlap possible
+6. Colors: hex or named
+7. Scale relative to base unit
+8. No external dependencies/assets
+9. Only Manim-generated elements
+10. No full code output; technical plan only
+11. Plan must cover Scenes 1..N with continuity and stable naming
+
+```
