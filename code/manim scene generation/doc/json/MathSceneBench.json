@@ -1,0 +1,1442 @@
+[
+  {
+    "topic": "Pythagorean_Theorem",
+    "description": "In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two legs. If the legs are a and b and the hypotenuse is c, then a² + b² = c².",
+    "difficulty": "Easy",
+    "remark": "A foundational result in Euclidean geometry; frequently used for distance computation and right-triangle solving.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Pythagorean_Theorem; mode=hypothesized; source=canonical_template; confidence=0.60; steps=6; OBJ_1=right_triangle; P: O(0,0,0)[right_angle_vertex], U(0,2,0)[leg_endpoint], R(2,0,0)[leg_endpoint]; E: OU(O,U,L=2.0,type=leg), OR(O,R,L=2.0,type=leg), UR(U,R,L=2.8284271247461903,type=hypotenuse); REL: perpendicular(OU,OR,at=O), hypotenuse_opposite_right_angle(UR,right_angle_at=O); M: a=|OU|=2.0, b=|OR|=2.0, c=|UR|=2.8284271247461903; OPS: pt(O,0,0,0), pt(U,0,2,0), pt(R,2,0,0), ed(OU,O,U), ed(OR,O,R), ed(UR,U,R); DERIVED: a2+b2=8.0, c2=8.0, holds=true."
+  },
+  {
+    "topic": "Properties_of_a_Kite_Quadrilateral",
+    "description": "A kite is a quadrilateral with two pairs of adjacent equal sides. Typical properties include: (1) two pairs of adjacent equal sides, (2) perpendicular diagonals, (3) one diagonal bisects the other, (4) one pair of opposite angles is equal, and (5) area S = 1/2 · d1 · d2, where d1 and d2 are diagonal lengths.",
+    "difficulty": "Easy",
+    "remark": "Common in geometry proofs and problem-solving, especially involving diagonals, symmetry, and area computation.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Properties_of_a_Kite_Quadrilateral; mode=hypothesized; source=canonical_template; confidence=0.60; steps=10; OBJ_1=kite_quadrilateral; P: T(0,1,0), R(1,0.5,0), B(0,-1,0), L(-1,0.5,0); E: TR(T,R,L=1.118033988749895,type=side), RB(R,B,L=1.8027756377319946,type=side), BL(B,L,L=1.8027756377319946,type=side), LT(L,T,L=1.118033988749895,type=side); D: TB(T,B,L=2.0,type=diagonal), RL(R,L,L=2.0,type=diagonal); P: I(0,0.5,0)[diag_intersection]; REL: adjacent_equal(TR,LT), adjacent_equal(RB,BL), perpendicular(TB,RL,at=I), bisect(RL,TB,at=I), opposite_angles_equal(at=R,at2=L); AREA: S=0.5*d1*d2, d1=|TB|=2.0, d2=|RL|=2.0, S=2.0; COND: circumcircle_only_if(rhombus_or_square), incircle_only_if(square_kite); OPS: pt(T,0,1,0), pt(R,1,0.5,0), pt(B,0,-1,0), pt(L,-1,0.5,0), ed(TR,T,R), ed(RB,R,B), ed(BL,B,L), ed(LT,L,T), ed(TB,T,B), ed(RL,R,L)."
+  },
+  {
+    "topic": "Eulers_Formula",
+    "description": "Euler's formula links complex exponentials and trigonometric functions: e^(ix) = cos(x) + i·sin(x), where i² = −1 and x is real. A special case is Euler's identity: e^(iπ) + 1 = 0.",
+    "difficulty": "Easy",
+    "remark": "A central identity in complex analysis; widely used in signal processing, physics, and engineering mathematics.",
+    "subfield": "Complex Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Eulers_Formula; mode=hypothesized; source=canonical_template; confidence=0.55; steps=10; OBJ_1=axes(complex_plane); P: X1(-3,0,0), X2(3,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=6.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=unit_circle_approx; P: E(1,0,0), N(0,1,0), W(-1,0,0), S(0,-1,0); REL: circle(center=O,r=1.0,approx_by_points=E,N,W,S); OBJ_3=formula_box; BOX: C(0,-2.2,0), w=7.2, h=1.6; TEXT: A(0,-2.2,0), align=center, content='e^(ix)=cos(x)+i·sin(x)'; OPS: create_axes(O), create_circle(O,r=1.0), create_box(C=0,-2.2,0,w=7.2,h=1.6), place_text(A=0,-2.2,0)."
+  },
+  {
+    "topic": "Laws_of_Exponents",
+    "description": "The laws of exponents provide algebraic rules for simplifying expressions with powers, such as product, quotient, and power-of-a-power rules.",
+    "difficulty": "Easy",
+    "remark": "Frequently used for algebraic simplification and as a prerequisite for logarithms and exponential functions.",
+    "subfield": "Algebra",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Laws_of_Exponents; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=7.2, h=2.0; P: TL(-3.6,1.0,0), TR(3.6,1.0,0), BR(3.6,-1.0,0), BL(-3.6,-1.0,0); E: TOP(TL,TR,L=7.2,type=box_edge), RIGHT(TR,BR,L=2.0,type=box_edge), BOTTOM(BR,BL,L=7.2,type=box_edge), LEFT(BL,TL,L=2.0,type=box_edge); TEXT: A(0,0,0), align=center, content='Exponent laws (symbolic rules)'; OPS: create_box(C=0,0,0,w=7.2,h=2.0), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Injective_Function_One_to_One_Function",
+    "description": "An injective (one-to-one) function maps distinct inputs to distinct outputs, meaning no two different inputs share the same output value.",
+    "difficulty": "Easy",
+    "remark": "A standard concept in functions; often used to ensure the existence of an inverse function.",
+    "subfield": "Functions",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Injective_Function_One_to_One_Function; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=7.6, h=2.2; P: TL(-3.8,1.1,0), TR(3.8,1.1,0), BR(3.8,-1.1,0), BL(-3.8,-1.1,0); E: TOP(TL,TR,L=7.6,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=7.6,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT: A(0,0,0), align=center, content='Injective: distinct inputs -> distinct outputs'; OPS: create_box(C=0,0,0,w=7.6,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Inverse_Function",
+    "description": "For a one-to-one function f, its inverse f⁻¹ satisfies f⁻¹(f(x)) = x and f(f⁻¹(x)) = x, meaning each operation reverses the other.",
+    "difficulty": "Easy",
+    "remark": "Core for function transformations and solving equations; requires f to be one-to-one on the domain considered.",
+    "subfield": "Functions",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Inverse_Function; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=7.8, h=2.4; P: TL(-3.9,1.2,0), TR(3.9,1.2,0), BR(3.9,-1.2,0), BL(-3.9,-1.2,0); E: TOP(TL,TR,L=7.8,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=7.8,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT: A(0,0,0), align=center, content='f^{-1}(f(x))=x; f(f^{-1}(x))=x'; OPS: create_box(C=0,0,0,w=7.8,h=2.4), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Remainder_Theorem",
+    "description": "When a polynomial p(x) is divided by (x − a), the remainder equals p(a).",
+    "difficulty": "Easy",
+    "remark": "Often paired with the Factor Theorem for root checking and polynomial factorization.",
+    "subfield": "Algebra",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Remainder_Theorem; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=7.6, h=2.0; P: TL(-3.8,1.0,0), TR(3.8,1.0,0), BR(3.8,-1.0,0), BL(-3.8,-1.0,0); E: TOP(TL,TR,L=7.6,type=box_edge), RIGHT(TR,BR,L=2.0,type=box_edge), BOTTOM(BR,BL,L=7.6,type=box_edge), LEFT(BL,TL,L=2.0,type=box_edge); TEXT: A(0,0,0), align=center, content='Divide p(x) by (x-a): remainder = p(a)'; OPS: create_box(C=0,0,0,w=7.6,h=2.0), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Rational_Root_Theorem",
+    "description": "The rational root theorem lists possible rational zeros of a polynomial by relating them to factors of the constant term and the leading coefficient.",
+    "difficulty": "Easy",
+    "remark": "Useful for quickly narrowing candidate roots before performing synthetic division or factorization.",
+    "subfield": "Algebra",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Rational_Root_Theorem; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.0, h=2.2; P: TL(-4.0,1.1,0), TR(4.0,1.1,0), BR(4.0,-1.1,0), BL(-4.0,-1.1,0); E: TOP(TL,TR,L=8.0,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=8.0,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT: A(0,0,0), align=center, content='Possible rational roots from factors of constant/leading coeff'; OPS: create_box(C=0,0,0,w=8.0,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Product_to_Sum_Formulas",
+    "description": "Product-to-sum formulas are trigonometric identities that rewrite a product of sine and/or cosine terms as a sum or difference.",
+    "difficulty": "Easy",
+    "remark": "Commonly used to simplify trigonometric expressions and to compute integrals involving trig products.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Product_to_Sum_Formulas; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.0, h=2.2; P: TL(-4.0,1.1,0), TR(4.0,1.1,0), BR(4.0,-1.1,0), BL(-4.0,-1.1,0); E: TOP(TL,TR,L=8.0,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=8.0,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT: A(0,0,0), align=center, content='Convert product of trig functions to sum/difference'; OPS: create_box(C=0,0,0,w=8.0,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Herons_Formula",
+    "description": "Heron's formula computes the area of a triangle from its side lengths. Let s=(a+b+c)/2, then Area = sqrt(s(s−a)(s−b)(s−c)).",
+    "difficulty": "Easy",
+    "remark": "Useful when side lengths are known but height is not directly available; appears frequently in geometry and contest problems.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Herons_Formula; mode=hypothesized; source=formula_box_template; confidence=0.55; steps=2; OBJ_1=formula_box; BOX: C(0,-0.2,0), w=8.2, h=2.4; P: TL(-4.1,1.0,0), TR(4.1,1.0,0), BR(4.1,-1.4,0), BL(-4.1,-1.4,0); E: TOP(TL,TR,L=8.2,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=8.2,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT: A(0,-0.2,0), align=center, content='s=(a+b+c)/2; Area=sqrt(s(s-a)(s-b)(s-c))'; OPS: create_box(C=0,-0.2,0,w=8.2,h=2.4), place_text(A=0,-0.2,0)."
+  },
+  {
+    "topic": "De_Moivres_Theorem",
+    "description": "If a complex number is written as z=r(cosθ+i·sinθ), then its nth power is z^n=r^n(cos(nθ)+i·sin(nθ)). This supports computing powers and roots in polar form.",
+    "difficulty": "Easy",
+    "remark": "A key tool for polar-form computation in complex numbers; commonly used for roots of unity and trigonometric expansions.",
+    "subfield": "Complex Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=De_Moivres_Theorem; mode=hypothesized; source=canonical_template; confidence=0.55; steps=12; OBJ_1=axes(complex_plane); P: X1(-3,0,0), X2(3,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=6.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=unit_circle_approx; P: E(1,0,0), N(0,1,0), W(-1,0,0), S(0,-1,0); REL: circle(center=O,r=1.0,approx_by_points=E,N,W,S); OBJ_3=radius_ray; P: Z(cosθ,sinθ,0)[on_unit_circle]; E: OZ(O,Z,L=1.0,type=radius); OBJ_4=formula_box; BOX: C(0,-2.35,0), w=8.6, h=2.0; TEXT: A(0,-2.35,0), align=center, content='z=r(cosθ+i·sinθ) ⇒ z^n=r^n(cos(nθ)+i·sin(nθ))'; OPS: create_axes(O), create_circle(O,r=1.0), create_point(Z,on_circle), create_edge(OZ), create_box(C=0,-2.35,0,w=8.6,h=2.0), place_text(A=0,-2.35,0)."
+  },
+  {
+    "topic": "Cramers_Rule",
+    "description": "Cramer's rule solves a square system of linear equations using determinants by expressing each variable as a ratio of determinants.",
+    "difficulty": "Easy",
+    "remark": "Best suited for small systems in theory; emphasizes the role of determinants in solvability and uniqueness.",
+    "subfield": "Algebra",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Cramers_Rule; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=7.8, h=2.0; P: TL(-3.9,1.0,0), TR(3.9,1.0,0), BR(3.9,-1.0,0), BL(-3.9,-1.0,0); E: TOP(TL,TR,L=7.8,type=box_edge), RIGHT(TR,BR,L=2.0,type=box_edge), BOTTOM(BR,BL,L=7.8,type=box_edge), LEFT(BL,TL,L=2.0,type=box_edge); TEXT: A(0,0,0), align=center, content='Solve linear system using determinants (Cramer)'; OPS: create_box(C=0,0,0,w=7.8,h=2.0), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Angle_of_Rotation",
+    "description": "An angle of rotation measures how far a figure is turned about a fixed point (the center of rotation), typically measured in degrees or radians.",
+    "difficulty": "Easy",
+    "remark": "Used in transformation geometry to describe rotational motion and orientation changes around a center.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Angle_of_Rotation; mode=hypothesized; source=rotation_scene_template; confidence=0.55; steps=9; OBJ_1=rotation_scene; P: C(0,0,0)[center], P1(2,0,0)[start], P2(0,2,0)[end]; E: CP1(C,P1,L=2.0,type=radius), CP2(C,P2,L=2.0,type=radius); REL: rotation(P1,center=C,angle=θ,to=P2), angle(P1,C,P2,value=θ); OBJ_2=formula_box; BOX: C2(0,-2.35,0), w=7.8, h=1.8; TEXT: A2(0,-2.35,0), align=center, content='Angle of rotation θ about center C'; OPS: pt(C,0,0,0), pt(P1,2,0,0), pt(P2,0,2,0), ed(CP1,C,P1), ed(CP2,C,P2), mark_angle(P1,C,P2), create_box(C=0,-2.35,0,w=7.8,h=1.8), place_text(A=0,-2.35,0)."
+  },
+  {
+    "topic": "Triangle_Similarity_Theorem",
+    "description": "Two triangles are similar if their corresponding angles are equal and their corresponding side lengths are proportional.",
+    "difficulty": "Easy",
+    "remark": "A basic theorem for scale relationships; widely used for indirect measurement and proportional reasoning in geometry.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Triangle_Similarity_Theorem; mode=hypothesized; source=theorem_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.6, h=2.2; P: TL(-4.3,1.1,0), TR(4.3,1.1,0), BR(4.3,-1.1,0), BL(-4.3,-1.1,0); E: TOP(TL,TR,L=8.6,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=8.6,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT: A(0,0,0), align=center, content='Equal angles + proportional sides ⇒ similar triangles'; OPS: create_box(C=0,0,0,w=8.6,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Triangle_Congruence_Theorems",
+    "description": "Two triangles are congruent if they satisfy at least one standard condition such as SSS, SAS, ASA, AAS, or HL (for right triangles).",
+    "difficulty": "Easy",
+    "remark": "Core criteria for proving triangles identical in size and shape; fundamental in geometry proofs.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Triangle_Congruence_Theorems; mode=hypothesized; source=theorem_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.8, h=2.4; P: TL(-4.4,1.2,0), TR(4.4,1.2,0), BR(4.4,-1.2,0), BL(-4.4,-1.2,0); E: TOP(TL,TR,L=8.8,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=8.8,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT: A(0,0,0), align=center, content='Congruence: SSS, SAS, ASA, AAS, HL (right)'; OPS: create_box(C=0,0,0,w=8.8,h=2.4), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Geometric_Sequence",
+    "description": "For a geometric sequence with first term a and common ratio r, the sum of the first n terms is Sₙ = a(1 − rⁿ)/(1 − r), where r ≠ 1.",
+    "difficulty": "Easy",
+    "remark": "Standard formula in sequences and series; frequently applied in growth/decay modeling and financial mathematics.",
+    "subfield": "Sequences and Series",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Geometric_Sequence; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.6, h=2.2; P: TL(-4.3,1.1,0), TR(4.3,1.1,0), BR(4.3,-1.1,0), BL(-4.3,-1.1,0); E: TOP(TL,TR,L=8.6,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=8.6,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT: A(0,0,0), align=center, content='S_n=a(1-r^n)/(1-r), r≠1'; OPS: create_box(C=0,0,0,w=8.6,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Arithmetic_Sequence",
+    "description": "For an arithmetic sequence with first term a and common difference d, the sum of the first n terms is Sₙ = (n/2)[2a + (n−1)d].",
+    "difficulty": "Easy",
+    "remark": "A basic sequence-sum formula; commonly used for evenly spaced patterns and linear growth problems.",
+    "subfield": "Sequences and Series",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Arithmetic_Sequence; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.6, h=2.2; P: TL(-4.3,1.1,0), TR(4.3,1.1,0), BR(4.3,-1.1,0), BL(-4.3,-1.1,0); E: TOP(TL,TR,L=8.6,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=8.6,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT: A(0,0,0), align=center, content='S_n=(n/2)[2a+(n−1)d]'; OPS: create_box(C=0,0,0,w=8.6,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Permutations",
+    "description": "A permutation is an ordered arrangement of elements; different orders of the same elements count as different permutations.",
+    "difficulty": "Easy",
+    "remark": "A fundamental counting concept in combinatorics; forms the basis for factorial-based counting methods.",
+    "subfield": "Combinatorics",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Permutations; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=7.8, h=2.0; P: TL(-3.9,1.0,0), TR(3.9,1.0,0), BR(3.9,-1.0,0), BL(-3.9,-1.0,0); E: TOP(TL,TR,L=7.8,type=box_edge), RIGHT(TR,BR,L=2.0,type=box_edge), BOTTOM(BR,BL,L=7.8,type=box_edge), LEFT(BL,TL,L=2.0,type=box_edge); TEXT: A(0,0,0), align=center, content='Permutation: ordered arrangement of elements'; OPS: create_box(C=0,0,0,w=7.8,h=2.0), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Directrix",
+    "description": "A directrix is a fixed line used to define a conic. For a parabola, points satisfy dist(P,focus) = dist(P,directrix).",
+    "difficulty": "Easy",
+    "remark": "A key geometric component in conic definitions; commonly paired with the focus to characterize parabolas.",
+    "subfield": "Conic Sections",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Directrix; mode=hypothesized; source=conic_scene_template; confidence=0.50; steps=10; OBJ_1=axes(plane); P: X1(-3,0,0), X2(3,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=6.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=directrix_line; P: D1(-2,-2.5,0), D2(-2,2.5,0); E: DLINE(D1,D2,L=5.0,type=line); OBJ_3=focus_point; P: F(1,0,0); OBJ_4=formula_box; BOX: C(0,-2.35,0), w=9.2, h=2.2; TEXT: A(0,-2.35,0), align=center, content='Parabola: dist(P,F)=dist(P,directrix)'; OPS: create_axes(O), create_edge(DLINE,D1,D2), pt(F,1,0,0), create_box(C=0,-2.35,0,w=9.2,h=2.2), place_text(A=0,-2.35,0)."
+  },
+  {
+    "topic": "Eccentricity",
+    "description": "Eccentricity e is a nonnegative number describing a conic's shape: e=0 for a circle, 0<e<1 for an ellipse, e=1 for a parabola, and e>1 for a hyperbola.",
+    "difficulty": "Easy",
+    "remark": "A concise parameter that classifies conic sections; frequently used in analytic geometry and orbital mechanics contexts.",
+    "subfield": "Conic Sections",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Eccentricity; mode=hypothesized; source=formula_box_template; confidence=0.50; steps=2; OBJ_1=formula_box; BOX: C(0,0,0), w=8.8, h=2.4; P: TL(-4.4,1.2,0), TR(4.4,1.2,0), BR(4.4,-1.2,0), BL(-4.4,-1.2,0); E: TOP(TL,TR,L=8.8,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=8.8,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT: A(0,0,0), align=center, content='Eccentricity e≥0: circle 0, ellipse (0,1), parabola 1, hyperbola >1'; OPS: create_box(C=0,0,0,w=8.8,h=2.4), place_text(A=0,0,0)."
+  },
+{
+"topic":"Area_of_a_Rectangle",
+"description":"The area of a rectangle is equal to its length times its width: A = l × w.",
+"difficulty":"Easy",
+"remark":"Basic area formula in plane geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Area_of_a_Rectangle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.6,h=2.0; TEXT:A(0,0,0),'A=l×w'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Area_of_a_Triangle",
+"description":"The area of a triangle is A = 1/2 × base × height.",
+"difficulty":"Easy",
+"remark":"Fundamental triangle area formula.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Area_of_a_Triangle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'A=1/2·b·h'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Area_of_a_Parallelogram",
+"description":"The area of a parallelogram equals base times height: A = b × h.",
+"difficulty":"Easy",
+"remark":"Equivalent to rectangle area with same base and height.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Area_of_a_Parallelogram; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.2,h=2.0; TEXT:A(0,0,0),'A=b×h'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Area_of_a_Trapezoid",
+"description":"The area of a trapezoid is A = 1/2 × (a+b) × h.",
+"difficulty":"Easy",
+"remark":"Average of parallel sides times height.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Area_of_a_Trapezoid; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.4,h=2.1; TEXT:A(0,0,0),'A=1/2(a+b)h'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Perimeter_of_a_Rectangle",
+"description":"The perimeter of a rectangle is P = 2(l + w).",
+"difficulty":"Easy",
+"remark":"Basic perimeter rule.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Perimeter_of_a_Rectangle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'P=2(l+w)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Perimeter_of_a_Triangle",
+"description":"The perimeter of a triangle equals the sum of its three side lengths.",
+"difficulty":"Easy",
+"remark":"Basic polygon perimeter concept.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Perimeter_of_a_Triangle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.0,h=2.0; TEXT:A(0,0,0),'P=a+b+c'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Volume_of_a_Cube",
+"description":"The volume of a cube with side length a is V = a³.",
+"difficulty":"Easy",
+"remark":"Basic 3D geometry formula.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Volume_of_a_Cube; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.2,h=2.0; TEXT:A(0,0,0),'V=a³'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Volume_of_a_Rectangular_Prism",
+"description":"The volume of a rectangular prism is V = l × w × h.",
+"difficulty":"Easy",
+"remark":"Extension of area into 3D.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Volume_of_a_Rectangular_Prism; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.6,h=2.0; TEXT:A(0,0,0),'V=lwh'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Volume_of_a_Cylinder",
+"description":"The volume of a cylinder is V = πr²h.",
+"difficulty":"Easy",
+"remark":"Area of base times height.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Volume_of_a_Cylinder; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.6,h=2.0; TEXT:A(0,0,0),'V=πr²h'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Volume_of_a_Cone",
+"description":"The volume of a cone is V = 1/3 πr²h.",
+"difficulty":"Easy",
+"remark":"One-third of corresponding cylinder volume.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Volume_of_a_Cone; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'V=1/3πr²h'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Volume_of_a_Sphere",
+"description":"The volume of a sphere is V = 4/3 πr³.",
+"difficulty":"Easy",
+"remark":"Standard sphere volume formula.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Volume_of_a_Sphere; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'V=4/3πr³'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Surface_Area_of_a_Cube",
+"description":"The surface area of a cube is SA = 6a².",
+"difficulty":"Easy",
+"remark":"Six congruent square faces.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Surface_Area_of_a_Cube; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.4,h=2.0; TEXT:A(0,0,0),'SA=6a²'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Surface_Area_of_a_Cylinder",
+"description":"The total surface area of a cylinder is SA = 2πr² + 2πrh.",
+"difficulty":"Easy",
+"remark":"Includes top, bottom, and side area.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Surface_Area_of_a_Cylinder; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.6,h=2.2; TEXT:A(0,0,0),'SA=2πr²+2πrh'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Complementary_Angles",
+"description":"Two angles are complementary if their sum is 90 degrees.",
+"difficulty":"Easy",
+"remark":"Basic angle relationship.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Complementary_Angles; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.0,h=2.0; TEXT:A(0,0,0),'θ₁+θ₂=90°'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Supplementary_Angles",
+"description":"Two angles are supplementary if their sum is 180 degrees.",
+"difficulty":"Easy",
+"remark":"Frequently used in line-angle problems.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Supplementary_Angles; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.2,h=2.0; TEXT:A(0,0,0),'θ₁+θ₂=180°'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Vertical_Angles_Theorem",
+"description":"Vertical angles formed by two intersecting lines are equal.",
+"difficulty":"Easy",
+"remark":"Essential geometry property.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Vertical_Angles_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.4,h=2.0; TEXT:A(0,0,0),'Vertical angles are equal'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Parallel_Lines_Angles",
+"description":"When a transversal cuts parallel lines, alternate interior angles are equal.",
+"difficulty":"Easy",
+"remark":"Key theorem in Euclidean geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Parallel_Lines_Angles; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.2,h=2.2; TEXT:A(0,0,0),'Alternate interior angles are equal'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Exponent_Zero_Rule",
+"description":"Any nonzero number raised to the power of zero equals 1.",
+"difficulty":"Easy",
+"remark":"Basic exponent law.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Exponent_Zero_Rule; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.6,h=2.0; TEXT:A(0,0,0),'a⁰=1 (a≠0)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Exponent_Negative_Rule",
+"description":"Negative exponents indicate reciprocals: a^-n = 1/a^n.",
+"difficulty":"Easy",
+"remark":"Used in algebra simplification.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Exponent_Negative_Rule; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.0,h=2.0; TEXT:A(0,0,0),'a⁻ⁿ=1/aⁿ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Square_Root_Property",
+"description":"If x² = a, then x = ±√a.",
+"difficulty":"Easy",
+"remark":"Basic solving method for quadratic equations.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Square_Root_Property; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'x²=a ⇒ x=±√a'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Sum_of_Interior_Angles_Triangle",
+"description":"The sum of the interior angles of any triangle equals 180 degrees.",
+"difficulty":"Easy",
+"remark":"Fundamental theorem in Euclidean geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Sum_of_Interior_Angles_Triangle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.8,h=2.0; TEXT:A(0,0,0),'A+B+C=180°'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Sum_of_Interior_Angles_Quadrilateral",
+"description":"The sum of the interior angles of a quadrilateral is 360 degrees.",
+"difficulty":"Easy",
+"remark":"Basic polygon angle property.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Sum_of_Interior_Angles_Quadrilateral; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.0,h=2.0; TEXT:A(0,0,0),'A+B+C+D=360°'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Exterior_Angle_Theorem",
+"description":"An exterior angle of a triangle equals the sum of the two remote interior angles.",
+"difficulty":"Easy",
+"remark":"Commonly used in angle-chasing problems.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Exterior_Angle_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.2,h=2.0; TEXT:A(0,0,0),'Exterior angle = sum of remote interior angles'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Isosceles_Triangle_Base_Angles",
+"description":"In an isosceles triangle, the base angles are equal.",
+"difficulty":"Easy",
+"remark":"Direct consequence of equal sides.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Isosceles_Triangle_Base_Angles; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.2,h=2.0; TEXT:A(0,0,0),'Equal sides ⇒ equal base angles'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Circle_Circumference",
+"description":"The circumference of a circle is C = 2πr.",
+"difficulty":"Easy",
+"remark":"Basic circle measurement formula.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Circle_Circumference; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.4,h=2.0; TEXT:A(0,0,0),'C=2πr'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Circle_Area",
+"description":"The area of a circle is A = πr².",
+"difficulty":"Easy",
+"remark":"One of the most common geometry formulas.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Circle_Area; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.0,h=2.0; TEXT:A(0,0,0),'A=πr²'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Arc_Length_Formula",
+"description":"Arc length is given by s = rθ when θ is measured in radians.",
+"difficulty":"Easy",
+"remark":"Links angle measure with distance on a circle.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Arc_Length_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.6,h=2.0; TEXT:A(0,0,0),'s=rθ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Sector_Area_Formula",
+"description":"The area of a sector is A = 1/2 r²θ (θ in radians).",
+"difficulty":"Easy",
+"remark":"Derived from full circle area.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Sector_Area_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.0,h=2.0; TEXT:A(0,0,0),'A=1/2 r²θ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Distance_Formula_2D",
+"description":"The distance between two points in the plane is d = √((x2−x1)²+(y2−y1)²).",
+"difficulty":"Easy",
+"remark":"Derived from the Pythagorean theorem.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Distance_Formula_2D; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'d=√((x2-x1)²+(y2-y1)²)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Midpoint_Formula",
+"description":"The midpoint of a segment joining two points is ((x1+x2)/2, (y1+y2)/2).",
+"difficulty":"Easy",
+"remark":"Used frequently in coordinate geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Midpoint_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.4,h=2.2; TEXT:A(0,0,0),'((x1+x2)/2,(y1+y2)/2)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Slope_Formula",
+"description":"The slope between two points is m = (y2−y1)/(x2−x1).",
+"difficulty":"Easy",
+"remark":"Core concept in analytic geometry.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Slope_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.0,h=2.0; TEXT:A(0,0,0),'m=(y2-y1)/(x2-x1)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Point_Slope_Form",
+"description":"Equation of a line: y − y1 = m(x − x1).",
+"difficulty":"Easy",
+"remark":"Basic linear equation representation.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Point_Slope_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.4,h=2.0; TEXT:A(0,0,0),'y-y1=m(x-x1)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Slope_Intercept_Form",
+"description":"Equation of a line in slope-intercept form is y = mx + b.",
+"difficulty":"Easy",
+"remark":"Most common linear equation form.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Slope_Intercept_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'y=mx+b'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Absolute_Value_Definition",
+"description":"Absolute value represents distance from zero: |x| = x if x≥0, and −x if x<0.",
+"difficulty":"Easy",
+"remark":"Foundation for inequalities and distance.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Absolute_Value_Definition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'|x|=x(x≥0), -x(x<0)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Quadratic_Standard_Form",
+"description":"A quadratic function is commonly written as y = ax² + bx + c.",
+"difficulty":"Easy",
+"remark":"Standard representation of parabolas.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Quadratic_Standard_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.6,h=2.0; TEXT:A(0,0,0),'y=ax²+bx+c'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Difference_of_Squares",
+"description":"Difference of squares identity: a² − b² = (a−b)(a+b).",
+"difficulty":"Easy",
+"remark":"Classic algebraic factoring identity.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Difference_of_Squares; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.8,h=2.0; TEXT:A(0,0,0),'a²-b²=(a-b)(a+b)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Distributive_Property",
+"description":"Distributive property: a(b+c)=ab+ac.",
+"difficulty":"Easy",
+"remark":"Fundamental arithmetic-algebra rule.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Distributive_Property; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=7.8,h=2.0; TEXT:A(0,0,0),'a(b+c)=ab+ac'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Commutative_Property_Addition",
+"description":"Changing the order of addition does not change the result: a+b=b+a.",
+"difficulty":"Easy",
+"remark":"Basic arithmetic law.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Commutative_Property_Addition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.2,h=2.0; TEXT:A(0,0,0),'a+b=b+a'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Commutative_Property_Multiplication",
+"description":"Changing the order of multiplication does not change the result: ab=ba.",
+"difficulty":"Easy",
+"remark":"Fundamental multiplication property.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Commutative_Property_Multiplication; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.4,h=2.0; TEXT:A(0,0,0),'ab=ba'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Associative_Property_Addition",
+"description":"Grouping does not affect addition: (a+b)+c=a+(b+c).",
+"difficulty":"Easy",
+"remark":"Used in algebraic simplification.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Associative_Property_Addition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.8,h=2.0; TEXT:A(0,0,0),'(a+b)+c=a+(b+c)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+  {
+    "topic": "Factor_Theorem",
+    "description": "A polynomial f(x) has (x - a) as a factor if and only if f(a) = 0. This theorem is used to find roots and factors of polynomials.",
+    "difficulty": "Medium",
+    "remark": "Crucial for solving polynomial equations and analyzing their properties.",
+    "subfield": "Algebra",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Factor_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=9.5,h=2.4; P: TL(-4.75,1.2,0), TR(4.75,1.2,0), BR(4.75,-1.2,0), BL(-4.75,-1.2,0); E: TOP(TL,TR,L=9.5,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=9.5,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A(0,0,0),align=center,content='f(a)=0 ⇔ (x−a) is a factor of f(x)'; OPS: create_box(C=0,0,0,w=9.5,h=2.4), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Law_of_Sines",
+    "description": "In any triangle, the ratio of a side length to the sine of its opposite angle is constant. If the side lengths are a, b, c with opposite angles A, B, C, then a/sin(A) = b/sin(B) = c/sin(C).",
+    "difficulty": "Medium",
+    "remark": "Often used to solve triangles when side-angle relationships are known.",
+    "subfield": "Trigonometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Law_of_Sines; mode=hypothesized; source=hypothesized; confidence=0.60; steps=6; OBJ_1=triangle; P: A(-2,0,0), B(2,0,0), C(0,2.5,0); E: AB(A,B,L=4.0,type=side), BC(B,C,L=3.2015621187164243,type=side), CA(C,A,L=3.2015621187164243,type=side); ANG: Aang(at=A), Bang(at=B), Cang(at=C); REL: opposite_side_angle(AB,Cang), opposite_side_angle(BC,Aang), opposite_side_angle(CA,Bang); OBJ_2=formula_box; BOX:C(0,-2.4,0),w=10.5,h=2.5; P: TL(-5.25,-1.15,0), TR(5.25,-1.15,0), BR(5.25,-3.65,0), BL(-5.25,-3.65,0); E: TOP(TL,TR,L=10.5,type=box_edge), RIGHT(TR,BR,L=2.5,type=box_edge), BOTTOM(BR,BL,L=10.5,type=box_edge), LEFT(BL,TL,L=2.5,type=box_edge); TEXT:A2(0,-2.4,0),align=center,content='a/sinA = b/sinB = c/sinC'; OPS: pt(A,-2,0,0), pt(B,2,0,0), pt(C,0,2.5,0), ed(AB,A,B), ed(BC,B,C), ed(CA,C,A), mark_angle(A), mark_angle(B), mark_angle(C), create_box(C=0,-2.4,0,w=10.5,h=2.5), place_text(A=0,-2.4,0)."
+  },
+  {
+    "topic": "Binomial_Theorem",
+    "description": "For any nonnegative integer n and real numbers a and b: (a + b)^n = Σ(k=0 to n) C(n,k) a^(n−k) b^k.",
+    "difficulty": "Medium",
+    "remark": "Has important applications in algebra, combinatorics, and probability theory.",
+    "subfield": "Algebra",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Binomial_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=11.0,h=2.6; P: TL(-5.5,1.3,0), TR(5.5,1.3,0), BR(5.5,-1.3,0), BL(-5.5,-1.3,0); E: TOP(TL,TR,L=11.0,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=11.0,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='(a+b)^n = Σ_{k=0..n} C(n,k) a^(n−k) b^k'; OPS: create_box(C=0,0,0,w=11.0,h=2.6), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Intermediate_Value_Theorem",
+    "description": "If f is continuous on [a,b] and k lies between f(a) and f(b), then there exists c in [a,b] such that f(c)=k.",
+    "difficulty": "Medium",
+    "remark": "A key foundation for understanding the behavior of continuous functions in calculus.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Intermediate_Value_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=8; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-2.8,0), Y2(0,2.8,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=5.6,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=curve_segment; P: A(-3,-1.5,0)[f(a)], B(3,1.8,0)[f(b)], Cpt(0,0.4,0)[f(c)=k]; E: ABcurve(A,B,type=continuous_curve); OBJ_3=level_line; P: L1(-4,0.4,0), L2(4,0.4,0); E: LL(L1,L2,L=8.0,type=level_line); REL: intersects(ABcurve,LL,at=Cpt); OBJ_4=formula_box; BOX:C(0,-2.6,0),w=11.5,h=2.8; P: TL(-5.75,-1.2,0), TR(5.75,-1.2,0), BR(5.75,-4.0,0), BL(-5.75,-4.0,0); E: TOP(TL,TR,L=11.5,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=11.5,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='f continuous on [a,b] and k between f(a),f(b) ⇒ ∃c∈[a,b]: f(c)=k'; OPS: create_axes(O), draw_curve(A,B), draw_line(L1,L2), pt(Cpt,0,0.4,0), create_box(C=0,-2.6,0,w=11.5,h=2.8), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Law_of_Cosines",
+    "description": "In any triangle, a² = b² + c² − 2bc·cos(A), where A is the angle opposite side a (and similarly for the other sides).",
+    "difficulty": "Medium",
+    "remark": "Applicable to side-angle computations in any triangle.",
+    "subfield": "Trigonometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Law_of_Cosines; mode=hypothesized; source=hypothesized; confidence=0.60; steps=6; OBJ_1=triangle; P: A(-2,0,0), B(2,0,0), C(0,2.2,0); E: AB(A,B,L=4.0,type=side), BC(B,C,L=2.973213749463701,type=side), CA(C,A,L=2.973213749463701,type=side); ANG: Aang(at=A), Bang(at=B), Cang(at=C); REL: included_angle(Bang,between=BA and BC), opposite_side_angle(AC,Bang), label_side(a=AC), label_side(b=BC), label_side(c=AB); OBJ_2=formula_box; BOX:C(0,-2.4,0),w=10.0,h=2.4; P: TL(-5.0,-1.2,0), TR(5.0,-1.2,0), BR(5.0,-3.6,0), BL(-5.0,-3.6,0); E: TOP(TL,TR,L=10.0,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=10.0,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A2(0,-2.4,0),align=center,content='a² = b² + c² − 2bc·cos(A)'; OPS: pt(A,-2,0,0), pt(B,2,0,0), pt(C,0,2.2,0), ed(AB,A,B), ed(BC,B,C), ed(CA,C,A), mark_angle(A), mark_angle(B), mark_angle(C), create_box(C=0,-2.4,0,w=10.0,h=2.4), place_text(A=0,-2.4,0)."
+  },
+  {
+    "topic": "Divergence_Test",
+    "description": "If lim(n→∞) a_n ≠ 0 or the limit does not exist, then the series Σ a_n diverges. This test can show divergence but cannot prove convergence.",
+    "difficulty": "Medium",
+    "remark": "A primary first check for series convergence.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Divergence_Test; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=9.8,h=2.4; P: TL(-4.9,1.2,0), TR(4.9,1.2,0), BR(4.9,-1.2,0), BL(-4.9,-1.2,0); E: TOP(TL,TR,L=9.8,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=9.8,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A(0,0,0),align=center,content='If lim_{n→∞} a_n ≠ 0 (or DNE) ⇒ Σ a_n diverges'; OPS: create_box(C=0,0,0,w=9.8,h=2.4), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Squeeze_Theorem",
+    "description": "If g(x) ≤ f(x) ≤ h(x) near a, and lim(x→a) g(x) = lim(x→a) h(x) = L, then lim(x→a) f(x) = L.",
+    "difficulty": "Medium",
+    "remark": "A commonly used technique in limit calculations.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Squeeze_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=8; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=bounding_curves; P: A(-3,0,0), B(3,0,0); E: gcurve(A,B,type=lower_bound), fcurve(A,B,type=middle), hcurve(A,B,type=upper_bound); REL: inequality(g≤f≤h,near=a); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=11.0,h=2.6; P: TL(-5.5,-1.3,0), TR(5.5,-1.3,0), BR(5.5,-3.9,0), BL(-5.5,-3.9,0); E: TOP(TL,TR,L=11.0,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=11.0,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='g≤f≤h and lim g=lim h=L ⇒ lim f=L'; OPS: create_axes(O), draw_curve(gcurve), draw_curve(fcurve), draw_curve(hcurve), create_box(C=0,-2.6,0,w=11.0,h=2.6), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Chain_Rule",
+    "description": "For a composite function y = f(g(x)), the derivative is y' = f'(g(x))·g'(x).",
+    "difficulty": "Medium",
+    "remark": "The most commonly used rule for differentiating composite functions.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Chain_Rule; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=9.0,h=2.2; P: TL(-4.5,1.1,0), TR(4.5,1.1,0), BR(4.5,-1.1,0), BL(-4.5,-1.1,0); E: TOP(TL,TR,L=9.0,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=9.0,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT:A(0,0,0),align=center,content='If y=f(g(x)), then dy/dx = f′(g(x))·g′(x)'; OPS: create_box(C=0,0,0,w=9.0,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Product_Rule",
+    "description": "For y = f(x)g(x), the derivative is y' = f'(x)g(x) + f(x)g'(x).",
+    "difficulty": "Medium",
+    "remark": "Used for differentiating products of functions.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Product_Rule; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=9.2,h=2.2; P: TL(-4.6,1.1,0), TR(4.6,1.1,0), BR(4.6,-1.1,0), BL(-4.6,-1.1,0); E: TOP(TL,TR,L=9.2,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=9.2,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT:A(0,0,0),align=center,content='(fg)′ = f′g + fg′'; OPS: create_box(C=0,0,0,w=9.2,h=2.2), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Quotient_Rule",
+    "description": "For y = f(x)/g(x) with g(x)≠0, the derivative is y' = (f'(x)g(x) − f(x)g'(x)) / [g(x)]².",
+    "difficulty": "Medium",
+    "remark": "Used for differentiating quotients of functions.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Quotient_Rule; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=9.2,h=2.3; P: TL(-4.6,1.15,0), TR(4.6,1.15,0), BR(4.6,-1.15,0), BL(-4.6,-1.15,0); E: TOP(TL,TR,L=9.2,type=box_edge), RIGHT(TR,BR,L=2.3,type=box_edge), BOTTOM(BR,BL,L=9.2,type=box_edge), LEFT(BL,TL,L=2.3,type=box_edge); TEXT:A(0,0,0),align=center,content='(f/g)′ = (f′g − fg′) / g²'; OPS: create_box(C=0,0,0,w=9.2,h=2.3), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Power_Rule",
+    "description": "If f(x)=x^n for a real constant n, then f'(x)=n·x^(n−1).",
+    "difficulty": "Medium",
+    "remark": "One of the most basic differentiation rules.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Power_Rule; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=9.0,h=2.3; P: TL(-4.5,1.15,0), TR(4.5,1.15,0), BR(4.5,-1.15,0), BL(-4.5,-1.15,0); E: TOP(TL,TR,L=9.0,type=box_edge), RIGHT(TR,BR,L=2.3,type=box_edge), BOTTOM(BR,BL,L=9.0,type=box_edge), LEFT(BL,TL,L=2.3,type=box_edge); TEXT:A(0,0,0),align=center,content='If f(x)=x^n, then f′(x)=n·x^(n−1)'; OPS: create_box(C=0,0,0,w=9.0,h=2.3), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "u_Substitution_Substitution_Rule",
+    "description": "To evaluate an integral of the form ∫ f(g(x))·g'(x) dx, set u=g(x). Then du=g'(x)dx and ∫ f(g(x))·g'(x) dx = ∫ f(u) du.",
+    "difficulty": "Medium",
+    "remark": "One of the commonly used techniques in integration.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=u_Substitution_Substitution_Rule; mode=hypothesized; source=hypothesized; confidence=0.60; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=11.2,h=2.6; P: TL(-5.6,1.3,0), TR(5.6,1.3,0), BR(5.6,-1.3,0), BL(-5.6,-1.3,0); E: TOP(TL,TR,L=11.2,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=11.2,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='Let u=g(x), du=g′(x)dx ⇒ ∫ f(g(x))g′(x)dx = ∫ f(u)du'; OPS: create_box(C=0,0,0,w=11.2,h=2.6), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Disk_and_Washer_Method",
+    "description": "For a solid of revolution about the x-axis, volume can be computed by V = π∫[a,b] (R(x)^2 − r(x)^2) dx, where R is outer radius and r is inner radius (disk is the special case r=0).",
+    "difficulty": "Medium",
+    "remark": "Standard technique for volumes of solids of revolution in integral calculus.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Disk_and_Washer_Method; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=axes; P: X1(-3,0,0), X2(3,0,0), Y1(0,-2.5,0), Y2(0,2.5,0), O(0,0,0); E: XAXIS(X1,X2,L=6.0,type=x_axis), YAXIS(Y1,Y2,L=5.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=region_curve; P: A(-2,0,0), B(2,0,0), Ptop(0,1.8,0); E: curve(A,B,type=function_graph), base(A,B,type=interval); REL: region_under_curve_about_x_axis; OBJ_3=cross_section; P: x0(1,0,0), Rpt(1,1.2,0); E: radius(x0,Rpt,L=1.2,type=radius); REL: disk_or_washer_at(x=x0); OBJ_4=formula_box; BOX:C(0,-2.35,0),w=11.5,h=2.2; P: TL(-5.75,-1.25,0), TR(5.75,-1.25,0), BR(5.75,-3.45,0), BL(-5.75,-3.45,0); E: TOP(TL,TR,L=11.5,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=11.5,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT:A2(0,-2.35,0),align=center,content='V = π∫(R(x)^2 − r(x)^2) dx   (disk: r=0)'; OPS: create_axes(O), draw_curve, highlight_region, draw_radius_slice, create_box(C=0,-2.35,0,w=11.5,h=2.2), place_text(A=0,-2.35,0)."
+  },
+  {
+    "topic": "Extreme_Value_Theorem",
+    "description": "If f is continuous on a closed interval [a,b], then f attains an absolute maximum and an absolute minimum on [a,b].",
+    "difficulty": "Medium",
+    "remark": "Guarantees existence of global extrema on closed intervals; often used before optimization arguments.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Extreme_Value_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=9; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=continuous_curve_on_interval; P: A(-3,-0.5,0)[x=a], B(3,0.2,0)[x=b], MaxPt(-1,2.1,0)[abs_max], MinPt(1,-1.8,0)[abs_min]; E: curve(A,B,type=continuous_curve); REL: on_interval(A,B), extreme_points(MaxPt,MinPt); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=11.2,h=2.4; P: TL(-5.6,-1.4,0), TR(5.6,-1.4,0), BR(5.6,-3.8,0), BL(-5.6,-3.8,0); E: TOP(TL,TR,L=11.2,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=11.2,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='f continuous on [a,b] ⇒ f has absolute max and min on [a,b]'; OPS: create_axes(O), draw_curve(A,B), mark_point(MaxPt), mark_point(MinPt), create_box(C=0,-2.6,0,w=11.2,h=2.4), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Fermats_Theorem_Stationary_Point_Condition",
+    "description": "If f has a local maximum or local minimum at an interior point c and f is differentiable at c, then f′(c)=0.",
+    "difficulty": "Medium",
+    "remark": "Used to identify critical points as candidates for local extrema.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Fermats_Theorem_Stationary_Point_Condition; mode=hypothesized; source=hypothesized; confidence=0.60; steps=8; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=curve_with_local_extremum; P: Cpt(0,1.6,0)[local_extremum], T1(-2,0.3,0), T2(2,0.3,0); E: curve(T1,T2,type=smooth_curve); E2: tangent(Cpt,dir=(1,0,0),type=tangent_line); REL: tangent_horizontal(at=Cpt), derivative_zero(at=Cpt); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=11.0,h=2.2; P: TL(-5.5,-1.5,0), TR(5.5,-1.5,0), BR(5.5,-3.7,0), BL(-5.5,-3.7,0); E: TOP(TL,TR,L=11.0,type=box_edge), RIGHT(TR,BR,L=2.2,type=box_edge), BOTTOM(BR,BL,L=11.0,type=box_edge), LEFT(BL,TL,L=2.2,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='Local extremum at interior c (differentiable) ⇒ f′(c)=0'; OPS: create_axes(O), draw_curve, mark_point(Cpt), draw_tangent(Cpt), create_box(C=0,-2.6,0,w=11.0,h=2.2), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Mean_Value_Theorem",
+    "description": "If f is continuous on [a,b] and differentiable on (a,b), then there exists c in (a,b) such that f′(c) = (f(b) − f(a)) / (b − a).",
+    "difficulty": "Medium",
+    "remark": "Connects average rate of change to an instantaneous slope; foundational for many calculus results.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Mean_Value_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=10; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=curve_and_secant; P: A(-3,-1.0,0)[x=a], B(3,1.5,0)[x=b], Cpt(0,0.4,0)[x=c]; E: curve(A,B,type=smooth_curve), secant(A,B,type=secant_line), tangent(Cpt,parallel_to=secant,type=tangent_line); REL: tangent_parallel_secant(at=Cpt); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=11.4,h=2.4; P: TL(-5.7,-1.4,0), TR(5.7,-1.4,0), BR(5.7,-3.8,0), BL(-5.7,-3.8,0); E: TOP(TL,TR,L=11.4,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=11.4,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='∃c∈(a,b): f′(c) = (f(b)−f(a))/(b−a)'; OPS: create_axes(O), draw_curve(A,B), draw_line(A,B), mark_point(Cpt), draw_tangent(Cpt), create_box(C=0,-2.6,0,w=11.4,h=2.4), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Newton_Raphson_Method",
+    "description": "Newton's method approximates a root by iteration: x_{n+1} = x_n − f(x_n)/f′(x_n). It uses the tangent line at x_n to estimate the next approximation.",
+    "difficulty": "Medium",
+    "remark": "Widely used in numerical root-finding problems in science and engineering.",
+    "subfield": "Numerical Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Newton_Raphson_Method; mode=hypothesized; source=hypothesized; confidence=0.55; steps=12; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=curve; P: A(-3,2.0,0), B(3,-2.0,0); E: fcurve(A,B,type=function_graph); OBJ_3=iteration_step; P: x0(-2,0,0)[x0], P0(-2,1.6,0)[on_curve], x1(-1.2,0,0)[x1]; E: tangent_at_P0(P0,type=tangent_line), drop_to_axis(P0->x0), intersect_tangent_with_xaxis(P0->x1); REL: newton_update(x0->x1); OBJ_4=formula_box; BOX:C(0,-2.6,0),w=11.8,h=2.4; P: TL(-5.9,-1.4,0), TR(5.9,-1.4,0), BR(5.9,-3.8,0), BL(-5.9,-3.8,0); E: TOP(TL,TR,L=11.8,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=11.8,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='x_{n+1} = x_n − f(x_n)/f′(x_n)'; OPS: create_axes(O), draw_curve, pt(x0,-2,0,0), pt(P0,-2,1.6,0), draw_tangent(P0), mark_intersection_with_xaxis(x1), create_box(C=0,-2.6,0,w=11.8,h=2.4), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Rolles_Theorem",
+    "description": "If f is continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then there exists c in (a,b) such that f′(c)=0.",
+    "difficulty": "Medium",
+    "remark": "A special case of the Mean Value Theorem; guarantees a horizontal tangent when endpoints share the same value.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Rolles_Theorem; mode=hypothesized; source=hypothesized; confidence=0.60; steps=10; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=curve_equal_endpoints; P: A(-3,0.5,0)[f(a)], B(3,0.5,0)[f(b)], Cpt(0,2.0,0)[f′(c)=0]; E: curve(A,B,type=smooth_curve); E2: tangent(Cpt,dir=(1,0,0),type=tangent_line); REL: endpoint_equal(A,B), horizontal_tangent(at=Cpt); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=10.6,h=2.3; P: TL(-5.3,-1.45,0), TR(5.3,-1.45,0), BR(5.3,-3.75,0), BL(-5.3,-3.75,0); E: TOP(TL,TR,L=10.6,type=box_edge), RIGHT(TR,BR,L=2.3,type=box_edge), BOTTOM(BR,BL,L=10.6,type=box_edge), LEFT(BL,TL,L=2.3,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='f(a)=f(b) ⇒ ∃c∈(a,b): f′(c)=0'; OPS: create_axes(O), draw_curve(A,B), mark_point(A), mark_point(B), mark_point(Cpt), draw_tangent(Cpt), create_box(C=0,-2.6,0,w=10.6,h=2.3), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Second_Derivative_Test",
+    "description": "At a critical point c where f′(c)=0, if f″(c)>0 then f has a local minimum at c; if f″(c)<0 then f has a local maximum at c.",
+    "difficulty": "Medium",
+    "remark": "Classifies local extrema using concavity near a critical point.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Second_Derivative_Test; mode=hypothesized; source=hypothesized; confidence=0.60; steps=8; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=two_local_shapes; P: Cmin(-1,-1.0,0)[min], Cmax(1,1.0,0)[max]; E: upcurve(around=Cmin,type=concave_up), downcurve(around=Cmax,type=concave_down); REL: second_derivative_positive(at=Cmin), second_derivative_negative(at=Cmax); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=11.2,h=2.3; P: TL(-5.6,-1.45,0), TR(5.6,-1.45,0), BR(5.6,-3.75,0), BL(-5.6,-3.75,0); E: TOP(TL,TR,L=11.2,type=box_edge), RIGHT(TR,BR,L=2.3,type=box_edge), BOTTOM(BR,BL,L=11.2,type=box_edge), LEFT(BL,TL,L=2.3,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='If f′(c)=0: f″(c)>0 ⇒ local min; f″(c)<0 ⇒ local max'; OPS: create_axes(O), draw_curve(upcurve), draw_curve(downcurve), mark_point(Cmin), mark_point(Cmax), create_box(C=0,-2.6,0,w=11.2,h=2.3), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Pappuss_Theorem_Centroid_Theorems",
+    "description": "Pappus's centroid theorems relate solids/surfaces of revolution to the path length traced by the centroid. For volume: V = A·(2πd). For surface area: S = L·(2πd), where d is the centroid distance to the axis, A is area of the region, and L is arc length of the curve.",
+    "difficulty": "Medium",
+    "remark": "Provides an efficient way to compute volume or surface area of revolution when centroid information is known.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Pappuss_Theorem_Centroid_Theorems; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=axis_and_centroid_path; P: O(0,0,0), AX1(-3,0,0), AX2(3,0,0), G(0,1.5,0)[centroid]; E: AX(AX1,AX2,L=6.0,type=axis), OG(O,G,L=1.5,type=distance); REL: centroid_distance(d=|OG|); OBJ_2=centroid_circle_path; REL: circle_path(center=O,r=d,represents=2πd); OBJ_3=formula_box; BOX:C(0,-2.4,0),w=11.8,h=2.6; P: TL(-5.9,-1.1,0), TR(5.9,-1.1,0), BR(5.9,-3.7,0), BL(-5.9,-3.7,0); E: TOP(TL,TR,L=11.8,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=11.8,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A2(0,-2.4,0),align=center,content='Pappus: V = A·(2πd),  S = L·(2πd)'; OPS: pt(O,0,0,0), ed(AX,AX1,AX2), pt(G,0,1.5,0), create_circle(center=O,r=1.5), create_box(C=0,-2.4,0,w=11.8,h=2.6), place_text(A=0,-2.4,0)."
+  },
+{
+"topic":"Integration_by_Parts",
+"description":"Integration by parts transforms the integral of a product of functions into another form: ∫u dv = uv − ∫v du.",
+"difficulty":"Medium",
+"remark":"A core integration technique derived from the product rule.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Integration_by_Parts; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.4; TEXT:A(0,0,0),'∫u dv = uv − ∫v du'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Partial_Fraction_Decomposition",
+"description":"A rational function can be written as a sum of simpler fractions to facilitate integration.",
+"difficulty":"Medium",
+"remark":"Widely used for integrating rational expressions.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Partial_Fraction_Decomposition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.4; TEXT:A(0,0,0),'Rational function ⇒ sum of simpler fractions'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Implicit_Differentiation",
+"description":"Implicit differentiation is used when variables are mixed and y is not isolated explicitly.",
+"difficulty":"Medium",
+"remark":"Essential for equations defining curves implicitly.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Implicit_Differentiation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.2; TEXT:A(0,0,0),'Differentiate both sides w.r.t x'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Related_Rates",
+"description":"Related rates problems involve differentiating equations with respect to time to relate changing quantities.",
+"difficulty":"Medium",
+"remark":"Common real-world application of derivatives.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Related_Rates; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'Differentiate wrt time: d/dt'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"LHopitals_Rule",
+"description":"L'Hôpital's rule evaluates indeterminate limits by differentiating numerator and denominator.",
+"difficulty":"Medium",
+"remark":"Used for 0/0 or ∞/∞ forms.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=LHopitals_Rule; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.2; TEXT:A(0,0,0),'lim f/g = lim f' / g''; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Logarithmic_Differentiation",
+"description":"Logarithmic differentiation uses logarithms to simplify differentiation of complex products or powers.",
+"difficulty":"Medium",
+"remark":"Useful when variables appear as exponents.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Logarithmic_Differentiation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.2; TEXT:A(0,0,0),'Take ln both sides before differentiating'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Polar_Coordinates_Conversion",
+"description":"Conversion between polar and Cartesian coordinates: x=r cosθ, y=r sinθ.",
+"difficulty":"Medium",
+"remark":"Foundation for polar graph analysis.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Polar_Coordinates_Conversion; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'x=r cosθ, y=r sinθ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Parametric_Derivative",
+"description":"For parametric equations x(t), y(t), the derivative is dy/dx = (dy/dt)/(dx/dt).",
+"difficulty":"Medium",
+"remark":"Core formula for parametric curves.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Parametric_Derivative; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.2; TEXT:A(0,0,0),'dy/dx=(dy/dt)/(dx/dt)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Geometric_Mean_Theorem_Right_Triangle",
+"description":"In a right triangle, the altitude to the hypotenuse creates segments related by geometric means.",
+"difficulty":"Medium",
+"remark":"Important property in right-triangle geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Geometric_Mean_Theorem_Right_Triangle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.2; TEXT:A(0,0,0),'Altitude² = segment1 × segment2'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Angle_Bisector_Theorem",
+"description":"An angle bisector divides the opposite side proportionally to adjacent sides.",
+"difficulty":"Medium",
+"remark":"Frequently used in triangle proportion problems.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Angle_Bisector_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.2; TEXT:A(0,0,0),'BD/DC = AB/AC'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Cevas_Theorem",
+"description":"Ceva's theorem gives a condition for three cevians of a triangle to be concurrent.",
+"difficulty":"Medium",
+"remark":"Key theorem for concurrency in triangles.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Cevas_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'AF/FB · BD/DC · CE/EA = 1'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Menelaus_Theorem",
+"description":"Menelaus' theorem gives a criterion for collinearity in a triangle.",
+"difficulty":"Medium",
+"remark":"Dual relationship with Ceva's theorem.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Menelaus_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'AF/FB · BD/DC · CE/EA = -1'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Binomial_Probability_Formula",
+"description":"Probability of exactly k successes in n trials: P(X=k)=C(n,k)p^k(1-p)^(n-k).",
+"difficulty":"Medium",
+"remark":"Core formula in discrete probability.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Binomial_Probability_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.2,h=2.4; TEXT:A(0,0,0),'P(X=k)=C(n,k)p^k(1-p)^(n-k)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Expected_Value_Discrete",
+"description":"Expected value of a discrete random variable is E(X)=Σx·P(x).",
+"difficulty":"Medium",
+"remark":"Foundation of probability theory.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Expected_Value_Discrete; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.4,h=2.2; TEXT:A(0,0,0),'E(X)=ΣxP(x)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Standard_Deviation_Formula",
+"description":"Standard deviation measures dispersion: σ = √(Σ(x−μ)²/N).",
+"difficulty":"Medium",
+"remark":"Key measurement in statistics.",
+"subfield":"Statistics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Standard_Deviation_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.4; TEXT:A(0,0,0),'σ=√(Σ(x-μ)²/N)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Permutation_Formula_nPr",
+"description":"Number of permutations of r objects from n objects is nPr = n!/(n−r)!.",
+"difficulty":"Medium",
+"remark":"Used when order matters.",
+"subfield":"Combinatorics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Permutation_Formula_nPr; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'nPr=n!/(n-r)!'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Combination_Formula_nCr",
+"description":"Number of combinations is nCr = n!/[r!(n−r)!].",
+"difficulty":"Medium",
+"remark":"Used when order does not matter.",
+"subfield":"Combinatorics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Combination_Formula_nCr; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'nCr=n!/(r!(n-r)!)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Geometric_Series_Infinite",
+"description":"If |r|<1, the infinite geometric series sum is S = a/(1−r).",
+"difficulty":"Medium",
+"remark":"Fundamental infinite series result.",
+"subfield":"Sequences and Series",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Geometric_Series_Infinite; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'S=a/(1-r), |r|<1'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Exponential_Growth_Decay",
+"description":"Exponential models follow y = a·e^(kt), where k determines growth or decay.",
+"difficulty":"Medium",
+"remark":"Widely used in physics, biology, and finance.",
+"subfield":"Functions",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Exponential_Growth_Decay; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.2; TEXT:A(0,0,0),'y=a·e^(kt)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Logarithm_Change_of_Base",
+"description":"Change of base formula: log_b(a)=log_k(a)/log_k(b).",
+"difficulty":"Medium",
+"remark":"Allows computation with any log base.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Logarithm_Change_of_Base; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'log_b(a)=log_k(a)/log_k(b)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Conic_Sections_Standard_Form",
+"description":"The general second-degree equation can represent conic sections such as circles, ellipses, parabolas, and hyperbolas.",
+"difficulty":"Medium",
+"remark":"Used to classify and analyze conic sections.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Conic_Sections_Standard_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'Ax²+Bxy+Cy²+Dx+Ey+F=0'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Ellipse_Standard_Equation",
+"description":"The equation of an ellipse centered at the origin is x²/a² + y²/b² = 1.",
+"difficulty":"Medium",
+"remark":"Foundation of ellipse geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Ellipse_Standard_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'x²/a² + y²/b² = 1'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Hyperbola_Standard_Equation",
+"description":"A hyperbola centered at the origin has equation x²/a² − y²/b² = 1 or vice versa.",
+"difficulty":"Medium",
+"remark":"Key model for hyperbolic curves.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Hyperbola_Standard_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'x²/a² − y²/b² = 1'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Parabola_Vertex_Form",
+"description":"The vertex form of a parabola is y = a(x−h)² + k.",
+"difficulty":"Medium",
+"remark":"Useful for identifying vertex and transformations.",
+"subfield":"Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Parabola_Vertex_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.2,h=2.2; TEXT:A(0,0,0),'y=a(x−h)²+k'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Distance_Between_Point_and_Line",
+"description":"The distance from point (x0,y0) to line Ax+By+C=0 is |Ax0+By0+C|/√(A²+B²).",
+"difficulty":"Medium",
+"remark":"Common analytic geometry formula.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Distance_Between_Point_and_Line; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.4; TEXT:A(0,0,0),'|Ax₀+By₀+C|/√(A²+B²)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Vector_Dot_Product",
+"description":"The dot product of vectors is a·b = |a||b|cosθ.",
+"difficulty":"Medium",
+"remark":"Used to measure angle and projection.",
+"subfield":"Vector Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Vector_Dot_Product; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.8,h=2.2; TEXT:A(0,0,0),'a·b=|a||b|cosθ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Vector_Cross_Product_Magnitude",
+"description":"The magnitude of cross product is |a×b|=|a||b|sinθ.",
+"difficulty":"Medium",
+"remark":"Represents area of parallelogram.",
+"subfield":"Vector Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Vector_Cross_Product_Magnitude; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.4,h=2.2; TEXT:A(0,0,0),'|a×b|=|a||b|sinθ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Projection_of_Vector",
+"description":"Projection of vector a onto b is proj_b(a) = (a·b/|b|²)b.",
+"difficulty":"Medium",
+"remark":"Important in geometry and physics.",
+"subfield":"Vector Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Projection_of_Vector; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.3; TEXT:A(0,0,0),'proj_b(a)=(a·b/|b|²)b'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Matrix_Multiplication_Rule",
+"description":"Matrix multiplication combines rows and columns through dot products.",
+"difficulty":"Medium",
+"remark":"Core operation in linear algebra.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Matrix_Multiplication_Rule; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.2; TEXT:A(0,0,0),'C_ij = Σ A_ik B_kj'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Determinant_of_2x2",
+"description":"The determinant of a 2×2 matrix is ad−bc.",
+"difficulty":"Medium",
+"remark":"Basic determinant formula.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Determinant_of_2x2; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.4,h=2.0; TEXT:A(0,0,0),'det=[[a,b],[c,d]]=ad−bc'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Inverse_of_2x2_Matrix",
+"description":"Inverse of a 2×2 matrix exists if determinant is nonzero.",
+"difficulty":"Medium",
+"remark":"Frequently used in solving linear systems.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Inverse_of_2x2_Matrix; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.3; TEXT:A(0,0,0),'A⁻¹=(1/det)[[d,-b],[-c,a]]'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Gaussian_Elimination",
+"description":"Gaussian elimination transforms a system into row-echelon form for solving linear equations.",
+"difficulty":"Medium",
+"remark":"Standard linear algebra technique.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Gaussian_Elimination; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'Row operations → echelon form'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Geometric_Distribution_Formula",
+"description":"Probability of first success on trial k: P(X=k)=(1−p)^(k−1)p.",
+"difficulty":"Medium",
+"remark":"Used for repeated independent trials.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Geometric_Distribution_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.3; TEXT:A(0,0,0),'P(X=k)=(1−p)^(k−1)p'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Poisson_Distribution_Formula",
+"description":"Poisson probability is P(X=k)=e^(−λ)λ^k/k!.",
+"difficulty":"Medium",
+"remark":"Models rare independent events.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Poisson_Distribution_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'P(X=k)=e^(−λ)λ^k/k!'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Normal_Distribution_Density",
+"description":"Normal distribution density function: f(x)=1/(σ√(2π)) exp(-(x−μ)²/(2σ²)).",
+"difficulty":"Medium",
+"remark":"Central model in statistics.",
+"subfield":"Statistics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Normal_Distribution_Density; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.5,h=2.5; TEXT:A(0,0,0),'f(x)=1/(σ√2π)e^{-(x-μ)²/2σ²}'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Central_Angle_Arc_Length",
+"description":"Arc length is given by s = rθ when θ is measured in radians.",
+"difficulty":"Medium",
+"remark":"Important for circular geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Central_Angle_Arc_Length; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.8,h=2.0; TEXT:A(0,0,0),'s=rθ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Sector_Area_Formula",
+"description":"Area of a sector is A = (1/2)r²θ in radians.",
+"difficulty":"Medium",
+"remark":"Key area formula in circular geometry.",
+"subfield":"Geometry",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Sector_Area_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=8.8,h=2.0; TEXT:A(0,0,0),'A=(1/2)r²θ'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Logistic_Function_Model",
+"description":"Logistic growth model is f(x)=L/(1+e^(−k(x−x0))).",
+"difficulty":"Medium",
+"remark":"Used for bounded growth processes.",
+"subfield":"Functions",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Logistic_Function_Model; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.3; TEXT:A(0,0,0),'f(x)=L/(1+e^{-k(x-x₀)})'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Arithmetic_Sequence_nth_Term",
+"description":"Nth term of arithmetic sequence is a_n = a_1 + (n−1)d.",
+"difficulty":"Medium",
+"remark":"Basic formula for linear sequences.",
+"subfield":"Sequences and Series",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Arithmetic_Sequence_nth_Term; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.2; TEXT:A(0,0,0),'a_n=a₁+(n−1)d'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Arithmetic_Sequence_Sum",
+"description":"Sum of first n terms of arithmetic sequence: S_n = n(a_1+a_n)/2.",
+"difficulty":"Medium",
+"remark":"Standard arithmetic progression formula.",
+"subfield":"Sequences and Series",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Arithmetic_Sequence_Sum; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.2; TEXT:A(0,0,0),'S_n=n(a₁+a_n)/2'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+  {
+    "topic": "Taylor_Polynomial",
+    "description": "Taylor's theorem gives a polynomial approximation of a function that is k-times differentiable near a point; the polynomial is called the kth-degree Taylor polynomial.",
+    "difficulty": "Hard",
+    "remark": "Provides a local polynomial approximation with a remainder term; widely used for error estimation and numerical methods.",
+    "subfield": "Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Taylor_Polynomial; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=function_and_taylor_poly; P: x0(0,0,0)[expansion_point], F0(0,0.8,0)[f(x0)], S1(-2,0.2,0), S2(2,1.6,0); E: fcurve(S1,S2,type=function_graph), pcurve(S1,S2,type=taylor_polynomial); REL: touch_at(pcurve,fcurve,at=x0,order=k); OBJ_3=annotation; P: Tx0(0,2.2,0); TEXT: Tx0(0,2.2,0),align=center,content='Expand at x0'; OBJ_4=formula_box; BOX:C(0,-2.55,0),w=12.0,h=2.6; P: TL(-6.0,-1.25,0), TR(6.0,-1.25,0), BR(6.0,-3.85,0), BL(-6.0,-3.85,0); E: TOP(TL,TR,L=12.0,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.0,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT2:A2(0,-2.55,0),align=center,content='f(x)=Σ_{i=0..k} f^(i)(x0)/i! · (x−x0)^i  + R_{k+1}(x)'; OPS: create_axes(O), draw_curve(fcurve), draw_curve(pcurve), pt(x0,0,0,0), pt(F0,0,0.8,0), place_text(Tx0), create_box(C=0,-2.55,0,w=12.0,h=2.6), place_text(A=0,-2.55,0)."
+  },
+  {
+    "topic": "Simpsons_Rule",
+    "description": "In numerical integration, Simpson's rule approximates a definite integral by fitting parabolic arcs through subinterval endpoints and midpoints.",
+    "difficulty": "Hard",
+    "remark": "A classical Newton–Cotes method; exact for polynomials up to degree 3 on each pair of subintervals.",
+    "subfield": "Numerical Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Simpsons_Rule; mode=hypothesized; source=hypothesized; confidence=0.55; steps=12; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-2.8,0), Y2(0,2.8,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=5.6,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=function_graph; P: A(-3,0.4,0), B(3,1.8,0); E: fcurve(A,B,type=function_graph); OBJ_3=sample_points; P: a(-2,0,0)[a], m(0,0,0)[mid], b(2,0,0)[b], Pa(-2,0.7,0)[f(a)], Pm(0,1.4,0)[f(m)], Pb(2,1.0,0)[f(b)]; E: va(a,Pa,L=0.7,type=sample), vm(m,Pm,L=1.4,type=sample), vb(b,Pb,L=1.0,type=sample); OBJ_4=parabola_fit; E: pcurve(Pa,Pm,Pb,type=parabola_approx); REL: passes_through(pcurve,Pa,Pm,Pb); OBJ_5=area_shading; REL: approximate_area_under_curve(using=pcurve,interval=[a,b]); OBJ_6=formula_box; BOX:C(0,-2.5,0),w=12.2,h=2.6; P: TL(-6.1,-1.2,0), TR(6.1,-1.2,0), BR(6.1,-3.8,0), BL(-6.1,-3.8,0); E: TOP(TL,TR,L=12.2,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.2,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A2(0,-2.5,0),align=center,content='∫_a^b f(x)dx ≈ (b−a)/6 · [f(a)+4f((a+b)/2)+f(b)]'; OPS: create_axes(O), draw_curve(fcurve), pt(a,-2,0,0), pt(m,0,0,0), pt(b,2,0,0), pt(Pa,-2,0.7,0), pt(Pm,0,1.4,0), pt(Pb,2,1.0,0), draw_curve(pcurve), shade_area(interval=[a,b]), create_box(C=0,-2.5,0,w=12.2,h=2.6), place_text(A=0,-2.5,0)."
+  },
+  {
+    "topic": "Velocity_Vector",
+    "description": "Velocity is a vector that represents both the magnitude and direction of motion of an object; instantaneous velocity is the derivative of position with respect to time.",
+    "difficulty": "Hard",
+    "remark": "Commonly visualized as a tangent vector along a trajectory; key link between geometry and derivatives.",
+    "subfield": "Vector Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Velocity_Vector; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=axes; P: X1(-4,0,0), X2(4,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=8.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=trajectory_curve; P: S(-3,-1.5,0), T(3,1.8,0); E: path(S,T,type=parametric_curve); OBJ_3=instant_point_and_tangent; P: P0(0,0.4,0)[position], Vtip(1.6,1.0,0)[velocity_tip]; E: vvec(P0,Vtip,L=1.7088007490635064,type=vector); REL: tangent_to_curve(vvec,at=P0); OBJ_4=formula_box; BOX:C(0,-2.6,0),w=10.8,h=2.4; P: TL(-5.4,-1.4,0), TR(5.4,-1.4,0), BR(5.4,-3.8,0), BL(-5.4,-3.8,0); E: TOP(TL,TR,L=10.8,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=10.8,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='v(t) = r′(t)  (tangent to the path)'; OPS: create_axes(O), draw_curve(path), pt(P0,0,0.4,0), vec(vvec,P0,Vtip), create_box(C=0,-2.6,0,w=10.8,h=2.4), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Double_Riemann_Sum",
+    "description": "A double Riemann sum approximates the value of a double integral over a region R by summing f(x_i*,y_j*)·ΔA over a partition of R.",
+    "difficulty": "Hard",
+    "remark": "Geometric meaning: sums of heights times small area elements over a 2D region.",
+    "subfield": "Multivariable Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Double_Riemann_Sum; mode=hypothesized; source=hypothesized; confidence=0.55; steps=12; OBJ_1=xy_axes; P: X1(-3,0,0), X2(3,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=6.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=region_rectangle; P: A(-2,-1,0), B(2,-1,0), C(2,1.5,0), D(-2,1.5,0); E: AB(A,B,L=4.0,type=boundary), BC(B,C,L=2.5,type=boundary), CD(C,D,L=4.0,type=boundary), DA(D,A,L=2.5,type=boundary); REL: region_R(AB,BC,CD,DA); OBJ_3=grid_partition; PARAM: nx=4, ny=3; REL: partition(region_R,into=nx*ny_cells); OBJ_4=sample_points; P: S11(-1.5,-0.5,0), S22(-0.5,0.25,0), S33(0.5,1.0,0); REL: representative_samples(in_cells=[(1,1),(2,2),(3,3)]); OBJ_5=formula_box; BOX:C(0,-2.6,0),w=12.0,h=2.4; P: TL(-6.0,-1.4,0), TR(6.0,-1.4,0), BR(6.0,-3.8,0), BL(-6.0,-3.8,0); E: TOP(TL,TR,L=12.0,type=box_edge), RIGHT(TR,BR,L=2.4,type=box_edge), BOTTOM(BR,BL,L=12.0,type=box_edge), LEFT(BL,TL,L=2.4,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='∬_R f(x,y)dA ≈ Σ f(x*_{ij},y*_{ij})·ΔA'; OPS: create_axes(O), draw_boundary(A,B,C,D), draw_grid(nx=4,ny=3), pt(S11,-1.5,-0.5,0), pt(S22,-0.5,0.25,0), pt(S33,0.5,1.0,0), create_box(C=0,-2.6,0,w=12.0,h=2.4), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Fubinis_Theorem",
+    "description": "Under appropriate conditions (e.g., f is continuous on a rectangle or absolutely integrable), a double integral can be computed as an iterated integral in either order.",
+    "difficulty": "Hard",
+    "remark": "Allows switching between ∬_R f(x,y)dA and ∫∫ f(x,y) dy dx (or dx dy), greatly simplifying computation.",
+    "subfield": "Multivariable Calculus",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Fubinis_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=region_rectangle; P: A(-2,-1.5,0), B(2,-1.5,0), C(2,1.5,0), D(-2,1.5,0); E: AB(A,B,L=4.0,type=boundary), BC(B,C,L=3.0,type=boundary), CD(C,D,L=4.0,type=boundary), DA(D,A,L=3.0,type=boundary); REL: rectangle_region_R; OBJ_2=vertical_and_horizontal_slices; P: x0(0,0,0), y0(0,0,0); E: vstrip(x=0,width=dx,type=slice), hstrip(y=0,width=dy,type=slice); REL: integrate_by_slices(order1=dy_then_dx,order2=dx_then_dy); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=12.4,h=2.6; P: TL(-6.2,-1.3,0), TR(6.2,-1.3,0), BR(6.2,-3.9,0), BL(-6.2,-3.9,0); E: TOP(TL,TR,L=12.4,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.4,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='∬_R f(x,y)dA = ∫_a^b(∫_c^d f(x,y)dy)dx = ∫_c^d(∫_a^b f(x,y)dx)dy'; OPS: draw_boundary(A,B,C,D), highlight_slice(vstrip), highlight_slice(hstrip), create_box(C=0,-2.6,0,w=12.4,h=2.6), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Jacobian_Matrix_and_Determinant",
+    "description": "For a transformation (u,v) ↦ (x(u,v), y(u,v)), the Jacobian matrix contains first-order partial derivatives, and |J| gives the local area-scaling factor used in change of variables.",
+    "difficulty": "Hard",
+    "remark": "Essential for multivariable change-of-variables: dA = |∂(x,y)/∂(u,v)| du dv.",
+    "subfield": "Vector Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Jacobian_Matrix_and_Determinant; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=uv_plane_patch; P: U1(-2,-1,0), U2(2,-1,0), U3(2,1,0), U4(-2,1,0); E: U12(U1,U2,L=4.0,type=boundary), U23(U2,U3,L=2.0,type=boundary), U34(U3,U4,L=4.0,type=boundary), U41(U4,U1,L=2.0,type=boundary); REL: region_in_uv; OBJ_2=xy_plane_mapped_patch; P: X1(-1.8,-0.6,0), X2(2.2,-0.4,0), X3(1.6,1.4,0), X4(-2.0,1.0,0); E: X12(X1,X2,type=mapped_edge), X23(X2,X3,type=mapped_edge), X34(X3,X4,type=mapped_edge), X41(X4,X1,type=mapped_edge); REL: mapped_region_in_xy; OBJ_3=formula_box; BOX:C(0,-2.6,0),w=12.6,h=2.8; P: TL(-6.3,-1.2,0), TR(6.3,-1.2,0), BR(6.3,-4.0,0), BL(-6.3,-4.0,0); E: TOP(TL,TR,L=12.6,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=12.6,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='J = [∂x/∂u  ∂x/∂v;  ∂y/∂u  ∂y/∂v],  dA = |det J| du dv'; OPS: draw_boundary(U1,U2,U3,U4), draw_mapped_boundary(X1,X2,X3,X4), create_box(C=0,-2.6,0,w=12.6,h=2.8), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Greens_Theorem",
+    "description": "Green's theorem relates a line integral around a positively oriented simple closed curve C to a double integral over the region D it encloses.",
+    "difficulty": "Hard",
+    "remark": "Planar case of Stokes: ∮_C (P dx + Q dy) = ∬_D (∂Q/∂x − ∂P/∂y) dA.",
+    "subfield": "Vector Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Greens_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=12; OBJ_1=region_and_boundary; P: A(-2,0,0), B(-1.2,1.6,0), C(1.2,1.6,0), D(2,0,0), Ept(0,-1.6,0); E: boundary(A,B,type=curve), boundary(B,C,type=curve), boundary(C,D,type=curve), boundary(D,Ept,type=curve), boundary(Ept,A,type=curve); REL: closed_curve_C, enclosed_region_D; OBJ_2=orientation; REL: positive_orientation(counterclockwise); OBJ_3=formula_box; BOX:C(0,-2.6,0),w=13.0,h=2.8; P: TL(-6.5,-1.2,0), TR(6.5,-1.2,0), BR(6.5,-4.0,0), BL(-6.5,-4.0,0); E: TOP(TL,TR,L=13.0,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=13.0,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='∮_C (P dx + Q dy) = ∬_D (∂Q/∂x − ∂P/∂y) dA'; OPS: draw_closed_curve(C), shade_region(D), add_orientation_arrows(C), create_box(C=0,-2.6,0,w=13.0,h=2.8), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Stokes_Theorem",
+    "description": "Stokes' theorem relates the surface integral of curl(F) over an oriented surface S to the line integral of F along the boundary curve ∂S.",
+    "difficulty": "Hard",
+    "remark": "Unifies circulation and curl: ∬_S (∇×F)·n dS = ∮_{∂S} F·dr.",
+    "subfield": "Vector Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Stokes_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=12; OBJ_1=surface_patch; P: C0(0,0,0)[center], P1(-2,0,0), P2(0,1.6,0), P3(2,0,0), P4(0,-1.6,0); REL: surface_S(approx_patch); OBJ_2=boundary_curve; E: boundary_loop(P1,P2,P3,P4,type=closed_curve); REL: boundary_is_partialS; OBJ_3=orientation; REL: right_hand_rule(surface_normal=n,curve_orientation=positive); OBJ_4=formula_box; BOX:C(0,-2.6,0),w=12.6,h=2.8; P: TL(-6.3,-1.2,0), TR(6.3,-1.2,0), BR(6.3,-4.0,0), BL(-6.3,-4.0,0); E: TOP(TL,TR,L=12.6,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=12.6,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='∬_S (∇×F)·n dS = ∮_{∂S} F·dr'; OPS: draw_surface_patch, draw_boundary_loop, add_normal_vector, add_orientation_arrows, create_box(C=0,-2.6,0,w=12.6,h=2.8), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Burnsides_Lemma",
+    "description": "If a finite group G acts on a finite set X, then the number of orbits equals the average number of fixed points: |X/G| = (1/|G|) Σ_{g∈G} |Fix(g)|.",
+    "difficulty": "Hard",
+    "remark": "Core tool for counting distinct configurations under symmetry; also called the Cauchy–Frobenius lemma.",
+    "subfield": "Group Theory",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Burnsides_Lemma; mode=hypothesized; source=hypothesized; confidence=0.55; steps=6; OBJ_1=set_nodes; P: x1(-2,0.8,0), x2(0,0.8,0), x3(2,0.8,0), o1(-2,-0.8,0), o2(0,-0.8,0), o3(2,-0.8,0); REL: top_row=elements_of_X, bottom_row=orbits; OBJ_2=mapping_arrows; E: a1(x1,o1,type=map), a2(x2,o2,type=map), a3(x3,o3,type=map); REL: partition_into_orbits; OBJ_3=formula_box; BOX:C(0,-2.6,0),w=12.8,h=2.8; P: TL(-6.4,-1.2,0), TR(6.4,-1.2,0), BR(6.4,-4.0,0), BL(-6.4,-4.0,0); E: TOP(TL,TR,L=12.8,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=12.8,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='Number of orbits = (1/|G|) Σ_{g∈G} |Fix(g)|'; OPS: pt(x1,-2,0.8,0), pt(x2,0,0.8,0), pt(x3,2,0.8,0), pt(o1,-2,-0.8,0), pt(o2,0,-0.8,0), pt(o3,2,-0.8,0), draw_arrows, create_box(C=0,-2.6,0,w=12.8,h=2.8), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Lah_Numbers",
+    "description": "Lah numbers count ways to partition n elements into k nonempty linearly ordered subsets; they relate rising and falling factorials.",
+    "difficulty": "Hard",
+    "remark": "Appears in combinatorial identities connecting rising/falling factorial expansions.",
+    "subfield": "Combinatorics",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Lah_Numbers; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=12.0,h=2.6; P: TL(-6.0,1.3,0), TR(6.0,1.3,0), BR(6.0,-1.3,0), BL(-6.0,-1.3,0); E: TOP(TL,TR,L=12.0,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.0,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='L(n,k): partitions into k ordered blocks; (x)_n = Σ L(n,k) x^{\u0305k}'; OPS: create_box(C=0,0,0,w=12.0,h=2.6), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Ramseys_Theorem",
+    "description": "Ramsey's theorem states that in sufficiently large structures, any partitioning or coloring forces the existence of an ordered substructure (e.g., a monochromatic clique in a colored complete graph).",
+    "difficulty": "Hard",
+    "remark": "A central result in combinatorics illustrating unavoidable regularity in large systems.",
+    "subfield": "Combinatorics",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Ramseys_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=8; OBJ_1=graph_nodes; P: v1(-2,1,0), v2(0,1.4,0), v3(2,1,0), v4(-1,-0.2,0), v5(1,-0.2,0), v6(0,-1.4,0); REL: complete_graph_K6; OBJ_2=colored_edges; REL: two_color_edges(red_or_blue); OBJ_3=highlight_clique; REL: exists_monochromatic_clique(size=3); OBJ_4=formula_box; BOX:C(0,-2.6,0),w=12.6,h=2.6; P: TL(-6.3,-1.3,0), TR(6.3,-1.3,0), BR(6.3,-3.9,0), BL(-6.3,-3.9,0); E: TOP(TL,TR,L=12.6,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.6,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='In large enough graphs, any edge-coloring forces a monochromatic clique'; OPS: pt(v1,-2,1,0), pt(v2,0,1.4,0), pt(v3,2,1,0), pt(v4,-1,-0.2,0), pt(v5,1,-0.2,0), pt(v6,0,-1.4,0), draw_complete_graph, color_edges, highlight_clique, create_box(C=0,-2.6,0,w=12.6,h=2.6), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Schwarz_Lemma",
+    "description": "If f is analytic on the unit disk, f(0)=0, and |f(z)|≤1, then |f(z)|≤|z| and |f′(0)|≤1; equality implies f(z)=e^{iθ}z.",
+    "difficulty": "Hard",
+    "remark": "Key estimate in complex analysis; controls both magnitude and derivative for disk-to-disk analytic maps.",
+    "subfield": "Complex Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Schwarz_Lemma; mode=hypothesized; source=hypothesized; confidence=0.55; steps=12; OBJ_1=complex_axes; P: X1(-3,0,0), X2(3,0,0), Y1(0,-3,0), Y2(0,3,0), O(0,0,0); E: XAXIS(X1,X2,L=6.0,type=x_axis), YAXIS(Y1,Y2,L=6.0,type=y_axis); REL: perpendicular(XAXIS,YAXIS,at=O); OBJ_2=unit_circle; REL: circle(center=O,r=1.0); OBJ_3=point_and_image; P: z(0.6,0.3,0)[inside_disk], fz(0.4,0.2,0)[image]; E: Oz(O,z,L=0.6708203932499369,type=radius), Ofz(O,fz,L=0.447213595499958,type=radius); REL: modulus_bound(|fz|≤|z|); OBJ_4=formula_box; BOX:C(0,-2.55,0),w=12.6,h=2.8; P: TL(-6.3,-1.15,0), TR(6.3,-1.15,0), BR(6.3,-3.95,0), BL(-6.3,-3.95,0); E: TOP(TL,TR,L=12.6,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=12.6,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A2(0,-2.55,0),align=center,content='|f(z)|≤|z|,  |f′(0)|≤1  (disk map, f(0)=0)'; OPS: create_axes(O), create_circle(O,r=1.0), pt(z,0.6,0.3,0), pt(fz,0.4,0.2,0), draw_segment(O,z), draw_segment(O,fz), create_box(C=0,-2.55,0,w=12.6,h=2.8), place_text(A=0,-2.55,0)."
+  },
+  {
+    "topic": "Cauchy_Riemann_Equations",
+    "description": "For f(z)=u(x,y)+iv(x,y), the Cauchy–Riemann equations u_x=v_y and u_y=−v_x characterize complex differentiability (with mild regularity conditions).",
+    "difficulty": "Hard",
+    "remark": "Fundamental criterion for analyticity; links complex differentiability to partial derivatives of u and v.",
+    "subfield": "Complex Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Cauchy_Riemann_Equations; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=12.4,h=2.8; P: TL(-6.2,1.4,0), TR(6.2,1.4,0), BR(6.2,-1.4,0), BL(-6.2,-1.4,0); E: TOP(TL,TR,L=12.4,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=12.4,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A(0,0,0),align=center,content='f=u+iv analytic ⇒ u_x=v_y and u_y=−v_x'; OPS: create_box(C=0,0,0,w=12.4,h=2.8), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Moreras_Theorem",
+    "description": "Morera's theorem: if f is continuous on a domain D and the integral of f over every closed triangle in D is zero, then f is analytic on D.",
+    "difficulty": "Hard",
+    "remark": "Useful analyticity test; often paired with Cauchy's theorem in complex analysis.",
+    "subfield": "Complex Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Moreras_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=8; OBJ_1=triangle_path; P: A(-2,0,0), B(2,0,0), C(0,2.2,0); E: AB(A,B,L=4.0,type=contour), BC(B,C,L=2.973213749463701,type=contour), CA(C,A,L=2.973213749463701,type=contour); REL: closed_triangle_contour, integral_over_triangle=0; OBJ_2=formula_box; BOX:C(0,-2.6,0),w=12.8,h=2.6; P: TL(-6.4,-1.3,0), TR(6.4,-1.3,0), BR(6.4,-3.9,0), BL(-6.4,-3.9,0); E: TOP(TL,TR,L=12.8,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.8,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A2(0,-2.6,0),align=center,content='f continuous and ∮_∂T f(z)dz=0 for all triangles T ⊂ D ⇒ f analytic'; OPS: pt(A,-2,0,0), pt(B,2,0,0), pt(C,0,2.2,0), ed(AB,A,B), ed(BC,B,C), ed(CA,C,A), add_orientation_arrows, create_box(C=0,-2.6,0,w=12.8,h=2.6), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Catalan_Numbers",
+    "description": "Catalan numbers count many recursive combinatorial objects; one closed form is C_n = (1/(n+1))·binom(2n,n).",
+    "difficulty": "Hard",
+    "remark": "Counts balanced parentheses, triangulations, binary trees, and more.",
+    "subfield": "Combinatorics",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Catalan_Numbers; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=11.0,h=2.6; P: TL(-5.5,1.3,0), TR(5.5,1.3,0), BR(5.5,-1.3,0), BL(-5.5,-1.3,0); E: TOP(TL,TR,L=11.0,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=11.0,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='Catalan: C_n = 1/(n+1) · binom(2n,n)'; OPS: create_box(C=0,0,0,w=11.0,h=2.6), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Liouvilles_Theorem",
+    "description": "Liouville's theorem (complex analysis): every bounded entire function is constant.",
+    "difficulty": "Hard",
+    "remark": "A cornerstone result implying the Fundamental Theorem of Algebra as a consequence.",
+    "subfield": "Complex Analysis",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Liouvilles_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=11.6,h=2.6; P: TL(-5.8,1.3,0), TR(5.8,1.3,0), BR(5.8,-1.3,0), BL(-5.8,-1.3,0); E: TOP(TL,TR,L=11.6,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=11.6,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='Bounded entire function ⇒ constant (Liouville)'; OPS: create_box(C=0,0,0,w=11.6,h=2.6), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Derangement_Formula",
+    "description": "A derangement is a permutation with no fixed points. The number of derangements is !n = n!·Σ_{k=0..n} (−1)^k / k!.",
+    "difficulty": "Hard",
+    "remark": "Classic inclusion–exclusion example; approximates n!/e for large n.",
+    "subfield": "Combinatorics",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Derangement_Formula; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=12.2,h=2.6; P: TL(-6.1,1.3,0), TR(6.1,1.3,0), BR(6.1,-1.3,0), BL(-6.1,-1.3,0); E: TOP(TL,TR,L=12.2,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.2,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='!n = n! · Σ_{k=0..n} (−1)^k/k!'; OPS: create_box(C=0,0,0,w=12.2,h=2.6), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Delian_Problem_Doubling_the_Cube",
+    "description": "The Delian problem asks for constructing a cube with twice the volume of a given cube; equivalently, constructing a segment of length a·∛2 from a given length a using classical straightedge and compass.",
+    "difficulty": "Hard",
+    "remark": "A famous classical impossibility result: ∛2 is not constructible with straightedge and compass alone.",
+    "subfield": "Geometry",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Delian_Problem_Doubling_the_Cube; mode=hypothesized; source=hypothesized; confidence=0.55; steps=10; OBJ_1=cube_edge_lengths; P: O(0,0,0), A(2,0,0)[edge_a], B(2.52,0,0)[edge_a_cuberoot2]; E: OA(O,A,L=2.0,type=segment), OB(O,B,L=2.5198420997897464,type=segment); REL: length_ratio(|OB|/|OA|=cuberoot2); OBJ_2=annotation; TEXT: T1(0,1.2,0),align=center,content='Need edge a·∛2 to double volume'; OBJ_3=formula_box; BOX:C(0,-2.6,0),w=12.8,h=2.6; P: TL(-6.4,-1.3,0), TR(6.4,-1.3,0), BR(6.4,-3.9,0), BL(-6.4,-3.9,0); E: TOP(TL,TR,L=12.8,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.8,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT2:A2(0,-2.6,0),align=center,content='Double volume: (a·∛2)^3 = 2a^3'; OPS: pt(O,0,0,0), pt(A,2,0,0), pt(B,2.5198420998,0,0), ed(OA,O,A), ed(OB,O,B), place_text(T1), create_box(C=0,-2.6,0,w=12.8,h=2.6), place_text(A=0,-2.6,0)."
+  },
+  {
+    "topic": "Polya_Enumeration_Theorem",
+    "description": "Pólya's enumeration theorem counts distinct colorings/configurations under a symmetry group by using the cycle index of the group action.",
+    "difficulty": "Hard",
+    "remark": "Generalizes Burnside’s lemma; widely used for counting colorings of symmetric objects.",
+    "subfield": "Combinatorics",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Polya_Enumeration_Theorem; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=13.0,h=2.8; P: TL(-6.5,1.4,0), TR(6.5,1.4,0), BR(6.5,-1.4,0), BL(-6.5,-1.4,0); E: TOP(TL,TR,L=13.0,type=box_edge), RIGHT(TR,BR,L=2.8,type=box_edge), BOTTOM(BR,BL,L=13.0,type=box_edge), LEFT(BL,TL,L=2.8,type=box_edge); TEXT:A(0,0,0),align=center,content='Pólya: count via cycle index Z_G and substitution of colors'; OPS: create_box(C=0,0,0,w=13.0,h=2.8), place_text(A=0,0,0)."
+  },
+  {
+    "topic": "Cauchys_Theorem_Group_Theory",
+    "description": "If a finite group G has order divisible by a prime p, then G contains an element of order p.",
+    "difficulty": "Hard",
+    "remark": "A fundamental existence theorem in finite group theory; often used to prove Sylow-type results.",
+    "subfield": "Group Theory",
+    "geometric_structure_data": "schema=geo-kp-edge-1.0; unit=manim_unit; topic=Cauchys_Theorem_Group_Theory; mode=hypothesized; source=hypothesized; confidence=0.55; steps=2; OBJ_1=formula_box; BOX:C(0,0,0),w=12.6,h=2.6; P: TL(-6.3,1.3,0), TR(6.3,1.3,0), BR(6.3,-1.3,0), BL(-6.3,-1.3,0); E: TOP(TL,TR,L=12.6,type=box_edge), RIGHT(TR,BR,L=2.6,type=box_edge), BOTTOM(BR,BL,L=12.6,type=box_edge), LEFT(BL,TL,L=2.6,type=box_edge); TEXT:A(0,0,0),align=center,content='If p | |G|, then ∃g∈G with order(g)=p'; OPS: create_box(C=0,0,0,w=12.6,h=2.6), place_text(A=0,0,0)."
+  },
+{
+"topic":"Fourier_Series_Expansion",
+"description":"A periodic function can be represented as an infinite sum of sine and cosine terms.",
+"difficulty":"Hard",
+"remark":"Fundamental in signal processing and analysis.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Fourier_Series_Expansion; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.2,h=2.6; TEXT:A(0,0,0),'f(x)=a₀/2+Σ(a_n cos nx + b_n sin nx)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Laplace_Transform",
+"description":"The Laplace transform converts a function of time into a function of complex frequency.",
+"difficulty":"Hard",
+"remark":"Widely used to solve differential equations.",
+"subfield":"Differential Equations",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Laplace_Transform; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.5,h=2.4; TEXT:A(0,0,0),'L{f(t)}=∫₀^∞ e^{-st}f(t)dt'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Inverse_Laplace_Transform",
+"description":"Inverse Laplace transform recovers the time-domain function from its transform.",
+"difficulty":"Hard",
+"remark":"Key step in system analysis.",
+"subfield":"Differential Equations",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Inverse_Laplace_Transform; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.3; TEXT:A(0,0,0),'f(t)=L^{-1}{F(s)}'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Eigenvalue_Equation",
+"description":"Eigenvalues satisfy the characteristic equation det(A−λI)=0.",
+"difficulty":"Hard",
+"remark":"Core concept of linear algebra.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Eigenvalue_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'det(A−λI)=0'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Diagonalization_Condition",
+"description":"A matrix is diagonalizable if it has enough linearly independent eigenvectors.",
+"difficulty":"Hard",
+"remark":"Simplifies matrix powers and systems.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Diagonalization_Condition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.3; TEXT:A(0,0,0),'A=PDP^{-1}'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Spectral_Theorem",
+"description":"A real symmetric matrix can be diagonalized by an orthogonal matrix.",
+"difficulty":"Hard",
+"remark":"Important theorem in advanced linear algebra.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Spectral_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.3; TEXT:A(0,0,0),'A=QΛQ^T'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Divergence_Theorem",
+"description":"Relates the flux through a closed surface to a triple integral over the volume.",
+"difficulty":"Hard",
+"remark":"Fundamental theorem in vector calculus.",
+"subfield":"Vector Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Divergence_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.5; TEXT:A(0,0,0),'∭_V divF dV = ∬_S F·n dS'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Curl_Operator_Definition",
+"description":"Curl measures the rotational tendency of a vector field.",
+"difficulty":"Hard",
+"remark":"Used in physics and electromagnetism.",
+"subfield":"Vector Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Curl_Operator_Definition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.3; TEXT:A(0,0,0),'curl F = ∇ × F'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Gradient_Vector_Field",
+"description":"The gradient gives the direction of maximum increase of a scalar function.",
+"difficulty":"Hard",
+"remark":"Core operator in multivariable calculus.",
+"subfield":"Multivariable Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Gradient_Vector_Field; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.4,h=2.2; TEXT:A(0,0,0),'∇f=(∂f/∂x,∂f/∂y,∂f/∂z)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Lagrange_Multipliers",
+"description":"Method for finding extrema of a function under constraints.",
+"difficulty":"Hard",
+"remark":"Widely used optimization technique.",
+"subfield":"Multivariable Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Lagrange_Multipliers; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.3; TEXT:A(0,0,0),'∇f = λ∇g'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Euler_Lagrange_Equation",
+"description":"Central equation in calculus of variations for optimizing functionals.",
+"difficulty":"Hard",
+"remark":"Foundation of analytical mechanics.",
+"subfield":"Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Euler_Lagrange_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.4; TEXT:A(0,0,0),'d/dx(∂L/∂y')−∂L/∂y=0'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Cauchy_Integral_Formula",
+"description":"Values of analytic functions inside a contour can be determined from boundary integrals.",
+"difficulty":"Hard",
+"remark":"Key theorem in complex analysis.",
+"subfield":"Complex Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Cauchy_Integral_Formula; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.5; TEXT:A(0,0,0),'f(a)=1/(2πi)∮ f(z)/(z−a) dz'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Residue_Theorem",
+"description":"Complex integrals can be evaluated using residues at singularities.",
+"difficulty":"Hard",
+"remark":"Powerful contour integration technique.",
+"subfield":"Complex Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Residue_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.4; TEXT:A(0,0,0),'∮f(z)dz=2πi ΣRes(f,a_k)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Chinese_Remainder_Theorem",
+"description":"Provides a solution to simultaneous congruences with coprime moduli.",
+"difficulty":"Hard",
+"remark":"Important theorem in number theory.",
+"subfield":"Number Theory",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Chinese_Remainder_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.3; TEXT:A(0,0,0),'x≡a_i (mod n_i)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Euler_Totient_Function",
+"description":"Counts positive integers less than n that are coprime to n.",
+"difficulty":"Hard",
+"remark":"Central concept in number theory.",
+"subfield":"Number Theory",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Euler_Totient_Function; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.6,h=2.2; TEXT:A(0,0,0),'φ(n)=n∏(1−1/p)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Generating_Function_Definition",
+"description":"Generating functions encode sequences into power series.",
+"difficulty":"Hard",
+"remark":"Powerful tool in combinatorics.",
+"subfield":"Combinatorics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Generating_Function_Definition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.0,h=2.3; TEXT:A(0,0,0),'G(x)=Σ a_n x^n'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Inclusion_Exclusion_Principle",
+"description":"Computes union size of sets using alternating sums.",
+"difficulty":"Hard",
+"remark":"Essential counting principle.",
+"subfield":"Combinatorics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Inclusion_Exclusion_Principle; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'|A∪B|=|A|+|B|−|A∩B|'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Bayes_Theorem_General_Form",
+"description":"Updates probability based on new evidence.",
+"difficulty":"Hard",
+"remark":"Core theorem of probabilistic inference.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Bayes_Theorem_General_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.4,h=2.3; TEXT:A(0,0,0),'P(A|B)=P(B|A)P(A)/P(B)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Markov_Chain_Transition_Matrix",
+"description":"Transition matrices describe probabilities of moving between states.",
+"difficulty":"Hard",
+"remark":"Foundation of stochastic processes.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Markov_Chain_Transition_Matrix; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.3; TEXT:A(0,0,0),'P_{ij}=P(X_{n+1}=j|X_n=i)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Black_Scholes_Equation",
+"description":"Partial differential equation describing option pricing in finance.",
+"difficulty":"Hard",
+"remark":"Fundamental model in quantitative finance.",
+"subfield":"Applied Mathematics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Black_Scholes_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.5,h=2.6; TEXT:A(0,0,0),'∂V/∂t + 1/2σ²S²∂²V/∂S² + rS∂V/∂S − rV =0'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Lebesgue_Integration_Concept",
+"description":"Lebesgue integration generalizes Riemann integration by measuring sets where a function takes certain values.",
+"difficulty":"Hard",
+"remark":"Foundation of modern real analysis.",
+"subfield":"Real Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Lebesgue_Integration_Concept; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.2,h=2.5; TEXT:A(0,0,0),'∫ f dμ (Lebesgue integral)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Uniform_Convergence_Definition",
+"description":"A sequence of functions converges uniformly if convergence occurs at the same rate over the entire domain.",
+"difficulty":"Hard",
+"remark":"Key concept for exchanging limits and integrals.",
+"subfield":"Real Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Uniform_Convergence_Definition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'∀ε>0 ∃N: |f_n−f|<ε'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Stone_Weierstrass_Theorem",
+"description":"Continuous functions on compact sets can be uniformly approximated by polynomials.",
+"difficulty":"Hard",
+"remark":"Central approximation theorem in analysis.",
+"subfield":"Real Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Stone_Weierstrass_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.4; TEXT:A(0,0,0),'Polynomial approximation of C(K)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Banach_Fixed_Point_Theorem",
+"description":"A contraction mapping on a complete metric space has a unique fixed point.",
+"difficulty":"Hard",
+"remark":"Widely used in existence and uniqueness proofs.",
+"subfield":"Functional Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Banach_Fixed_Point_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.2,h=2.5; TEXT:A(0,0,0),'d(Tx,Ty)≤kd(x,y), k<1'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Hahn_Banach_Theorem",
+"description":"Linear functionals can be extended while preserving boundedness.",
+"difficulty":"Hard",
+"remark":"Fundamental theorem in functional analysis.",
+"subfield":"Functional Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Hahn_Banach_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'Extension of bounded linear functionals'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Compactness_Heine_Borel",
+"description":"In Euclidean space, a set is compact iff it is closed and bounded.",
+"difficulty":"Hard",
+"remark":"Important criterion in topology and analysis.",
+"subfield":"Topology",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Compactness_Heine_Borel; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.5,h=2.3; TEXT:A(0,0,0),'compact ⇔ closed + bounded'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Open_Mapping_Theorem",
+"description":"A surjective bounded linear operator between Banach spaces is an open map.",
+"difficulty":"Hard",
+"remark":"Core result in functional analysis.",
+"subfield":"Functional Analysis",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Open_Mapping_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'Surjective bounded operator ⇒ open'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Implicit_Function_Theorem",
+"description":"Provides conditions under which equations define implicit functions locally.",
+"difficulty":"Hard",
+"remark":"Key theorem in multivariable calculus.",
+"subfield":"Multivariable Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Implicit_Function_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.4; TEXT:A(0,0,0),'det(∂F/∂y)≠0 ⇒ y=y(x)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Inverse_Function_Theorem_Advanced",
+"description":"A differentiable map with invertible Jacobian is locally invertible.",
+"difficulty":"Hard",
+"remark":"Foundation of local differential geometry.",
+"subfield":"Multivariable Calculus",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Inverse_Function_Theorem_Advanced; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.0,h=2.4; TEXT:A(0,0,0),'det(Jf)≠0 ⇒ local inverse exists'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Jordan_Canonical_Form",
+"description":"Every square matrix over an algebraically closed field is similar to a Jordan form.",
+"difficulty":"Hard",
+"remark":"Advanced matrix decomposition theorem.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Jordan_Canonical_Form; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.3; TEXT:A(0,0,0),'A=PJP^{-1}'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Gram_Schmidt_Orthogonalization",
+"description":"Converts a linearly independent set into an orthonormal basis.",
+"difficulty":"Hard",
+"remark":"Essential in numerical linear algebra.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Gram_Schmidt_Orthogonalization; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'u_k=v_k−Σ proj_{u_i}(v_k)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Singular_Value_Decomposition",
+"description":"Any matrix can be decomposed into orthogonal matrices and a diagonal matrix of singular values.",
+"difficulty":"Hard",
+"remark":"Fundamental in data science and optimization.",
+"subfield":"Linear Algebra",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Singular_Value_Decomposition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.3; TEXT:A(0,0,0),'A=UΣV^T'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Poisson_Distribution",
+"description":"Probability distribution describing rare events in a fixed interval.",
+"difficulty":"Hard",
+"remark":"Common in stochastic modeling.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Poisson_Distribution; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.2,h=2.3; TEXT:A(0,0,0),'P(X=k)=e^{-λ}λ^k/k!'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Central_Limit_Theorem",
+"description":"The normalized sum of independent random variables converges to a normal distribution.",
+"difficulty":"Hard",
+"remark":"One of the most important results in probability theory.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Central_Limit_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.2,h=2.5; TEXT:A(0,0,0),'(ΣX_i−nμ)/(σ√n) → N(0,1)'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Martingale_Definition",
+"description":"A stochastic process whose expected future value equals the current value.",
+"difficulty":"Hard",
+"remark":"Core concept in modern probability.",
+"subfield":"Probability",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Martingale_Definition; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.6,h=2.3; TEXT:A(0,0,0),'E[X_{n+1}|F_n]=X_n'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Noethers_Theorem",
+"description":"Symmetries of a physical system correspond to conservation laws.",
+"difficulty":"Hard",
+"remark":"Foundational theorem in theoretical physics.",
+"subfield":"Applied Mathematics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Noethers_Theorem; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.8,h=2.4; TEXT:A(0,0,0),'symmetry ⇒ conservation law'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Heat_Equation",
+"description":"Partial differential equation describing heat diffusion over time.",
+"difficulty":"Hard",
+"remark":"Classical PDE in mathematical physics.",
+"subfield":"Differential Equations",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Heat_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.3; TEXT:A(0,0,0),'∂u/∂t = α∂²u/∂x²'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Wave_Equation",
+"description":"Describes propagation of waves such as sound or light.",
+"difficulty":"Hard",
+"remark":"Fundamental equation in physics.",
+"subfield":"Differential Equations",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Wave_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=9.8,h=2.3; TEXT:A(0,0,0),'∂²u/∂t² = c²∂²u/∂x²'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Navier_Stokes_Equation",
+"description":"Governs motion of viscous fluid substances.",
+"difficulty":"Hard",
+"remark":"One of the most challenging equations in mathematics.",
+"subfield":"Applied Mathematics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Navier_Stokes_Equation; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=11.6,h=2.6; TEXT:A(0,0,0),'ρ(∂v/∂t+v·∇v)=−∇p+μ∇²v'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+},
+{
+"topic":"Hamiltonian_System",
+"description":"Hamiltonian equations describe evolution of dynamical systems using energy functions.",
+"difficulty":"Hard",
+"remark":"Core framework in classical mechanics.",
+"subfield":"Applied Mathematics",
+"geometric_structure_data":"schema=geo-kp-edge-1.0; unit=manim_unit; topic=Hamiltonian_System; mode=hypothesized; OBJ_1:formula_box; BOX:C(0,0,0),w=10.4,h=2.3; TEXT:A(0,0,0),'dq/dt=∂H/∂p, dp/dt=−∂H/∂q'; OPS:create_box>place_text; source=hypothesized; confidence=0.6."
+}
+]
