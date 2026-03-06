@@ -1,0 +1,5 @@
+Ablation_Setting,Easy,Medium,Hard
+Structured_Representation_Framework,95.6,89.8,82.9
+w/o_Geometric_Constraint_Correction_Module,92.6,82.9,71.2
+w/o_Geometric_Parameter_Control_Module,90.9,79.3,67.1
+Structured_Scene_Representation_Model_Only,86.4,73.8,61.0

@@ -1,0 +1,9 @@
+Model_Backbone,Easy,Medium,Hard
+GPT-5_Single_Agent,0.83,1.47,2.38
+GPT-5_Multi_Agent_Collaborative_Scene_Generation_System,0.28,0.88,1.52
+Gemini_3.0_Pro_Single_Agent,0.87,1.53,2.47
+Gemini_3.0_Pro_Multi_Agent_Collaborative_Scene_Generation_System,0.42,0.93,1.58
+Qwen3-VL-Plus_Single_Agent,0.78,1.57,2.43
+Qwen3-VL-Plus_Multi_Agent_Collaborative_Scene_Generation_System,0.33,0.90,1.55
+o4-mini_Single_Agent,0.92,1.72,2.63
+o4-mini_Multi_Agent_Collaborative_Scene_Generation_System,0.52,1.03,1.82

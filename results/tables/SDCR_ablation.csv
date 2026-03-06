@@ -1,0 +1,6 @@
+Ablation_Setting,Easy,Medium,Hard
+Multi_Agent_Collaborative_Scene_Generation_System,93.3,81.7,63.3
+w/o_Atomic_Data_Flow_Mechanism,91.7,78.3,61.7
+w/o_Rendering_Execution_Isolation_Mechanism,91.7,76.7,58.3
+w/o_Hierarchical_Directory_Retrieval_Module,90.0,75.0,56.7
+w/o_Structured_Diagnostic_Mechanism,86.7,73.3,53.3
