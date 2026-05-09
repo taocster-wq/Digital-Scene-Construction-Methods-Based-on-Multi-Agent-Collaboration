@@ -1,0 +1,6 @@
+Consistency_Analysis_Index,Statistical_Result
+Human_Reviewer_Score_Mean,4.79
+Model_Score_Mean,4.68
+Pearson_Correlation_Coefficient,0.958
+Spearman_Rank_Correlation_Coefficient,0.965
+Mean_Absolute_Error,0.112
