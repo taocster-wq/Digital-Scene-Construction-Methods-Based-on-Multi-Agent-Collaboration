@@ -1,0 +1,4862 @@
+[
+  {
+    "sample_id": "E01",
+    "topic": "Pythagorean_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "E02",
+    "topic": "Properties_of_a_Kite_Quadrilateral",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      }
+    }
+  },
+  {
+    "sample_id": "E03",
+    "topic": "Eulers_Formula",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "E04",
+    "topic": "Laws_of_Exponents",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      }
+    }
+  },
+  {
+    "sample_id": "E05",
+    "topic": "Injective_Function_One_to_One_Function",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "E06",
+    "topic": "Inverse_Function",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      }
+    }
+  },
+  {
+    "sample_id": "E07",
+    "topic": "Remainder_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E08",
+    "topic": "Rational_Root_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      }
+    }
+  },
+  {
+    "sample_id": "E09",
+    "topic": "Product_to_Sum_Formulas",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E10",
+    "topic": "Herons_Formula",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      }
+    }
+  },
+  {
+    "sample_id": "E11",
+    "topic": "De_Moivres_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      }
+    }
+  },
+  {
+    "sample_id": "E12",
+    "topic": "Cramers_Rule",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "E13",
+    "topic": "Angle_of_Rotation",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      }
+    }
+  },
+  {
+    "sample_id": "E14",
+    "topic": "Triangle_Similarity_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "E15",
+    "topic": "Triangle_Congruence_Theorems",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      }
+    }
+  },
+  {
+    "sample_id": "E16",
+    "topic": "Geometric_Sequence",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      }
+    }
+  },
+  {
+    "sample_id": "E17",
+    "topic": "Arithmetic_Sequence",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      }
+    }
+  },
+  {
+    "sample_id": "E18",
+    "topic": "Permutations",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      }
+    }
+  },
+  {
+    "sample_id": "E19",
+    "topic": "Directrix",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E20",
+    "topic": "Eccentricity",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      }
+    }
+  },
+  {
+    "sample_id": "E21",
+    "topic": "Area_of_a_Rectangle",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "E22",
+    "topic": "Area_of_a_Triangle",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      }
+    }
+  },
+  {
+    "sample_id": "E23",
+    "topic": "Area_of_a_Parallelogram",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      }
+    }
+  },
+  {
+    "sample_id": "E24",
+    "topic": "Area_of_a_Trapezoid",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      }
+    }
+  },
+  {
+    "sample_id": "E25",
+    "topic": "Perimeter_of_a_Rectangle",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      }
+    }
+  },
+  {
+    "sample_id": "E26",
+    "topic": "Perimeter_of_a_Triangle",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "E27",
+    "topic": "Volume_of_a_Cube",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      }
+    }
+  },
+  {
+    "sample_id": "E28",
+    "topic": "Volume_of_a_Rectangular_Prism",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      }
+    }
+  },
+  {
+    "sample_id": "E29",
+    "topic": "Volume_of_a_Cylinder",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E30",
+    "topic": "Volume_of_a_Cone",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      }
+    }
+  },
+  {
+    "sample_id": "E31",
+    "topic": "Volume_of_a_Sphere",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      }
+    }
+  },
+  {
+    "sample_id": "E32",
+    "topic": "Surface_Area_of_a_Cube",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E33",
+    "topic": "Surface_Area_of_a_Cylinder",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      }
+    }
+  },
+  {
+    "sample_id": "E34",
+    "topic": "Complementary_Angles",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "E35",
+    "topic": "Supplementary_Angles",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      }
+    }
+  },
+  {
+    "sample_id": "E36",
+    "topic": "Vertical_Angles_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      }
+    }
+  },
+  {
+    "sample_id": "E37",
+    "topic": "Parallel_Lines_Angles",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      }
+    }
+  },
+  {
+    "sample_id": "E38",
+    "topic": "Exponent_Zero_Rule",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "E39",
+    "topic": "Exponent_Negative_Rule",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E40",
+    "topic": "Square_Root_Property",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      }
+    }
+  },
+  {
+    "sample_id": "E41",
+    "topic": "Sum_of_Interior_Angles_Triangle",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      }
+    }
+  },
+  {
+    "sample_id": "E42",
+    "topic": "Sum_of_Interior_Angles_Quadrilateral",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      }
+    }
+  },
+  {
+    "sample_id": "E43",
+    "topic": "Exterior_Angle_Theorem",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "E44",
+    "topic": "Isosceles_Triangle_Base_Angles",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      }
+    }
+  },
+  {
+    "sample_id": "E45",
+    "topic": "Circle_Circumference",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      }
+    }
+  },
+  {
+    "sample_id": "E46",
+    "topic": "Circle_Area",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "E47",
+    "topic": "Arc_Length_Formula",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      }
+    }
+  },
+  {
+    "sample_id": "E48",
+    "topic": "Sector_Area_Formula",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "E49",
+    "topic": "Distance_Formula_2D",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      }
+    }
+  },
+  {
+    "sample_id": "E50",
+    "topic": "Midpoint_Formula",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      }
+    }
+  },
+  {
+    "sample_id": "E51",
+    "topic": "Slope_Formula",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      }
+    }
+  },
+  {
+    "sample_id": "E52",
+    "topic": "Point_Slope_Form",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      }
+    }
+  },
+  {
+    "sample_id": "E53",
+    "topic": "Slope_Intercept_Form",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      }
+    }
+  },
+  {
+    "sample_id": "E54",
+    "topic": "Absolute_Value_Definition",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      }
+    }
+  },
+  {
+    "sample_id": "E55",
+    "topic": "Quadratic_Standard_Form",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      }
+    }
+  },
+  {
+    "sample_id": "E56",
+    "topic": "Difference_of_Squares",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      }
+    }
+  },
+  {
+    "sample_id": "E57",
+    "topic": "Distributive_Property",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      }
+    }
+  },
+  {
+    "sample_id": "E58",
+    "topic": "Commutative_Property_Addition",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      }
+    }
+  },
+  {
+    "sample_id": "E59",
+    "topic": "Commutative_Property_Multiplication",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      }
+    }
+  },
+  {
+    "sample_id": "E60",
+    "topic": "Associative_Property_Addition",
+    "difficulty": "Easy",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "M01",
+    "topic": "Factor_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      }
+    }
+  },
+  {
+    "sample_id": "M02",
+    "topic": "Law_of_Sines",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      }
+    }
+  },
+  {
+    "sample_id": "M03",
+    "topic": "Binomial_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      }
+    }
+  },
+  {
+    "sample_id": "M04",
+    "topic": "Intermediate_Value_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      }
+    }
+  },
+  {
+    "sample_id": "M05",
+    "topic": "Law_of_Cosines",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "M06",
+    "topic": "Divergence_Test",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      }
+    }
+  },
+  {
+    "sample_id": "M07",
+    "topic": "Squeeze_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "M08",
+    "topic": "Chain_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "M09",
+    "topic": "Product_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "M10",
+    "topic": "Quotient_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      }
+    }
+  },
+  {
+    "sample_id": "M11",
+    "topic": "Power_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "M12",
+    "topic": "u_Substitution_Substitution_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      }
+    }
+  },
+  {
+    "sample_id": "M13",
+    "topic": "Disk_and_Washer_Method",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      }
+    }
+  },
+  {
+    "sample_id": "M14",
+    "topic": "Extreme_Value_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 98,
+        "N_step": 100,
+        "sample_gca": 98.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "M15",
+    "topic": "Fermats_Theorem_Stationary_Point_Condition",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      }
+    }
+  },
+  {
+    "sample_id": "M16",
+    "topic": "Mean_Value_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "M17",
+    "topic": "Newton_Raphson_Method",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      }
+    }
+  },
+  {
+    "sample_id": "M18",
+    "topic": "Rolles_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      }
+    }
+  },
+  {
+    "sample_id": "M19",
+    "topic": "Second_Derivative_Test",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      }
+    }
+  },
+  {
+    "sample_id": "M20",
+    "topic": "Pappuss_Theorem_Centroid_Theorems",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      }
+    }
+  },
+  {
+    "sample_id": "M21",
+    "topic": "Integration_by_Parts",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      }
+    }
+  },
+  {
+    "sample_id": "M22",
+    "topic": "Partial_Fraction_Decomposition",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      }
+    }
+  },
+  {
+    "sample_id": "M23",
+    "topic": "Implicit_Differentiation",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      }
+    }
+  },
+  {
+    "sample_id": "M24",
+    "topic": "Related_Rates",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      }
+    }
+  },
+  {
+    "sample_id": "M25",
+    "topic": "LHopitals_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      }
+    }
+  },
+  {
+    "sample_id": "M26",
+    "topic": "Logarithmic_Differentiation",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      }
+    }
+  },
+  {
+    "sample_id": "M27",
+    "topic": "Polar_Coordinates_Conversion",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 63,
+        "N_step": 100,
+        "sample_gca": 63.0
+      }
+    }
+  },
+  {
+    "sample_id": "M28",
+    "topic": "Parametric_Derivative",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "M29",
+    "topic": "Geometric_Mean_Theorem_Right_Triangle",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "M30",
+    "topic": "Angle_Bisector_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      }
+    }
+  },
+  {
+    "sample_id": "M31",
+    "topic": "Cevas_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "M32",
+    "topic": "Menelaus_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      }
+    }
+  },
+  {
+    "sample_id": "M33",
+    "topic": "Binomial_Probability_Formula",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      }
+    }
+  },
+  {
+    "sample_id": "M34",
+    "topic": "Expected_Value_Discrete",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 99,
+        "N_step": 100,
+        "sample_gca": 99.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      }
+    }
+  },
+  {
+    "sample_id": "M35",
+    "topic": "Standard_Deviation_Formula",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 97,
+        "N_step": 100,
+        "sample_gca": 97.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      }
+    }
+  },
+  {
+    "sample_id": "M36",
+    "topic": "Permutation_Formula_nPr",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "M37",
+    "topic": "Combination_Formula_nCr",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      }
+    }
+  },
+  {
+    "sample_id": "M38",
+    "topic": "Geometric_Series_Infinite",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      }
+    }
+  },
+  {
+    "sample_id": "M39",
+    "topic": "Exponential_Growth_Decay",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 100,
+        "N_step": 100,
+        "sample_gca": 100.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      }
+    }
+  },
+  {
+    "sample_id": "M40",
+    "topic": "Logarithm_Change_of_Base",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 59,
+        "N_step": 100,
+        "sample_gca": 59.0
+      }
+    }
+  },
+  {
+    "sample_id": "M41",
+    "topic": "Conic_Sections_Standard_Form",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "M42",
+    "topic": "Ellipse_Standard_Equation",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "M43",
+    "topic": "Hyperbola_Standard_Equation",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "M44",
+    "topic": "Parabola_Vertex_Form",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      }
+    }
+  },
+  {
+    "sample_id": "M45",
+    "topic": "Distance_Between_Point_and_Line",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      }
+    }
+  },
+  {
+    "sample_id": "M46",
+    "topic": "Vector_Dot_Product",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "M47",
+    "topic": "Vector_Cross_Product_Magnitude",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "M48",
+    "topic": "Projection_of_Vector",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 91,
+        "N_step": 100,
+        "sample_gca": 91.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      }
+    }
+  },
+  {
+    "sample_id": "M49",
+    "topic": "Matrix_Multiplication_Rule",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      }
+    }
+  },
+  {
+    "sample_id": "M50",
+    "topic": "Determinant_of_2x2",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      }
+    }
+  },
+  {
+    "sample_id": "M51",
+    "topic": "Inverse_of_2x2_Matrix",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      }
+    }
+  },
+  {
+    "sample_id": "M52",
+    "topic": "Gaussian_Elimination",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      }
+    }
+  },
+  {
+    "sample_id": "M53",
+    "topic": "Geometric_Distribution_Formula",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      }
+    }
+  },
+  {
+    "sample_id": "M54",
+    "topic": "Poisson_Distribution_Formula",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      }
+    }
+  },
+  {
+    "sample_id": "M55",
+    "topic": "Normal_Distribution_Density",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      }
+    }
+  },
+  {
+    "sample_id": "M56",
+    "topic": "Central_Angle_Arc_Length",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      }
+    }
+  },
+  {
+    "sample_id": "M57",
+    "topic": "Inscribed_Angle_Theorem",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      }
+    }
+  },
+  {
+    "sample_id": "M58",
+    "topic": "Logistic_Function_Model",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      }
+    }
+  },
+  {
+    "sample_id": "M59",
+    "topic": "Arithmetic_Sequence_nth_Term",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      }
+    }
+  },
+  {
+    "sample_id": "M60",
+    "topic": "Arithmetic_Sequence_Sum",
+    "difficulty": "Medium",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "H01",
+    "topic": "Taylor_Polynomial",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      }
+    }
+  },
+  {
+    "sample_id": "H02",
+    "topic": "Simpsons_Rule",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "H03",
+    "topic": "Velocity_Vector",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 60,
+        "N_step": 100,
+        "sample_gca": 60.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 53,
+        "N_step": 100,
+        "sample_gca": 53.0
+      }
+    }
+  },
+  {
+    "sample_id": "H04",
+    "topic": "Double_Riemann_Sum",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      }
+    }
+  },
+  {
+    "sample_id": "H05",
+    "topic": "Fubinis_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "H06",
+    "topic": "Jacobian_Matrix_and_Determinant",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      }
+    }
+  },
+  {
+    "sample_id": "H07",
+    "topic": "Greens_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 57,
+        "N_step": 100,
+        "sample_gca": 57.0
+      }
+    }
+  },
+  {
+    "sample_id": "H08",
+    "topic": "Stokes_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      }
+    }
+  },
+  {
+    "sample_id": "H09",
+    "topic": "Burnsides_Lemma",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      }
+    }
+  },
+  {
+    "sample_id": "H10",
+    "topic": "Lah_Numbers",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 94,
+        "N_step": 100,
+        "sample_gca": 94.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      }
+    }
+  },
+  {
+    "sample_id": "H11",
+    "topic": "Ramseys_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 95,
+        "N_step": 100,
+        "sample_gca": 95.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      }
+    }
+  },
+  {
+    "sample_id": "H12",
+    "topic": "Schwarz_Lemma",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      }
+    }
+  },
+  {
+    "sample_id": "H13",
+    "topic": "Cauchy_Riemann_Equations",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 57,
+        "N_step": 100,
+        "sample_gca": 57.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 52,
+        "N_step": 100,
+        "sample_gca": 52.0
+      }
+    }
+  },
+  {
+    "sample_id": "H14",
+    "topic": "Moreras_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      }
+    }
+  },
+  {
+    "sample_id": "H15",
+    "topic": "Catalan_Numbers",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 57,
+        "N_step": 100,
+        "sample_gca": 57.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 48,
+        "N_step": 100,
+        "sample_gca": 48.0
+      }
+    }
+  },
+  {
+    "sample_id": "H16",
+    "topic": "Liouvilles_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 60,
+        "N_step": 100,
+        "sample_gca": 60.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 50,
+        "N_step": 100,
+        "sample_gca": 50.0
+      }
+    }
+  },
+  {
+    "sample_id": "H17",
+    "topic": "Derangement_Formula",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 60,
+        "N_step": 100,
+        "sample_gca": 60.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 50,
+        "N_step": 100,
+        "sample_gca": 50.0
+      }
+    }
+  },
+  {
+    "sample_id": "H18",
+    "topic": "Delian_Problem_Doubling_the_Cube",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      }
+    }
+  },
+  {
+    "sample_id": "H19",
+    "topic": "Polya_Enumeration_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 63,
+        "N_step": 100,
+        "sample_gca": 63.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 53,
+        "N_step": 100,
+        "sample_gca": 53.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 46,
+        "N_step": 100,
+        "sample_gca": 46.0
+      }
+    }
+  },
+  {
+    "sample_id": "H20",
+    "topic": "Cauchys_Theorem_Group_Theory",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 49,
+        "N_step": 100,
+        "sample_gca": 49.0
+      }
+    }
+  },
+  {
+    "sample_id": "H21",
+    "topic": "Fourier_Series_Expansion",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 57,
+        "N_step": 100,
+        "sample_gca": 57.0
+      }
+    }
+  },
+  {
+    "sample_id": "H22",
+    "topic": "Laplace_Transform",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 59,
+        "N_step": 100,
+        "sample_gca": 59.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 51,
+        "N_step": 100,
+        "sample_gca": 51.0
+      }
+    }
+  },
+  {
+    "sample_id": "H23",
+    "topic": "Inverse_Laplace_Transform",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      }
+    }
+  },
+  {
+    "sample_id": "H24",
+    "topic": "Eigenvalue_Equation",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      }
+    }
+  },
+  {
+    "sample_id": "H25",
+    "topic": "Diagonalization_Condition",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "H26",
+    "topic": "Spectral_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      }
+    }
+  },
+  {
+    "sample_id": "H27",
+    "topic": "Divergence_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      }
+    }
+  },
+  {
+    "sample_id": "H28",
+    "topic": "Curl_Operator_Definition",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      }
+    }
+  },
+  {
+    "sample_id": "H29",
+    "topic": "Gradient_Vector_Field",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      }
+    }
+  },
+  {
+    "sample_id": "H30",
+    "topic": "Lagrange_Multipliers",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 53,
+        "N_step": 100,
+        "sample_gca": 53.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 49,
+        "N_step": 100,
+        "sample_gca": 49.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 41,
+        "N_step": 100,
+        "sample_gca": 41.0
+      }
+    }
+  },
+  {
+    "sample_id": "H31",
+    "topic": "Euler_Lagrange_Equation",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      }
+    }
+  },
+  {
+    "sample_id": "H32",
+    "topic": "Cauchy_Integral_Formula",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 76,
+        "N_step": 100,
+        "sample_gca": 76.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 48,
+        "N_step": 100,
+        "sample_gca": 48.0
+      }
+    }
+  },
+  {
+    "sample_id": "H33",
+    "topic": "Residue_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 67,
+        "N_step": 100,
+        "sample_gca": 67.0
+      }
+    }
+  },
+  {
+    "sample_id": "H34",
+    "topic": "Chinese_Remainder_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 52,
+        "N_step": 100,
+        "sample_gca": 52.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 49,
+        "N_step": 100,
+        "sample_gca": 49.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 44,
+        "N_step": 100,
+        "sample_gca": 44.0
+      }
+    }
+  },
+  {
+    "sample_id": "H35",
+    "topic": "Euler_Totient_Function",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 55,
+        "N_step": 100,
+        "sample_gca": 55.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 53,
+        "N_step": 100,
+        "sample_gca": 53.0
+      }
+    }
+  },
+  {
+    "sample_id": "H36",
+    "topic": "Generating_Function_Definition",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 90,
+        "N_step": 100,
+        "sample_gca": 90.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 63,
+        "N_step": 100,
+        "sample_gca": 63.0
+      }
+    }
+  },
+  {
+    "sample_id": "H37",
+    "topic": "Inclusion_Exclusion_Principle",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 83,
+        "N_step": 100,
+        "sample_gca": 83.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 58,
+        "N_step": 100,
+        "sample_gca": 58.0
+      }
+    }
+  },
+  {
+    "sample_id": "H38",
+    "topic": "Bayes_Theorem_General_Form",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      }
+    }
+  },
+  {
+    "sample_id": "H39",
+    "topic": "Markov_Chain_Transition_Matrix",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 87,
+        "N_step": 100,
+        "sample_gca": 87.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      }
+    }
+  },
+  {
+    "sample_id": "H40",
+    "topic": "Black_Scholes_Equation",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 49,
+        "N_step": 100,
+        "sample_gca": 49.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 41,
+        "N_step": 100,
+        "sample_gca": 41.0
+      }
+    }
+  },
+  {
+    "sample_id": "H41",
+    "topic": "Lebesgue_Integration_Concept",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 86,
+        "N_step": 100,
+        "sample_gca": 86.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 58,
+        "N_step": 100,
+        "sample_gca": 58.0
+      }
+    }
+  },
+  {
+    "sample_id": "H42",
+    "topic": "Uniform_Convergence_Definition",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 72,
+        "N_step": 100,
+        "sample_gca": 72.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      }
+    }
+  },
+  {
+    "sample_id": "H43",
+    "topic": "Stone_Weierstrass_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "H44",
+    "topic": "Banach_Fixed_Point_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 58,
+        "N_step": 100,
+        "sample_gca": 58.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 51,
+        "N_step": 100,
+        "sample_gca": 51.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 44,
+        "N_step": 100,
+        "sample_gca": 44.0
+      }
+    }
+  },
+  {
+    "sample_id": "H45",
+    "topic": "Hahn_Banach_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      }
+    }
+  },
+  {
+    "sample_id": "H46",
+    "topic": "Compactness_Heine_Borel",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 62,
+        "N_step": 100,
+        "sample_gca": 62.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      }
+    }
+  },
+  {
+    "sample_id": "H47",
+    "topic": "Open_Mapping_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 69,
+        "N_step": 100,
+        "sample_gca": 69.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      }
+    }
+  },
+  {
+    "sample_id": "H48",
+    "topic": "Implicit_Function_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 61,
+        "N_step": 100,
+        "sample_gca": 61.0
+      }
+    }
+  },
+  {
+    "sample_id": "H49",
+    "topic": "Inverse_Function_Theorem_Advanced",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 93,
+        "N_step": 100,
+        "sample_gca": 93.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 70,
+        "N_step": 100,
+        "sample_gca": 70.0
+      }
+    }
+  },
+  {
+    "sample_id": "H50",
+    "topic": "Jordan_Canonical_Form",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 80,
+        "N_step": 100,
+        "sample_gca": 80.0
+      }
+    }
+  },
+  {
+    "sample_id": "H51",
+    "topic": "Gram_Schmidt_Orthogonalization",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      }
+    }
+  },
+  {
+    "sample_id": "H52",
+    "topic": "Singular_Value_Decomposition",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 81,
+        "N_step": 100,
+        "sample_gca": 81.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 60,
+        "N_step": 100,
+        "sample_gca": 60.0
+      }
+    }
+  },
+  {
+    "sample_id": "H53",
+    "topic": "Poisson_Distribution",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 73,
+        "N_step": 100,
+        "sample_gca": 73.0
+      }
+    }
+  },
+  {
+    "sample_id": "H54",
+    "topic": "Central_Limit_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 82,
+        "N_step": 100,
+        "sample_gca": 82.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 56,
+        "N_step": 100,
+        "sample_gca": 56.0
+      }
+    }
+  },
+  {
+    "sample_id": "H55",
+    "topic": "Martingale_Definition",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 89,
+        "N_step": 100,
+        "sample_gca": 89.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 79,
+        "N_step": 100,
+        "sample_gca": 79.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 75,
+        "N_step": 100,
+        "sample_gca": 75.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      }
+    }
+  },
+  {
+    "sample_id": "H56",
+    "topic": "Noethers_Theorem",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 92,
+        "N_step": 100,
+        "sample_gca": 92.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 77,
+        "N_step": 100,
+        "sample_gca": 77.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 64,
+        "N_step": 100,
+        "sample_gca": 64.0
+      }
+    }
+  },
+  {
+    "sample_id": "H57",
+    "topic": "Heat_Equation",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 88,
+        "N_step": 100,
+        "sample_gca": 88.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 68,
+        "N_step": 100,
+        "sample_gca": 68.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 57,
+        "N_step": 100,
+        "sample_gca": 57.0
+      }
+    }
+  },
+  {
+    "sample_id": "H58",
+    "topic": "Wave_Equation",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 96,
+        "N_step": 100,
+        "sample_gca": 96.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 78,
+        "N_step": 100,
+        "sample_gca": 78.0
+      }
+    }
+  },
+  {
+    "sample_id": "H59",
+    "topic": "Navier_Stokes_Equation",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 84,
+        "N_step": 100,
+        "sample_gca": 84.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 74,
+        "N_step": 100,
+        "sample_gca": 74.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 66,
+        "N_step": 100,
+        "sample_gca": 66.0
+      }
+    }
+  },
+  {
+    "sample_id": "H60",
+    "topic": "Hamiltonian_System",
+    "difficulty": "Hard",
+    "gca_ablation_metrics": {
+      "Full configuration": {
+        "C_sum": 85,
+        "N_step": 100,
+        "sample_gca": 85.0
+      },
+      "Remove GCCM configuration": {
+        "C_sum": 71,
+        "N_step": 100,
+        "sample_gca": 71.0
+      },
+      "Remove GPCM configuration": {
+        "C_sum": 65,
+        "N_step": 100,
+        "sample_gca": 65.0
+      },
+      "Only retain SSRM configuration": {
+        "C_sum": 58,
+        "N_step": 100,
+        "sample_gca": 58.0
+      }
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "sample_count": 60,
+    "keypoint_error": 28.54,
+    "size_error": 8.42,
+    "boundary_violation_rate": 6.54,
+    "difficulty": "Easy"
+  },
+  {
+    "sample_count": 60,
+    "keypoint_error": 38.27,
+    "size_error": 12.65,
+    "boundary_violation_rate": 14.25,
+    "difficulty": "Medium"
+  },
+  {
+    "sample_count": 60,
+    "keypoint_error": 54.61,
+    "size_error": 18.73,
+    "boundary_violation_rate": 22.18,
+    "difficulty": "Hard"
+  }
+]

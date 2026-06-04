@@ -1,0 +1,32 @@
+[
+  {
+    "ablation_configuration": "Full configuration",
+    "easy_scene": 91.7,
+    "medium_scene": 78.3,
+    "hard_scene": 65.0
+  },
+  {
+    "ablation_configuration": "Remove atomic data flow mechanism",
+    "easy_scene": 88.3,
+    "medium_scene": 75.0,
+    "hard_scene": 61.7
+  },
+  {
+    "ablation_configuration": "Remove rendering execution isolation mechanism",
+    "easy_scene": 83.3,
+    "medium_scene": 73.3,
+    "hard_scene": 58.3
+  },
+  {
+    "ablation_configuration": "Remove hierarchical directory retrieval module",
+    "easy_scene": 81.7,
+    "medium_scene": 71.7,
+    "hard_scene": 55.0
+  },
+  {
+    "ablation_configuration": "Remove structured diagnosis mechanism",
+    "easy_scene": 76.7,
+    "medium_scene": 68.3,
+    "hard_scene": 51.7
+  }
+]

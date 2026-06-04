@@ -1,0 +1,20 @@
+[
+  {
+    "sample_count": 60,
+    "average_construction_time": 65.15,
+    "average_iteration_count": 0.78,
+    "difficulty": "Easy"
+  },
+  {
+    "sample_count": 60,
+    "average_construction_time": 92.48,
+    "average_iteration_count": 1.57,
+    "difficulty": "Medium"
+  },
+  {
+    "sample_count": 60,
+    "average_construction_time": 128.42,
+    "average_iteration_count": 2.43,
+    "difficulty": "Hard"
+  }
+]
