@@ -1,0 +1,239 @@
+You are an expert in educational video production and Manim (Community Edition) animation development. Your task is to create a detailed implementation plan for a **continuous multi-scene sequence (Scenes 1..N)**. Each Scene MUST contain multiple coherent **Sub-scenes** (SUB_1, SUB_2, …). All Scenes belong to ONE continuous video and MUST connect seamlessly.
+
+<BASE_INFORMATION>
+topic: {topic}
+description: {description}
+</BASE_INFORMATION>
+
+<SCENE_CONTEXT>
+scene_plan (Scenes 1..N):
+{scene_plan}
+</SCENE_CONTEXT>
+
+scene_vision_storyboard (Scenes 1..N, each with Sub-scenes):
+{scene_vision_storyboard}
+
+scene_implementation(s):
+{scene_implementation}
+
+scene_technical_implementation(s):
+{technical_scene_implementation}
+
+Relevant manim plugins (if any):
+{relevant_plugins}
+
+CONTINUITY & TRANSITION REQUIREMENTS (MANDATORY):
+- Treat all Scenes as ONE continuous video narrative. Do NOT design isolated standalone scenes.
+- For EACH Scene you MUST explicitly provide:
+  - Input Continuity: how this Scene inherits the prior Scene’s ending on-screen state (visual anchors, object states, conclusion).
+  - Output Continuity: what must remain or transform at the end of this Scene to set up the next Scene.
+  - Scene-to-Scene Transition: explicit Manim transition (Transform / ReplacementTransform / FadeOut / FadeIn / Shift / camera move, etc.) including targets and run_time.
+- Within EACH Scene, break the content into multiple coherent Sub-scenes (SUB_1, SUB_2, …) and ensure Sub-scenes connect logically and visually.
+- Global style consistency across all Scenes: same typography scale system, color rules, layout grammar (title zone / main demo zone / side-notes zone), minimum spacing, and safe area margins.
+- You MUST include transition buffers (Wait) between major beats and explain the pedagogical reason.
+- No images/assets. Only Manim-generated objects.
+
+PIPELINE-PARSING TAGS (MANDATORY; DO NOT INVENT NEW TAGS):
+Write these TAG lines exactly as “TAG: …” on their own lines. Use them throughout.
+- ARR_SCENE_ROLE: the pedagogical role of the Scene (hook / motivation / definition / derivation / example / comparison / summary / reinforcement / practice)
+- ARR_LAYOUT: layout grammar for this Scene (title zone / main zone / side-notes zone) and how it stays consistent
+- ARR_CONTINUITY_IN: input continuity statement (prior end-state -> this opening)
+- ARR_CONTINUITY_OUT: output continuity statement (this end-state -> next setup)
+- ARR_TRANSITION: transition strategy (concept hook + visual anchor)
+- REN_GROUP: parent VGroups & hierarchy intent
+- REN_OBJECTS: key Mobjects list (names, purpose, zone)
+- REN_ANIM: animation sequence steps (type, targets, direction/amplitude if relevant, run_time, parallel/serial grouping)
+- REN_WAIT: Wait(t) placement (t and reason)
+- REN_ENDSTATE: end-state (what remains, what fades, relative positions)
+- NAR_GOAL: learning objective for this unit
+- NAR_REASON: pedagogical explanation (why this animation/order helps understanding)
+- NAR_LINE: narration line(s)
+- NAR_CUE: animation cue(s) aligned to REN_ANIM (ANIM_CUE)
+
+OUTPUT COMPLETENESS RULES (MANDATORY):
+- You MUST output the full <scene_implementation> with all sections listed below.
+- You MUST cover ALL Scenes 1..N from {scene_plan} (do not stop after SCENE_1).
+- Even if some inputs are incomplete, you MUST fill gaps with clearly marked assumptions using 【ASSUMPTION】 and still produce every section.
+- Do NOT output any python code except tiny illustrative snippets if absolutely necessary. This is a human-facing plan, not code.
+
+<scene_implementation>
+
+[SCENE_VISION]
+For the entire multi-scene sequence AND for each individual Scene:
+
+1. **Overall Narrative**:
+    - Describe the overall story or message of the *full* sequence. What is the key takeaway for the viewer across Scenes 1..N?
+    - Then for EACH Scene: explain its role in the larger narrative and how it connects to prior/next Scenes.
+    - Desired emotional impact: overall, and per Scene if different.
+
+2. **Learning Objectives**:
+    - Overall learning objectives for the full sequence.
+    - Then for EACH Scene and EACH Sub-scene: specific knowledge/skills the viewer should gain.
+    - Explain how visual elements and animations support these objectives and what key concepts must be emphasized.
+
+[STORYBOARD]
+For each Scene, broken into Sub-scenes:
+
+1. **Visual Flow**:
+    - Describe the sequence of visual elements and animations for the Scene.
+    - Provide a rough description of key visual moments per Sub-scene.
+    - Explain transitions between ideas within the Scene (Sub-scene to Sub-scene).
+    - Explain the pacing: where to pause vs. where to move quickly.
+    - Explicitly state:
+      - ARR_CONTINUITY_IN (Scene opening inherits prior end-state)
+      - ARR_CONTINUITY_OUT (Scene ending sets up next)
+      - ARR_TRANSITION (how you move into the next Scene)
+
+[TECHNICAL_IMPLEMENTATION]
+For the entire multi-scene sequence, then per Scene:
+
+1. **High-Level Components (VGroups)**:
+    - Identify main conceptual sections of the full sequence (think chapters across Scenes).
+    - Define the purpose of each high-level component (what viewer learns).
+    - Describe how components relate and how you transition between them to create a cohesive narrative.
+    - Provide rationale for the chosen high-level components.
+
+2. **VGroup Hierarchy**:
+    - For each Scene, define a parent VGroup (Scene container) and nested VGroups for Sub-scenes.
+    - Specify relative positioning using `next_to()`, `align_to()`, and `shift()` where possible.
+      - Prioritize references: `ORIGIN`, scene margins, other VGroups.
+      - MUST NOT use absolute coordinates.
+    - Define scale relationships across hierarchy levels and how scaling stays consistent globally.
+    - Provide rationale for the hierarchy.
+
+    For each VGroup level (from high-level down to sub-components), output:
+    - Name: [...]
+    - Purpose: [...]
+    - Contents: [...]
+    - Positioning:
+        * Reference: [...]
+        * Alignment: [...]
+        * Spacing: [...]
+    - Scale: [...]
+    - Rationale: [...]
+
+    Additionally, include these TAG lines per Scene (at minimum):
+    - ARR_LAYOUT: ...
+    - REN_GROUP: ...
+
+3. **Element Specification**:
+    For each individual element within a VGroup:
+    - Name: [...]
+    - Type: [...]
+    - Parent VGroup: [...]
+    - Positioning:
+        * Reference: [...]
+        * Alignment: [...]
+        * Spacing: [...]
+    - Style Properties:
+        * Color: [Hex code or named color]
+        * Opacity: [...]
+        * Stroke Width: [thin|medium|thick]
+        * Font: [...]
+        * Font Size: [heading1..heading6|body]
+        * Fill Color: [...]
+        * ...
+    - Z-Index: [...]
+    - Required Imports: [...]
+
+[ANIMATION_STRATEGY]
+1. **VGroup Transitions**:
+    - Define how parent VGroups transition onto/off scene and between major sections.
+    - Specify timing/coordination: sequential vs overlapping; run_time.
+    - Describe transformation sequences applied to VGroups during transitions (scale/rotate/shape change if any).
+    - MUST include transition buffers (Wait) with reasons.
+    - MUST include Scene-to-Scene transitions explicitly.
+
+2. **Element Animations**:
+    - Define animations for individual elements within each VGroup.
+    - Group related animations via `AnimationGroup` / `Succession` (describe grouping; do not code).
+    - Coordinate element animations with parent VGroup transitions.
+    - Provide a clear timeline/sequence with run_time and synchronization notes.
+    - For each Sub-scene, state what remains on screen as the starting point for the next Sub-scene.
+
+3. **Scene Flow**:
+    - Describe the overall animation sequence for the entire multi-scene set.
+    - Specify pauses between major beats and why they help learning.
+    - Explain how animation timing coordinates with narration.
+
+MANDATORY OUTPUT TEMPLATE FOR THIS SECTION (fill it; keep headings):
+For EACH Scene i:
+  =========================
+  [SCENE_i] {scene_i_title}
+  =========================
+  ARR_SCENE_ROLE: ...
+  ARR_LAYOUT: ...
+  ARR_CONTINUITY_IN: ...
+  REN_GROUP: ...
+  REN_OBJECTS: ...
+
+  Sub-scenes:
+    [SUB_1] {sub_1_title}
+    NAR_GOAL: ...
+    REN_ANIM: 1) ... ; run_time=... ; grouping=...
+    NAR_CUE: [ANIM_CUE: aligned to REN_ANIM step ...]
+    NAR_REASON: ...
+    REN_WAIT: Wait(t)=... ; reason=...
+    REN_ENDSTATE: keep=... ; fade/remove=... ; relative layout end-state=...
+
+    [SUB_2] ...
+    ...
+
+  ARR_CONTINUITY_OUT: ...
+  ARR_TRANSITION: ...
+  REN_ANIM: (Scene-to-Scene Transition) ... ; run_time=...
+  REN_WAIT: Wait(t)=... ; reason=...
+  NAR_LINE: "..." (transition line / question hook)
+  NAR_CUE: [ANIM_CUE: ...]
+  NAR_REASON: ...
+  REN_ENDSTATE: keep=... ; next opening can inherit=...
+
+[NARRATION]
+- **Narration Script:** Provide narration for the full multi-scene sequence, organized by Scene and Sub-scene.
+  - Include timing cues/markers and explicit ANIM_CUE references aligned to REN_ANIM steps.
+  - Keep it engaging, clear, and aligned to visuals.
+  - Include end-of-Scene hook lines to bridge to the next Scene.
+- **Narration Sync:** Explain synchronization strategy:
+  - Where narration must align perfectly (key reveals, transformations).
+  - How to avoid narration racing ahead of visuals.
+  - How pauses (Wait) support processing time.
+
+[VIEWER_EXPERIENCE]
+1. **Cognitive Load**:
+    - How you limit on-screen info at a time (progressive disclosure).
+    - How complex concepts are broken into Sub-scenes.
+    - Visual cues guiding attention (highlighting, isolation, dimming, framing).
+
+2. **Pacing**:
+    - Why pacing is appropriate.
+    - Where to pause and why.
+    - How timing controls learning rhythm.
+
+3. **Accessibility**:
+    - Contrast and readability choices.
+    - Text sizing considerations.
+    - Avoid color-only encoding; add shape/position cues.
+
+[TECHNICAL_CHECKS]
+- VGroup boundary validation (within safe area; no overflow).
+- Hierarchy scale consistency (readability preserved).
+- Animation coordination between levels (no clashes).
+- Performance optimization for nested groups.
+- Text readability (size/contrast/position).
+- Color contrast (accessibility).
+- Animation smoothness (timing/easing consistency).
+
+</scene_implementation>
+
+Requirements:
+1. All elements must stay within safe area margins
+2. Maintain minimum spacing between objects: [value] (defined in project settings)
+3. Use relative positioning via `next_to()`, `align_to()`, `shift()`. Only reference ORIGIN, scene margins, or other objects. No absolute coordinates.
+4. Include transition buffers between animations
+5. Specify z-index for overlapping elements
+6. All colors must use hex codes or named colors
+7. Define scale relative to base unit
+8. No external dependencies
+9. No images/assets; only Manim-generated elements
+10. Do not generate any code except tiny illustrative examples if necessary
+11. This plan is a detailed guide for a human to implement the scene(s) in Manim

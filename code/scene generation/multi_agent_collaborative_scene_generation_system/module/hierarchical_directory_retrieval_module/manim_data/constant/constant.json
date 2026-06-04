@@ -1,0 +1,487 @@
+[
+  { "type": "constant",
+    "constant": { 
+        "name": "BLACK", 
+        "value": "#000000", 
+        "description": "颜色：黑色" 
+    } 
+},
+  { "type": "constant", "constant": { "name": "BLUE", "value": "#58C4DD", "description": "颜色：蓝色（主蓝）" } },
+  { "type": "constant", "constant": { "name": "BLUE_A", "value": "#C7E9F1", "description": "颜色：浅蓝 A" } },
+  { "type": "constant", "constant": { "name": "BLUE_B", "value": "#9CDCEB", "description": "颜色：浅蓝 B" } },
+  { "type": "constant", "constant": { "name": "BLUE_C", "value": "#58C4DD", "description": "颜色：蓝色 C（同 BLUE）" } },
+  { "type": "constant", "constant": { "name": "BLUE_D", "value": "#29ABCA", "description": "颜色：深蓝 D" } },
+  { "type": "constant", "constant": { "name": "BLUE_E", "value": "#236B8E", "description": "颜色：深蓝 E" } },
+  { "type": "constant", "constant": { "name": "DARKER_GRAY", "value": "#222222", "description": "颜色：更深灰（美式拼写 GRAY）" } },
+  { "type": "constant", "constant": { "name": "DARKER_GREY", "value": "#222222", "description": "颜色：更深灰（英式拼写 GREY）" } },
+  { "type": "constant", "constant": { "name": "DARK_BLUE", "value": "#236B8E", "description": "颜色：深蓝（同 BLUE_E）" } },
+  { "type": "constant", "constant": { "name": "DARK_BROWN", "value": "#8B4513", "description": "颜色：深棕色" } },
+  { "type": "constant", "constant": { "name": "DARK_GRAY", "value": "#444444", "description": "颜色：深灰（美式拼写 GRAY）" } },
+  { "type": "constant", "constant": { "name": "DARK_GREY", "value": "#444444", "description": "颜色：深灰（英式拼写 GREY）" } },
+  { "type": "constant", "constant": { "name": "GOLD", "value": "#F0AC5F", "description": "颜色：金色（主金）" } },
+  { "type": "constant", "constant": { "name": "GOLD_A", "value": "#F7C797", "description": "颜色：浅金 A" } },
+  { "type": "constant", "constant": { "name": "GOLD_B", "value": "#F9B775", "description": "颜色：浅金 B" } },
+  { "type": "constant", "constant": { "name": "GOLD_C", "value": "#F0AC5F", "description": "颜色：金色 C（同 GOLD）" } },
+  { "type": "constant", "constant": { "name": "GOLD_D", "value": "#E1A158", "description": "颜色：深金 D" } },
+  { "type": "constant", "constant": { "name": "GOLD_E", "value": "#C78D46", "description": "颜色：深金 E" } },
+  { "type": "constant", "constant": { "name": "GRAY", "value": "#888888", "description": "颜色：灰色（美式拼写 GRAY）" } },
+  { "type": "constant", "constant": { "name": "GRAY_A", "value": "#DDDDDD", "description": "颜色：浅灰 A" } },
+  { "type": "constant", "constant": { "name": "GRAY_B", "value": "#BBBBBB", "description": "颜色：浅灰 B" } },
+  { "type": "constant", "constant": { "name": "GRAY_BROWN", "value": "#736357", "description": "颜色：灰棕色" } },
+  { "type": "constant", "constant": { "name": "GRAY_C", "value": "#888888", "description": "颜色：灰色 C（同 GRAY）" } },
+  { "type": "constant", "constant": { "name": "GRAY_D", "value": "#444444", "description": "颜色：深灰 D（同 DARK_GRAY）" } },
+  { "type": "constant", "constant": { "name": "GRAY_E", "value": "#222222", "description": "颜色：更深灰 E（同 DARKER_GRAY）" } },
+  { "type": "constant", "constant": { "name": "GREEN", "value": "#83C167", "description": "颜色：绿色（主绿）" } },
+  { "type": "constant", "constant": { "name": "GREEN_A", "value": "#C9E2AE", "description": "颜色：浅绿 A" } },
+  { "type": "constant", "constant": { "name": "GREEN_B", "value": "#A6CF8C", "description": "颜色：浅绿 B" } },
+  { "type": "constant", "constant": { "name": "GREEN_C", "value": "#83C167", "description": "颜色：绿色 C（同 GREEN）" } },
+  { "type": "constant", "constant": { "name": "GREEN_D", "value": "#77B05D", "description": "颜色：深绿 D" } },
+  { "type": "constant", "constant": { "name": "GREEN_E", "value": "#699C52", "description": "颜色：深绿 E" } },
+  { "type": "constant", "constant": { "name": "GREY", "value": "#888888", "description": "颜色：灰色（英式拼写 GREY）" } },
+  { "type": "constant", "constant": { "name": "GREY_A", "value": "#DDDDDD", "description": "颜色：浅灰 A（英式拼写）" } },
+  { "type": "constant", "constant": { "name": "GREY_B", "value": "#BBBBBB", "description": "颜色：浅灰 B（英式拼写）" } },
+  { "type": "constant", "constant": { "name": "GREY_BROWN", "value": "#736357", "description": "颜色：灰棕色（英式拼写）" } },
+  { "type": "constant", "constant": { "name": "GREY_C", "value": "#888888", "description": "颜色：灰色 C（同 GREY）" } },
+  { "type": "constant", "constant": { "name": "GREY_D", "value": "#444444", "description": "颜色：深灰 D（同 DARK_GREY）" } },
+  { "type": "constant", "constant": { "name": "GREY_E", "value": "#222222", "description": "颜色：更深灰 E（同 DARKER_GREY）" } },
+  { "type": "constant", "constant": { "name": "LIGHTER_GRAY", "value": "#DDDDDD", "description": "颜色：更浅灰（美式拼写 GRAY）" } },
+  { "type": "constant", "constant": { "name": "LIGHTER_GREY", "value": "#DDDDDD", "description": "颜色：更浅灰（英式拼写 GREY）" } },
+  { "type": "constant", "constant": { "name": "LIGHT_BROWN", "value": "#CD853F", "description": "颜色：浅棕色" } },
+  { "type": "constant", "constant": { "name": "LIGHT_GRAY", "value": "#BBBBBB", "description": "颜色：浅灰（美式拼写 GRAY）" } },
+  { "type": "constant", "constant": { "name": "LIGHT_GREY", "value": "#BBBBBB", "description": "颜色：浅灰（英式拼写 GREY）" } },
+  { "type": "constant", "constant": { "name": "LIGHT_PINK", "value": "#DC75CD", "description": "颜色：浅粉色" } },
+  { "type": "constant", "constant": { "name": "LOGO_BLACK", "value": "#343434", "description": "颜色：Manim Logo 黑" } },
+  { "type": "constant", "constant": { "name": "LOGO_BLUE", "value": "#525893", "description": "颜色：Manim Logo 蓝" } },
+  { "type": "constant", "constant": { "name": "LOGO_GREEN", "value": "#87C2A5", "description": "颜色：Manim Logo 绿" } },
+  { "type": "constant", "constant": { "name": "LOGO_RED", "value": "#E07A5F", "description": "颜色：Manim Logo 红" } },
+  { "type": "constant", "constant": { "name": "LOGO_WHITE", "value": "#ECE7E2", "description": "颜色：Manim Logo 白/米白" } },
+  { "type": "constant", "constant": { "name": "MAROON", "value": "#C55F73", "description": "颜色：栗红/酒红（主色）" } },
+  { "type": "constant", "constant": { "name": "MAROON_A", "value": "#ECABC1", "description": "颜色：浅酒红 A" } },
+  { "type": "constant", "constant": { "name": "MAROON_B", "value": "#EC92AB", "description": "颜色：浅酒红 B" } },
+  { "type": "constant", "constant": { "name": "MAROON_C", "value": "#C55F73", "description": "颜色：酒红 C（同 MAROON）" } },
+  { "type": "constant", "constant": { "name": "MAROON_D", "value": "#A24D61", "description": "颜色：深酒红 D" } },
+  { "type": "constant", "constant": { "name": "MAROON_E", "value": "#94424F", "description": "颜色：深酒红 E" } },
+  { "type": "constant", "constant": { "name": "ORANGE", "value": "#FF862F", "description": "颜色：橙色" } },
+  { "type": "constant", "constant": { "name": "PINK", "value": "#D147BD", "description": "颜色：粉色/洋红" } },
+  { "type": "constant", "constant": { "name": "PURE_BLUE", "value": "#0000FF", "description": "纯色：纯蓝（RGB 0,0,255）" } },
+  { "type": "constant", "constant": { "name": "PURE_GREEN", "value": "#00FF00", "description": "纯色：纯绿（RGB 0,255,0）" } },
+  { "type": "constant", "constant": { "name": "PURE_RED", "value": "#FF0000", "description": "纯色：纯红（RGB 255,0,0）" } },
+  { "type": "constant", "constant": { "name": "PURPLE", "value": "#9A72AC", "description": "颜色：紫色（主紫）" } },
+  { "type": "constant", "constant": { "name": "PURPLE_A", "value": "#CAA3E8", "description": "颜色：浅紫 A" } },
+  { "type": "constant", "constant": { "name": "PURPLE_B", "value": "#B189C6", "description": "颜色：浅紫 B" } },
+  { "type": "constant", "constant": { "name": "PURPLE_C", "value": "#9A72AC", "description": "颜色：紫色 C（同 PURPLE）" } },
+  { "type": "constant", "constant": { "name": "PURPLE_D", "value": "#715582", "description": "颜色：深紫 D" } },
+  { "type": "constant", "constant": { "name": "PURPLE_E", "value": "#644172", "description": "颜色：深紫 E" } },
+  { "type": "constant", "constant": { "name": "RED", "value": "#FC6255", "description": "颜色：红色（主红）" } },
+  { "type": "constant", "constant": { "name": "RED_A", "value": "#F7A1A3", "description": "颜色：浅红 A" } },
+  { "type": "constant", "constant": { "name": "RED_B", "value": "#FF8080", "description": "颜色：浅红 B" } },
+  { "type": "constant", "constant": { "name": "RED_C", "value": "#FC6255", "description": "颜色：红色 C（同 RED）" } },
+  { "type": "constant", "constant": { "name": "RED_D", "value": "#E65A4C", "description": "颜色：深红 D" } },
+  { "type": "constant", "constant": { "name": "RED_E", "value": "#CF5044", "description": "颜色：深红 E" } },
+  { "type": "constant", "constant": { "name": "TEAL", "value": "#5CD0B3", "description": "颜色：青绿/蓝绿色（主 TEAL）" } },
+  { "type": "constant", "constant": { "name": "TEAL_A", "value": "#ACEAD7", "description": "颜色：浅青绿 A" } },
+  { "type": "constant", "constant": { "name": "TEAL_B", "value": "#76DDC0", "description": "颜色：浅青绿 B" } },
+  { "type": "constant", "constant": { "name": "TEAL_C", "value": "#5CD0B3", "description": "颜色：青绿 C（同 TEAL）" } },
+  { "type": "constant", "constant": { "name": "TEAL_D", "value": "#55C1A7", "description": "颜色：深青绿 D" } },
+  { "type": "constant", "constant": { "name": "TEAL_E", "value": "#49A88F", "description": "颜色：深青绿 E" } },
+  { "type": "constant", "constant": { "name": "WHITE", "value": "#FFFFFF", "description": "颜色：白色" } },
+  { "type": "constant", "constant": { "name": "YELLOW", "value": "#FFFF00", "description": "颜色：黄色（纯黄）" } },
+  { "type": "constant", "constant": { "name": "YELLOW_A", "value": "#FFF1B6", "description": "颜色：浅黄 A" } },
+  { "type": "constant", "constant": { "name": "YELLOW_B", "value": "#FFEA94", "description": "颜色：浅黄 B" } },
+  { "type": "constant", "constant": { "name": "YELLOW_C", "value": "#FFFF00", "description": "颜色：黄色 C（同 YELLOW）" } },
+  { "type": "constant", "constant": { "name": "YELLOW_D", "value": "#F4D345", "description": "颜色：深黄 D" } },
+  { "type": "constant", "constant": { "name": "YELLOW_E", "value": "#E8C11C", "description": "颜色：深黄 E" } },
+  { "type": "constant", "constant": { "name": "SCENE_NOT_FOUND_MESSAGE", "value": "{} is not in the script", "description": "CLI 文案：场景名不在脚本中（格式化占位 {}）" } },
+  { "type": "constant", "constant": { "name": "CHOOSE_NUMBER_MESSAGE", "value": "Choose number corresponding to desired scene/arguments.\n(Use comma separated list for multiple entries)\nChoice(s): ", "description": "CLI 文案：提示选择场景/参数编号（支持逗号多选）" } },
+  { "type": "constant", "constant": { "name": "INVALID_NUMBER_MESSAGE", "value": "Invalid scene numbers have been specified. Aborting.", "description": "CLI 文案：编号无效，终止执行" } },
+  { "type": "constant", "constant": { "name": "NO_SCENE_MESSAGE", "value": "There are no scenes inside that module", "description": "CLI 文案：模块中没有 Scene" } },
+  { "type": "constant", "constant": { "name": "PANGO", "value": { "NORMAL": "NORMAL", "ITALIC": "ITALIC", "OBLIQUE": "OBLIQUE", "BOLD": "BOLD", "THIN": "THIN", "ULTRALIGHT": "ULTRALIGHT", "LIGHT": "LIGHT", "SEMILIGHT": "SEMILIGHT", "BOOK": "BOOK", "MEDIUM": "MEDIUM", "SEMIBOLD": "SEMIBOLD", "ULTRABOLD": "ULTRABOLD", "HEAVY": "HEAVY", "ULTRAHEAVY": "ULTRAHEAVY" }, "description": "Pango 字体样式/粗细常量表" } },
+  { "type": "constant", "constant": { "name": "RESAMPLING_ALGORITHMS", "value": { "nearest": "Resampling.NEAREST", "none": "Resampling.NEAREST", "lanczos": "Resampling.LANCZOS", "antialias": "Resampling.LANCZOS", "bilinear": "Resampling.BILINEAR", "linear": "Resampling.BILINEAR", "bicubic": "Resampling.BICUBIC", "cubic": "Resampling.BICUBIC", "box": "Resampling.BOX", "hamming": "Resampling.HAMMING" }, "description": "重采样算法别名到 Resampling 枚举的映射" } },
+  { "type": "constant", "constant": { "name": "GEOMETRY", "value": { "ORIGIN": [0.0, 0.0, 0.0], "UP": [0.0, 1.0, 0.0], "DOWN": [0.0, -1.0, 0.0], "RIGHT": [1.0, 0.0, 0.0], "LEFT": [-1.0, 0.0, 0.0], "IN": [0.0, 0.0, -1.0], "OUT": [0.0, 0.0, 1.0], "X_AXIS": [1.0, 0.0, 0.0], "Y_AXIS": [0.0, 1.0, 0.0], "Z_AXIS": [0.0, 0.0, 1.0] }, "description": "几何方向/坐标轴向量常量集合" } },
+  { "type": "constant", "constant": { "name": "DEFAULTS", "value": { "START_X": 30, "START_Y": 20, "DEFAULT_DOT_RADIUS": 0.08, "DEFAULT_SMALL_DOT_RADIUS": 0.04, "DEFAULT_DASH_LENGTH": 0.05, "DEFAULT_ARROW_TIP_LENGTH": 0.35, "SMALL_BUFF": 0.1, "MED_SMALL_BUFF": 0.25, "MED_LARGE_BUFF": 0.5, "LARGE_BUFF": 1, "DEFAULT_MOBJECT_TO_EDGE_BUFFER": 0.5, "DEFAULT_MOBJECT_TO_MOBJECT_BUFFER": 0.25, "DEFAULT_POINTWISE_FUNCTION_RUN_TIME": 3.0, "DEFAULT_WAIT_TIME": 1.0, "DEFAULT_POINT_DENSITY_2D": 25, "DEFAULT_POINT_DENSITY_1D": 10, "DEFAULT_STROKE_WIDTH": 4, "DEFAULT_FONT_SIZE": 48, "SCALE_FACTOR_PER_FONT_POINT": 0.0010416666666666667 }, "description": "默认参数集合（布局缓冲、线宽、字号、运行时间等）" } },
+  { "type": "constant", "constant": { "name": "MATHEMATICAL_CONSTANTS", "value": { "PI": 3.141592653589793, "TAU": 6.283185307179586, "DEGREES": 0.017453292519943295 }, "description": "数学常数（π、τ、角度到弧度系数）" } },
+  { "type": "constant", "constant": { "name": "QUALITIES", "value": { "fourk_quality": { "flag": "k", "pixel_height": 2160, "pixel_width": 3840, "frame_rate": 60 }, "production_quality": { "flag": "p", "pixel_height": 1440, "pixel_width": 2560, "frame_rate": 60 }, "high_quality": { "flag": "h", "pixel_height": 1080, "pixel_width": 1920, "frame_rate": 60 }, "medium_quality": { "flag": "m", "pixel_height": 720, "pixel_width": 1280, "frame_rate": 30 }, "low_quality": { "flag": "l", "pixel_height": 480, "pixel_width": 854, "frame_rate": 15 }, "example_quality": { "flag": null, "pixel_height": 480, "pixel_width": 854, "frame_rate": 30 } }, "description": "渲染质量预设（命令行 flag、分辨率、帧率）" } },
+  { "type": "constant", "constant": { "name": "DEFAULT_QUALITY", "value": "high_quality", "description": "默认渲染质量名称" } },
+  { "type": "constant", "constant": { "name": "EPILOG", "value": "Made with <3 by Manim Community developers.", "description": "片尾/署名文案" } },
+  { "type": "constant", "constant": { "name": "SHIFT_VALUE", "value": 65505, "description": "键盘键值：Shift" } },
+  { "type": "constant", "constant": { "name": "CTRL_VALUE", "value": 65507, "description": "键盘键值：Control/Ctrl" } },
+  { "type": "constant", "constant": { "name": "CONTEXT_SETTINGS", "value": { "align_option_groups": true, "align_sections": true, "show_constraints": true }, "description": "上下文设置：对齐选项组/对齐分节/显示约束" } },
+  {
+    "type": "constant",
+    "constant": { "name": "ORIGIN", "value": [0.0, 0.0, 0.0], "description": "GEOMETRY 子项：原点向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "UP", "value": [0.0, 1.0, 0.0], "description": "GEOMETRY 子项：上方向向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DOWN", "value": [0.0, -1.0, 0.0], "description": "GEOMETRY 子项：下方向向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RIGHT", "value": [1.0, 0.0, 0.0], "description": "GEOMETRY 子项：右方向向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "LEFT", "value": [-1.0, 0.0, 0.0], "description": "GEOMETRY 子项：左方向向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "IN", "value": [0.0, 0.0, -1.0], "description": "GEOMETRY 子项：屏幕内（-Z）" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "OUT", "value": [0.0, 0.0, 1.0], "description": "GEOMETRY 子项：屏幕外（+Z）" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "X_AXIS", "value": [1.0, 0.0, 0.0], "description": "GEOMETRY 子项：X 轴方向向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "Y_AXIS", "value": [0.0, 1.0, 0.0], "description": "GEOMETRY 子项：Y 轴方向向量" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "Z_AXIS", "value": [0.0, 0.0, 1.0], "description": "GEOMETRY 子项：Z 轴方向向量" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "START_X", "value": 30, "description": "DEFAULTS 子项：起始 X" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "START_Y", "value": 20, "description": "DEFAULTS 子项：起始 Y" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_DOT_RADIUS", "value": 0.08, "description": "DEFAULTS 子项：默认点半径" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_SMALL_DOT_RADIUS", "value": 0.04, "description": "DEFAULTS 子项：默认小点半径" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_DASH_LENGTH", "value": 0.05, "description": "DEFAULTS 子项：默认虚线段长度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_ARROW_TIP_LENGTH", "value": 0.35, "description": "DEFAULTS 子项：默认箭头尖长度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "SMALL_BUFF", "value": 0.1, "description": "DEFAULTS 子项：小间距" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "MED_SMALL_BUFF", "value": 0.25, "description": "DEFAULTS 子项：中小间距" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "MED_LARGE_BUFF", "value": 0.5, "description": "DEFAULTS 子项：中大间距" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "LARGE_BUFF", "value": 1, "description": "DEFAULTS 子项：大间距" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_MOBJECT_TO_EDGE_BUFFER", "value": 0.5, "description": "DEFAULTS 子项：物体到边缘默认缓冲" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_MOBJECT_TO_MOBJECT_BUFFER", "value": 0.25, "description": "DEFAULTS 子项：物体间默认缓冲" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_POINTWISE_FUNCTION_RUN_TIME", "value": 3.0, "description": "DEFAULTS 子项：点函数默认运行时间" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_WAIT_TIME", "value": 1.0, "description": "DEFAULTS 子项：默认等待时间" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_POINT_DENSITY_2D", "value": 25, "description": "DEFAULTS 子项：2D 默认点密度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_POINT_DENSITY_1D", "value": 10, "description": "DEFAULTS 子项：1D 默认点密度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_STROKE_WIDTH", "value": 4, "description": "DEFAULTS 子项：默认描边宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEFAULT_FONT_SIZE", "value": 48, "description": "DEFAULTS 子项：默认字体大小" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "SCALE_FACTOR_PER_FONT_POINT", "value": 0.0010416666666666667, "description": "DEFAULTS 子项：字体点数缩放因子" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "PI", "value": 3.141592653589793, "description": "MATHEMATICAL_CONSTANTS 子项：圆周率 π" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "TAU", "value": 6.283185307179586, "description": "MATHEMATICAL_CONSTANTS 子项：τ = 2π" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "DEGREES", "value": 0.017453292519943295, "description": "MATHEMATICAL_CONSTANTS 子项：角度到弧度系数" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__NORMAL", "value": "NORMAL", "description": "PANGO 子项：常规" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__ITALIC", "value": "ITALIC", "description": "PANGO 子项：斜体" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__OBLIQUE", "value": "OBLIQUE", "description": "PANGO 子项：倾斜" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__BOLD", "value": "BOLD", "description": "PANGO 子项：粗体" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__THIN", "value": "THIN", "description": "PANGO 子项：细" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__ULTRALIGHT", "value": "ULTRALIGHT", "description": "PANGO 子项：超细浅" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__LIGHT", "value": "LIGHT", "description": "PANGO 子项：浅" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__SEMILIGHT", "value": "SEMILIGHT", "description": "PANGO 子项：半浅" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__BOOK", "value": "BOOK", "description": "PANGO 子项：书体" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__MEDIUM", "value": "MEDIUM", "description": "PANGO 子项：中等" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__SEMIBOLD", "value": "SEMIBOLD", "description": "PANGO 子项：半粗" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__ULTRABOLD", "value": "ULTRABOLD", "description": "PANGO 子项：超粗" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__HEAVY", "value": "HEAVY", "description": "PANGO 子项：很粗" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "PANGO__ULTRAHEAVY", "value": "ULTRAHEAVY", "description": "PANGO 子项：极粗" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__nearest", "value": "Resampling.NEAREST", "description": "RESAMPLING_ALGORITHMS 子项：nearest" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__none", "value": "Resampling.NEAREST", "description": "RESAMPLING_ALGORITHMS 子项：none（同 nearest）" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__lanczos", "value": "Resampling.LANCZOS", "description": "RESAMPLING_ALGORITHMS 子项：lanczos" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__antialias", "value": "Resampling.LANCZOS", "description": "RESAMPLING_ALGORITHMS 子项：antialias（同 lanczos）" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__bilinear", "value": "Resampling.BILINEAR", "description": "RESAMPLING_ALGORITHMS 子项：bilinear" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__linear", "value": "Resampling.BILINEAR", "description": "RESAMPLING_ALGORITHMS 子项：linear（同 bilinear）" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__bicubic", "value": "Resampling.BICUBIC", "description": "RESAMPLING_ALGORITHMS 子项：bicubic" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__cubic", "value": "Resampling.BICUBIC", "description": "RESAMPLING_ALGORITHMS 子项：cubic（同 bicubic）" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__box", "value": "Resampling.BOX", "description": "RESAMPLING_ALGORITHMS 子项：box" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "RESAMPLING_ALGORITHMS__hamming", "value": "Resampling.HAMMING", "description": "RESAMPLING_ALGORITHMS 子项：hamming" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "fourk_quality__flag", "value": "k", "description": "QUALITIES 子项：fourk_quality flag" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "fourk_quality__pixel_height", "value": 2160, "description": "QUALITIES 子项：fourk_quality 高度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "fourk_quality__pixel_width", "value": 3840, "description": "QUALITIES 子项：fourk_quality 宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "fourk_quality__frame_rate", "value": 60, "description": "QUALITIES 子项：fourk_quality 帧率" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "production_quality__flag", "value": "p", "description": "QUALITIES 子项：production_quality flag" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "production_quality__pixel_height", "value": 1440, "description": "QUALITIES 子项：production_quality 高度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "production_quality__pixel_width", "value": 2560, "description": "QUALITIES 子项：production_quality 宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "production_quality__frame_rate", "value": 60, "description": "QUALITIES 子项：production_quality 帧率" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "high_quality__flag", "value": "h", "description": "QUALITIES 子项：high_quality flag" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "high_quality__pixel_height", "value": 1080, "description": "QUALITIES 子项：high_quality 高度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "high_quality__pixel_width", "value": 1920, "description": "QUALITIES 子项：high_quality 宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "high_quality__frame_rate", "value": 60, "description": "QUALITIES 子项：high_quality 帧率" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "medium_quality__flag", "value": "m", "description": "QUALITIES 子项：medium_quality flag" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "medium_quality__pixel_height", "value": 720, "description": "QUALITIES 子项：medium_quality 高度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "medium_quality__pixel_width", "value": 1280, "description": "QUALITIES 子项：medium_quality 宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "medium_quality__frame_rate", "value": 30, "description": "QUALITIES 子项：medium_quality 帧率" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "low_quality__flag", "value": "l", "description": "QUALITIES 子项：low_quality flag" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "low_quality__pixel_height", "value": 480, "description": "QUALITIES 子项：low_quality 高度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "low_quality__pixel_width", "value": 854, "description": "QUALITIES 子项：low_quality 宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "low_quality__frame_rate", "value": 15, "description": "QUALITIES 子项：low_quality 帧率" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "example_quality__flag", "value": null, "description": "QUALITIES 子项：example_quality flag" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "example_quality__pixel_height", "value": 480, "description": "QUALITIES 子项：example_quality 高度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "example_quality__pixel_width", "value": 854, "description": "QUALITIES 子项：example_quality 宽度" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "example_quality__frame_rate", "value": 30, "description": "QUALITIES 子项：example_quality 帧率" }
+  },
+
+  {
+    "type": "constant",
+    "constant": { "name": "align_option_groups", "value": true, "description": "CONTEXT_SETTINGS 子项：对齐选项组" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "align_sections", "value": true, "description": "CONTEXT_SETTINGS 子项：对齐分节" }
+  },
+  {
+    "type": "constant",
+    "constant": { "name": "show_constraints", "value": true, "description": "CONTEXT_SETTINGS 子项：显示约束" }
+  },
+  {
+  "type": "constant",
+  "constant": {
+    "name": "UL",
+    "value": [-1.0, 1.0, 0.0],
+    "description": "几何方向：左上（UP + LEFT）"
+  }
+},
+{
+  "type": "constant",
+  "constant": {
+    "name": "UR",
+    "value": [1.0, 1.0, 0.0],
+    "description": "几何方向：右上（UP + RIGHT）"
+  }
+},
+{
+  "type": "constant",
+  "constant": {
+    "name": "DL",
+    "value": [-1.0, -1.0, 0.0],
+    "description": "几何方向：左下（DOWN + LEFT）"
+  }
+},
+{
+  "type": "constant",
+  "constant": {
+    "name": "DR",
+    "value": [1.0, -1.0, 0.0],
+    "description": "几何方向：右下（DOWN + RIGHT）"
+  }
+}
+]
+
+
+
