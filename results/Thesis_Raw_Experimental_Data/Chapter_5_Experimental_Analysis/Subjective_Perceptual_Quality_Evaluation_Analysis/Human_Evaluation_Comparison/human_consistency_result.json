@@ -1,8 +1,0 @@
-{
-  "sample_count": 30,
-  "human_average_score": 4.79,
-  "model_average_score": 4.68,
-  "pearson_correlation": 0.958,
-  "spearman_correlation": 0.965,
-  "mean_absolute_error": 0.112
-}
