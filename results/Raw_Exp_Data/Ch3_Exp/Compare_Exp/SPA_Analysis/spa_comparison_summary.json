@@ -1,0 +1,20 @@
+[
+  {
+    "difficulty": "Easy",
+    "single_agent_method": 82.5,
+    "general_multi_agent_method": 88.4,
+    "structured_representation_system_method": 96.8
+  },
+  {
+    "difficulty": "Medium",
+    "single_agent_method": 65.4,
+    "general_multi_agent_method": 76.2,
+    "structured_representation_system_method": 92.5
+  },
+  {
+    "difficulty": "Hard",
+    "single_agent_method": 59.8,
+    "general_multi_agent_method": 69.3,
+    "structured_representation_system_method": 86.4
+  }
+]

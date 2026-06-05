@@ -1,0 +1,1622 @@
+[
+  {
+    "topic": "Pythagorean_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 6.75,
+      "size_error": 3.74,
+      "boundary_violation_rate": 0.0
+    }
+  },
+  {
+    "topic": "Properties_of_a_Kite_Quadrilateral",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 8.71,
+      "size_error": 5.21,
+      "boundary_violation_rate": 0.01
+    }
+  },
+  {
+    "topic": "Eulers_Formula",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.88,
+      "size_error": 4.36,
+      "boundary_violation_rate": 4.04
+    }
+  },
+  {
+    "topic": "Laws_of_Exponents",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.28,
+      "size_error": 4.38,
+      "boundary_violation_rate": 5.07
+    }
+  },
+  {
+    "topic": "Injective_Function_One_to_One_Function",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.12,
+      "size_error": 4.92,
+      "boundary_violation_rate": 3.08
+    }
+  },
+  {
+    "topic": "Inverse_Function",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 15.54,
+      "size_error": 4.05,
+      "boundary_violation_rate": 3.05
+    }
+  },
+  {
+    "topic": "Remainder_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.72,
+      "size_error": 3.61,
+      "boundary_violation_rate": 0.67
+    }
+  },
+  {
+    "topic": "Rational_Root_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 19.63,
+      "size_error": 3.4,
+      "boundary_violation_rate": 4.23
+    }
+  },
+  {
+    "topic": "Product_to_Sum_Formulas",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.66,
+      "size_error": 5.73,
+      "boundary_violation_rate": 2.1
+    }
+  },
+  {
+    "topic": "Herons_Formula",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.31,
+      "size_error": 3.6,
+      "boundary_violation_rate": 4.81
+    }
+  },
+  {
+    "topic": "De_Moivres_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 17.91,
+      "size_error": 3.72,
+      "boundary_violation_rate": 5.46
+    }
+  },
+  {
+    "topic": "Cramers_Rule",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.07,
+      "size_error": 4.77,
+      "boundary_violation_rate": 1.35
+    }
+  },
+  {
+    "topic": "Angle_of_Rotation",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 23.7,
+      "size_error": 2.73,
+      "boundary_violation_rate": 2.62
+    }
+  },
+  {
+    "topic": "Triangle_Similarity_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.88,
+      "size_error": 5.32,
+      "boundary_violation_rate": 4.54
+    }
+  },
+  {
+    "topic": "Triangle_Congruence_Theorems",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 17.85,
+      "size_error": 5.35,
+      "boundary_violation_rate": 6.55
+    }
+  },
+  {
+    "topic": "Geometric_Sequence",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.36,
+      "size_error": 4.34,
+      "boundary_violation_rate": 1.8
+    }
+  },
+  {
+    "topic": "Arithmetic_Sequence",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 23.42,
+      "size_error": 3.51,
+      "boundary_violation_rate": 3.24
+    }
+  },
+  {
+    "topic": "Permutations",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.47,
+      "size_error": 5.2,
+      "boundary_violation_rate": 3.59
+    }
+  },
+  {
+    "topic": "Directrix",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 19.74,
+      "size_error": 4.89,
+      "boundary_violation_rate": 5.51
+    }
+  },
+  {
+    "topic": "Eccentricity",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 18.16,
+      "size_error": 2.76,
+      "boundary_violation_rate": 1.65
+    }
+  },
+  {
+    "topic": "Area_of_a_Rectangle",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 28.7,
+      "size_error": 5.53,
+      "boundary_violation_rate": 4.99
+    }
+  },
+  {
+    "topic": "Area_of_a_Triangle",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.47,
+      "size_error": 4.79,
+      "boundary_violation_rate": 3.87
+    }
+  },
+  {
+    "topic": "Area_of_a_Parallelogram",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.37,
+      "size_error": 5.13,
+      "boundary_violation_rate": 6.56
+    }
+  },
+  {
+    "topic": "Area_of_a_Trapezoid",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.44,
+      "size_error": 4.63,
+      "boundary_violation_rate": 2.58
+    }
+  },
+  {
+    "topic": "Perimeter_of_a_Rectangle",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 20.94,
+      "size_error": 5.19,
+      "boundary_violation_rate": 3.25
+    }
+  },
+  {
+    "topic": "Perimeter_of_a_Triangle",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 19.08,
+      "size_error": 5.38,
+      "boundary_violation_rate": 1.83
+    }
+  },
+  {
+    "topic": "Volume_of_a_Cube",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.72,
+      "size_error": 3.77,
+      "boundary_violation_rate": 3.04
+    }
+  },
+  {
+    "topic": "Volume_of_a_Rectangular_Prism",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 17.92,
+      "size_error": 5.05,
+      "boundary_violation_rate": 5.21
+    }
+  },
+  {
+    "topic": "Volume_of_a_Cylinder",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 16.05,
+      "size_error": 4.8,
+      "boundary_violation_rate": 0.02
+    }
+  },
+  {
+    "topic": "Volume_of_a_Cone",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.48,
+      "size_error": 2.74,
+      "boundary_violation_rate": 1.52
+    }
+  },
+  {
+    "topic": "Volume_of_a_Sphere",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 17.41,
+      "size_error": 3.63,
+      "boundary_violation_rate": 4.32
+    }
+  },
+  {
+    "topic": "Surface_Area_of_a_Cube",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 13.95,
+      "size_error": 6.87,
+      "boundary_violation_rate": 3.21
+    }
+  },
+  {
+    "topic": "Surface_Area_of_a_Cylinder",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 23.88,
+      "size_error": 5.47,
+      "boundary_violation_rate": 2.31
+    }
+  },
+  {
+    "topic": "Complementary_Angles",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 24.59,
+      "size_error": 3.03,
+      "boundary_violation_rate": 4.91
+    }
+  },
+  {
+    "topic": "Supplementary_Angles",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.69,
+      "size_error": 5.14,
+      "boundary_violation_rate": 5.86
+    }
+  },
+  {
+    "topic": "Vertical_Angles_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 27.71,
+      "size_error": 4.33,
+      "boundary_violation_rate": 5.63
+    }
+  },
+  {
+    "topic": "Parallel_Lines_Angles",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 26.81,
+      "size_error": 3.39,
+      "boundary_violation_rate": 4.57
+    }
+  },
+  {
+    "topic": "Exponent_Zero_Rule",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.64,
+      "size_error": 3.33,
+      "boundary_violation_rate": 0.15
+    }
+  },
+  {
+    "topic": "Exponent_Negative_Rule",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 16.06,
+      "size_error": 3.85,
+      "boundary_violation_rate": 1.54
+    }
+  },
+  {
+    "topic": "Square_Root_Property",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 23.51,
+      "size_error": 4.06,
+      "boundary_violation_rate": 3.97
+    }
+  },
+  {
+    "topic": "Sum_of_Interior_Angles_Triangle",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 19.35,
+      "size_error": 5.37,
+      "boundary_violation_rate": 0.69
+    }
+  },
+  {
+    "topic": "Sum_of_Interior_Angles_Quadrilateral",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.37,
+      "size_error": 5.29,
+      "boundary_violation_rate": 3.34
+    }
+  },
+  {
+    "topic": "Exterior_Angle_Theorem",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 18.39,
+      "size_error": 5.27,
+      "boundary_violation_rate": 4.95
+    }
+  },
+  {
+    "topic": "Isosceles_Triangle_Base_Angles",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 23.43,
+      "size_error": 6.06,
+      "boundary_violation_rate": 3.56
+    }
+  },
+  {
+    "topic": "Circle_Circumference",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 19.04,
+      "size_error": 3.64,
+      "boundary_violation_rate": 4.89
+    }
+  },
+  {
+    "topic": "Circle_Area",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 24.66,
+      "size_error": 5.49,
+      "boundary_violation_rate": 4.35
+    }
+  },
+  {
+    "topic": "Arc_Length_Formula",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 22.26,
+      "size_error": 6.88,
+      "boundary_violation_rate": 0.5
+    }
+  },
+  {
+    "topic": "Sector_Area_Formula",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.79,
+      "size_error": 4.54,
+      "boundary_violation_rate": 1.94
+    }
+  },
+  {
+    "topic": "Distance_Formula_2D",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 28.82,
+      "size_error": 4.52,
+      "boundary_violation_rate": 4.39
+    }
+  },
+  {
+    "topic": "Midpoint_Formula",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 18.55,
+      "size_error": 6.4,
+      "boundary_violation_rate": 5.85
+    }
+  },
+  {
+    "topic": "Slope_Formula",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 23.11,
+      "size_error": 6.24,
+      "boundary_violation_rate": 4.27
+    }
+  },
+  {
+    "topic": "Point_Slope_Form",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 24.34,
+      "size_error": 3.91,
+      "boundary_violation_rate": 1.48
+    }
+  },
+  {
+    "topic": "Slope_Intercept_Form",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 13.94,
+      "size_error": 4.0,
+      "boundary_violation_rate": 5.08
+    }
+  },
+  {
+    "topic": "Absolute_Value_Definition",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 28.46,
+      "size_error": 2.97,
+      "boundary_violation_rate": 3.26
+    }
+  },
+  {
+    "topic": "Quadratic_Standard_Form",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 20.07,
+      "size_error": 3.1,
+      "boundary_violation_rate": 4.26
+    }
+  },
+  {
+    "topic": "Difference_of_Squares",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 19.33,
+      "size_error": 3.48,
+      "boundary_violation_rate": 6.19
+    }
+  },
+  {
+    "topic": "Distributive_Property",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.13,
+      "size_error": 4.93,
+      "boundary_violation_rate": 5.33
+    }
+  },
+  {
+    "topic": "Commutative_Property_Addition",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.23,
+      "size_error": 3.69,
+      "boundary_violation_rate": 0.03
+    }
+  },
+  {
+    "topic": "Commutative_Property_Multiplication",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 25.67,
+      "size_error": 4.25,
+      "boundary_violation_rate": 2.74
+    }
+  },
+  {
+    "topic": "Associative_Property_Addition",
+    "difficulty": "Easy",
+    "objective_metrics": {
+      "keypoint_error": 21.28,
+      "size_error": 6.07,
+      "boundary_violation_rate": 5.39
+    }
+  },
+  {
+    "topic": "Factor_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 26.99,
+      "size_error": 6.41,
+      "boundary_violation_rate": 8.18
+    }
+  },
+  {
+    "topic": "Law_of_Sines",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 25.33,
+      "size_error": 7.73,
+      "boundary_violation_rate": 9.9
+    }
+  },
+  {
+    "topic": "Binomial_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 32.49,
+      "size_error": 5.78,
+      "boundary_violation_rate": 7.33
+    }
+  },
+  {
+    "topic": "Intermediate_Value_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 31.13,
+      "size_error": 6.89,
+      "boundary_violation_rate": 8.23
+    }
+  },
+  {
+    "topic": "Law_of_Cosines",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.1,
+      "size_error": 6.33,
+      "boundary_violation_rate": 6.8
+    }
+  },
+  {
+    "topic": "Divergence_Test",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 32.96,
+      "size_error": 8.0,
+      "boundary_violation_rate": 5.49
+    }
+  },
+  {
+    "topic": "Squeeze_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 26.27,
+      "size_error": 6.08,
+      "boundary_violation_rate": 8.44
+    }
+  },
+  {
+    "topic": "Chain_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.23,
+      "size_error": 6.45,
+      "boundary_violation_rate": 7.78
+    }
+  },
+  {
+    "topic": "Product_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.04,
+      "size_error": 6.56,
+      "boundary_violation_rate": 5.03
+    }
+  },
+  {
+    "topic": "Quotient_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.71,
+      "size_error": 5.81,
+      "boundary_violation_rate": 6.71
+    }
+  },
+  {
+    "topic": "Power_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 18.2,
+      "size_error": 4.66,
+      "boundary_violation_rate": 7.25
+    }
+  },
+  {
+    "topic": "u_Substitution_Substitution_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 38.39,
+      "size_error": 6.03,
+      "boundary_violation_rate": 9.86
+    }
+  },
+  {
+    "topic": "Disk_and_Washer_Method",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.13,
+      "size_error": 6.59,
+      "boundary_violation_rate": 8.07
+    }
+  },
+  {
+    "topic": "Extreme_Value_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 26.05,
+      "size_error": 5.61,
+      "boundary_violation_rate": 11.47
+    }
+  },
+  {
+    "topic": "Fermats_Theorem_Stationary_Point_Condition",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 33.55,
+      "size_error": 5.84,
+      "boundary_violation_rate": 8.2
+    }
+  },
+  {
+    "topic": "Mean_Value_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 34.53,
+      "size_error": 5.69,
+      "boundary_violation_rate": 10.2
+    }
+  },
+  {
+    "topic": "Newton_Raphson_Method",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 35.23,
+      "size_error": 7.17,
+      "boundary_violation_rate": 4.01
+    }
+  },
+  {
+    "topic": "Rolles_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 26.98,
+      "size_error": 7.16,
+      "boundary_violation_rate": 6.48
+    }
+  },
+  {
+    "topic": "Second_Derivative_Test",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 27.99,
+      "size_error": 5.96,
+      "boundary_violation_rate": 7.27
+    }
+  },
+  {
+    "topic": "Pappuss_Theorem_Centroid_Theorems",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.87,
+      "size_error": 8.01,
+      "boundary_violation_rate": 8.69
+    }
+  },
+  {
+    "topic": "Integration_by_Parts",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 26.01,
+      "size_error": 6.18,
+      "boundary_violation_rate": 7.52
+    }
+  },
+  {
+    "topic": "Partial_Fraction_Decomposition",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 28.27,
+      "size_error": 5.58,
+      "boundary_violation_rate": 8.79
+    }
+  },
+  {
+    "topic": "Implicit_Differentiation",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 31.56,
+      "size_error": 5.16,
+      "boundary_violation_rate": 5.59
+    }
+  },
+  {
+    "topic": "Related_Rates",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 23.24,
+      "size_error": 6.37,
+      "boundary_violation_rate": 8.57
+    }
+  },
+  {
+    "topic": "LHopitals_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 23.4,
+      "size_error": 7.45,
+      "boundary_violation_rate": 11.3
+    }
+  },
+  {
+    "topic": "Logarithmic_Differentiation",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 28.88,
+      "size_error": 7.55,
+      "boundary_violation_rate": 10.3
+    }
+  },
+  {
+    "topic": "Polar_Coordinates_Conversion",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 33.81,
+      "size_error": 7.8,
+      "boundary_violation_rate": 7.37
+    }
+  },
+  {
+    "topic": "Parametric_Derivative",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.9,
+      "size_error": 4.63,
+      "boundary_violation_rate": 10.12
+    }
+  },
+  {
+    "topic": "Geometric_Mean_Theorem_Right_Triangle",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 27.04,
+      "size_error": 4.92,
+      "boundary_violation_rate": 12.62
+    }
+  },
+  {
+    "topic": "Angle_Bisector_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 18.21,
+      "size_error": 6.11,
+      "boundary_violation_rate": 8.59
+    }
+  },
+  {
+    "topic": "Cevas_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 27.64,
+      "size_error": 6.12,
+      "boundary_violation_rate": 3.66
+    }
+  },
+  {
+    "topic": "Menelaus_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.47,
+      "size_error": 5.63,
+      "boundary_violation_rate": 8.22
+    }
+  },
+  {
+    "topic": "Binomial_Probability_Formula",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 31.43,
+      "size_error": 7.49,
+      "boundary_violation_rate": 8.63
+    }
+  },
+  {
+    "topic": "Expected_Value_Discrete",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 37.38,
+      "size_error": 6.72,
+      "boundary_violation_rate": 8.64
+    }
+  },
+  {
+    "topic": "Standard_Deviation_Formula",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 23.82,
+      "size_error": 7.91,
+      "boundary_violation_rate": 7.71
+    }
+  },
+  {
+    "topic": "Permutation_Formula_nPr",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 20.72,
+      "size_error": 5.9,
+      "boundary_violation_rate": 6.89
+    }
+  },
+  {
+    "topic": "Combination_Formula_nCr",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 26.28,
+      "size_error": 6.93,
+      "boundary_violation_rate": 7.83
+    }
+  },
+  {
+    "topic": "Geometric_Series_Infinite",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 18.19,
+      "size_error": 6.73,
+      "boundary_violation_rate": 8.99
+    }
+  },
+  {
+    "topic": "Exponential_Growth_Decay",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.37,
+      "size_error": 6.9,
+      "boundary_violation_rate": 10.04
+    }
+  },
+  {
+    "topic": "Logarithm_Change_of_Base",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.7,
+      "size_error": 7.5,
+      "boundary_violation_rate": 6.4
+    }
+  },
+  {
+    "topic": "Conic_Sections_Standard_Form",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.68,
+      "size_error": 6.57,
+      "boundary_violation_rate": 9.14
+    }
+  },
+  {
+    "topic": "Ellipse_Standard_Equation",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 28.64,
+      "size_error": 6.26,
+      "boundary_violation_rate": 6.67
+    }
+  },
+  {
+    "topic": "Hyperbola_Standard_Equation",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 25.65,
+      "size_error": 6.97,
+      "boundary_violation_rate": 9.15
+    }
+  },
+  {
+    "topic": "Parabola_Vertex_Form",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 24.48,
+      "size_error": 6.46,
+      "boundary_violation_rate": 8.08
+    }
+  },
+  {
+    "topic": "Distance_Between_Point_and_Line",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 23.44,
+      "size_error": 6.25,
+      "boundary_violation_rate": 7.44
+    }
+  },
+  {
+    "topic": "Vector_Dot_Product",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 31.83,
+      "size_error": 8.2,
+      "boundary_violation_rate": 10.44
+    }
+  },
+  {
+    "topic": "Vector_Cross_Product_Magnitude",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 27.57,
+      "size_error": 5.59,
+      "boundary_violation_rate": 7.82
+    }
+  },
+  {
+    "topic": "Projection_of_Vector",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 27.05,
+      "size_error": 5.64,
+      "boundary_violation_rate": 8.41
+    }
+  },
+  {
+    "topic": "Matrix_Multiplication_Rule",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 20.64,
+      "size_error": 7.59,
+      "boundary_violation_rate": 8.25
+    }
+  },
+  {
+    "topic": "Determinant_of_2x2",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 18.22,
+      "size_error": 6.64,
+      "boundary_violation_rate": 7.85
+    }
+  },
+  {
+    "topic": "Inverse_of_2x2_Matrix",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 34.49,
+      "size_error": 7.01,
+      "boundary_violation_rate": 8.39
+    }
+  },
+  {
+    "topic": "Gaussian_Elimination",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 23.14,
+      "size_error": 6.48,
+      "boundary_violation_rate": 6.76
+    }
+  },
+  {
+    "topic": "Geometric_Distribution_Formula",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.78,
+      "size_error": 7.66,
+      "boundary_violation_rate": 11.51
+    }
+  },
+  {
+    "topic": "Poisson_Distribution_Formula",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.06,
+      "size_error": 6.42,
+      "boundary_violation_rate": 3.92
+    }
+  },
+  {
+    "topic": "Normal_Distribution_Density",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 28.65,
+      "size_error": 4.64,
+      "boundary_violation_rate": 7.47
+    }
+  },
+  {
+    "topic": "Central_Angle_Arc_Length",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 33.87,
+      "size_error": 4.17,
+      "boundary_violation_rate": 13.5
+    }
+  },
+  {
+    "topic": "Inscribed_Angle_Theorem",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 28.69,
+      "size_error": 6.86,
+      "boundary_violation_rate": 8.45
+    }
+  },
+  {
+    "topic": "Logistic_Function_Model",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 29.26,
+      "size_error": 5.08,
+      "boundary_violation_rate": 8.6
+    }
+  },
+  {
+    "topic": "Arithmetic_Sequence_nth_Term",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 38.4,
+      "size_error": 5.19,
+      "boundary_violation_rate": 6.05
+    }
+  },
+  {
+    "topic": "Arithmetic_Sequence_Sum",
+    "difficulty": "Medium",
+    "objective_metrics": {
+      "keypoint_error": 30.17,
+      "size_error": 7.18,
+      "boundary_violation_rate": 7.93
+    }
+  },
+  {
+    "topic": "Taylor_Polynomial",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 29.2,
+      "size_error": 14.2,
+      "boundary_violation_rate": 13.49
+    }
+  },
+  {
+    "topic": "Simpsons_Rule",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.79,
+      "size_error": 14.55,
+      "boundary_violation_rate": 20.31
+    }
+  },
+  {
+    "topic": "Velocity_Vector",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 47.44,
+      "size_error": 14.11,
+      "boundary_violation_rate": 15.61
+    }
+  },
+  {
+    "topic": "Double_Riemann_Sum",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.95,
+      "size_error": 11.88,
+      "boundary_violation_rate": 14.22
+    }
+  },
+  {
+    "topic": "Fubinis_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.96,
+      "size_error": 10.94,
+      "boundary_violation_rate": 19.87
+    }
+  },
+  {
+    "topic": "Jacobian_Matrix_and_Determinant",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.99,
+      "size_error": 11.86,
+      "boundary_violation_rate": 17.43
+    }
+  },
+  {
+    "topic": "Greens_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.38,
+      "size_error": 12.53,
+      "boundary_violation_rate": 10.96
+    }
+  },
+  {
+    "topic": "Stokes_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.27,
+      "size_error": 10.17,
+      "boundary_violation_rate": 15.49
+    }
+  },
+  {
+    "topic": "Burnsides_Lemma",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 40.9,
+      "size_error": 10.59,
+      "boundary_violation_rate": 13.79
+    }
+  },
+  {
+    "topic": "Lah_Numbers",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 43.37,
+      "size_error": 12.61,
+      "boundary_violation_rate": 12.72
+    }
+  },
+  {
+    "topic": "Ramseys_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 44.16,
+      "size_error": 13.02,
+      "boundary_violation_rate": 8.0
+    }
+  },
+  {
+    "topic": "Schwarz_Lemma",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 46.6,
+      "size_error": 10.83,
+      "boundary_violation_rate": 17.36
+    }
+  },
+  {
+    "topic": "Cauchy_Riemann_Equations",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 52.75,
+      "size_error": 10.42,
+      "boundary_violation_rate": 18.49
+    }
+  },
+  {
+    "topic": "Moreras_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 42.75,
+      "size_error": 10.12,
+      "boundary_violation_rate": 12.55
+    }
+  },
+  {
+    "topic": "Catalan_Numbers",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 43.58,
+      "size_error": 12.42,
+      "boundary_violation_rate": 12.65
+    }
+  },
+  {
+    "topic": "Liouvilles_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 33.17,
+      "size_error": 7.56,
+      "boundary_violation_rate": 15.07
+    }
+  },
+  {
+    "topic": "Derangement_Formula",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.27,
+      "size_error": 7.2,
+      "boundary_violation_rate": 12.2
+    }
+  },
+  {
+    "topic": "Delian_Problem_Doubling_the_Cube",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 48.39,
+      "size_error": 10.98,
+      "boundary_violation_rate": 14.92
+    }
+  },
+  {
+    "topic": "Polya_Enumeration_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 41.55,
+      "size_error": 13.08,
+      "boundary_violation_rate": 17.11
+    }
+  },
+  {
+    "topic": "Cauchys_Theorem_Group_Theory",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 46.61,
+      "size_error": 11.53,
+      "boundary_violation_rate": 9.05
+    }
+  },
+  {
+    "topic": "Fourier_Series_Expansion",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 47.04,
+      "size_error": 15.63,
+      "boundary_violation_rate": 13.51
+    }
+  },
+  {
+    "topic": "Laplace_Transform",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 47.95,
+      "size_error": 12.31,
+      "boundary_violation_rate": 9.49
+    }
+  },
+  {
+    "topic": "Inverse_Laplace_Transform",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 35.08,
+      "size_error": 7.21,
+      "boundary_violation_rate": 14.02
+    }
+  },
+  {
+    "topic": "Eigenvalue_Equation",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 35.91,
+      "size_error": 10.57,
+      "boundary_violation_rate": 19.13
+    }
+  },
+  {
+    "topic": "Diagonalization_Condition",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 44.85,
+      "size_error": 8.88,
+      "boundary_violation_rate": 23.51
+    }
+  },
+  {
+    "topic": "Spectral_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.46,
+      "size_error": 8.76,
+      "boundary_violation_rate": 16.68
+    }
+  },
+  {
+    "topic": "Divergence_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 55.29,
+      "size_error": 11.29,
+      "boundary_violation_rate": 11.23
+    }
+  },
+  {
+    "topic": "Curl_Operator_Definition",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 43.98,
+      "size_error": 12.16,
+      "boundary_violation_rate": 17.59
+    }
+  },
+  {
+    "topic": "Gradient_Vector_Field",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 41.35,
+      "size_error": 12.62,
+      "boundary_violation_rate": 16.34
+    }
+  },
+  {
+    "topic": "Lagrange_Multipliers",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 43.94,
+      "size_error": 13.16,
+      "boundary_violation_rate": 16.18
+    }
+  },
+  {
+    "topic": "Euler_Lagrange_Equation",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 45.99,
+      "size_error": 9.62,
+      "boundary_violation_rate": 20.01
+    }
+  },
+  {
+    "topic": "Cauchy_Integral_Formula",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 42.13,
+      "size_error": 11.01,
+      "boundary_violation_rate": 8.01
+    }
+  },
+  {
+    "topic": "Residue_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 42.58,
+      "size_error": 13.85,
+      "boundary_violation_rate": 18.14
+    }
+  },
+  {
+    "topic": "Chinese_Remainder_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 35.11,
+      "size_error": 8.26,
+      "boundary_violation_rate": 15.35
+    }
+  },
+  {
+    "topic": "Euler_Totient_Function",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 57.59,
+      "size_error": 10.76,
+      "boundary_violation_rate": 16.49
+    }
+  },
+  {
+    "topic": "Generating_Function_Definition",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 46.49,
+      "size_error": 14.42,
+      "boundary_violation_rate": 7.99
+    }
+  },
+  {
+    "topic": "Inclusion_Exclusion_Principle",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 42.96,
+      "size_error": 15.12,
+      "boundary_violation_rate": 16.55
+    }
+  },
+  {
+    "topic": "Bayes_Theorem_General_Form",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 47.7,
+      "size_error": 11.41,
+      "boundary_violation_rate": 12.22
+    }
+  },
+  {
+    "topic": "Markov_Chain_Transition_Matrix",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 40.31,
+      "size_error": 12.67,
+      "boundary_violation_rate": 18.39
+    }
+  },
+  {
+    "topic": "Black_Scholes_Equation",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 41.15,
+      "size_error": 12.0,
+      "boundary_violation_rate": 24.24
+    }
+  },
+  {
+    "topic": "Lebesgue_Integration_Concept",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 51.38,
+      "size_error": 10.87,
+      "boundary_violation_rate": 11.08
+    }
+  },
+  {
+    "topic": "Uniform_Convergence_Definition",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 29.66,
+      "size_error": 12.1,
+      "boundary_violation_rate": 10.74
+    }
+  },
+  {
+    "topic": "Stone_Weierstrass_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 50.5,
+      "size_error": 9.34,
+      "boundary_violation_rate": 10.54
+    }
+  },
+  {
+    "topic": "Banach_Fixed_Point_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.82,
+      "size_error": 12.08,
+      "boundary_violation_rate": 15.48
+    }
+  },
+  {
+    "topic": "Hahn_Banach_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 31.05,
+      "size_error": 10.89,
+      "boundary_violation_rate": 15.46
+    }
+  },
+  {
+    "topic": "Compactness_Heine_Borel",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.55,
+      "size_error": 11.79,
+      "boundary_violation_rate": 9.16
+    }
+  },
+  {
+    "topic": "Open_Mapping_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 41.54,
+      "size_error": 11.11,
+      "boundary_violation_rate": 14.34
+    }
+  },
+  {
+    "topic": "Implicit_Function_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 42.16,
+      "size_error": 8.57,
+      "boundary_violation_rate": 16.36
+    }
+  },
+  {
+    "topic": "Inverse_Function_Theorem_Advanced",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 55.28,
+      "size_error": 8.34,
+      "boundary_violation_rate": 11.68
+    }
+  },
+  {
+    "topic": "Jordan_Canonical_Form",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.34,
+      "size_error": 7.19,
+      "boundary_violation_rate": 15.47
+    }
+  },
+  {
+    "topic": "Gram_Schmidt_Orthogonalization",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 43.92,
+      "size_error": 7.83,
+      "boundary_violation_rate": 13.72
+    }
+  },
+  {
+    "topic": "Singular_Value_Decomposition",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 38.96,
+      "size_error": 7.63,
+      "boundary_violation_rate": 16.61
+    }
+  },
+  {
+    "topic": "Poisson_Distribution",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 52.52,
+      "size_error": 13.03,
+      "boundary_violation_rate": 12.73
+    }
+  },
+  {
+    "topic": "Central_Limit_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 45.33,
+      "size_error": 11.64,
+      "boundary_violation_rate": 14.13
+    }
+  },
+  {
+    "topic": "Martingale_Definition",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 39.86,
+      "size_error": 9.53,
+      "boundary_violation_rate": 16.91
+    }
+  },
+  {
+    "topic": "Noethers_Theorem",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.28,
+      "size_error": 9.81,
+      "boundary_violation_rate": 11.57
+    }
+  },
+  {
+    "topic": "Heat_Equation",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 37.23,
+      "size_error": 12.58,
+      "boundary_violation_rate": 12.6
+    }
+  },
+  {
+    "topic": "Wave_Equation",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 43.03,
+      "size_error": 12.76,
+      "boundary_violation_rate": 12.11
+    }
+  },
+  {
+    "topic": "Navier_Stokes_Equation",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 28.5,
+      "size_error": 11.94,
+      "boundary_violation_rate": 13.22
+    }
+  },
+  {
+    "topic": "Hamiltonian_System",
+    "difficulty": "Hard",
+    "objective_metrics": {
+      "keypoint_error": 38.35,
+      "size_error": 12.46,
+      "boundary_violation_rate": 13.33
+    }
+  }
+]

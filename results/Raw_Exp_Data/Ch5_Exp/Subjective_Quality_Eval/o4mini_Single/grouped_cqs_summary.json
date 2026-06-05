@@ -1,0 +1,32 @@
+[
+  {
+    "sample_count": 60,
+    "accuracy_and_depth": 4.49,
+    "logical_fluency": 4.44,
+    "visual_relevance": 4.58,
+    "element_layout": 4.63,
+    "visual_consistency": 4.50,
+    "difficulty": "Easy",
+    "cqs": 4.52
+  },
+  {
+    "sample_count": 60,
+    "accuracy_and_depth": 4.18,
+    "logical_fluency": 4.27,
+    "visual_relevance": 4.30,
+    "element_layout": 4.45,
+    "visual_consistency": 4.24,
+    "difficulty": "Medium",
+    "cqs": 4.28
+  },
+  {
+    "sample_count": 60,
+    "accuracy_and_depth": 3.99,
+    "logical_fluency": 4.08,
+    "visual_relevance": 4.15,
+    "element_layout": 4.24,
+    "visual_consistency": 4.10,
+    "difficulty": "Hard",
+    "cqs": 4.10
+  }
+]

@@ -1,0 +1,2162 @@
+[
+  {
+    "topic": "Pythagorean_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Properties_of_a_Kite_Quadrilateral",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.3,
+      "element_layout": 4.5,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Eulers_Formula",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.9,
+      "element_layout": 4.8,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Laws_of_Exponents",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Injective_Function_One_to_One_Function",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.9,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Inverse_Function",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.6,
+      "element_layout": 4.9,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Remainder_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.5,
+      "element_layout": 4.9,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Rational_Root_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.8,
+      "element_layout": 4.9,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Product_to_Sum_Formulas",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Herons_Formula",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.8,
+      "element_layout": 4.5,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "De_Moivres_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.7,
+      "element_layout": 4.9,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Cramers_Rule",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.7,
+      "element_layout": 4.6,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Angle_of_Rotation",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.3,
+      "element_layout": 4.8,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Triangle_Similarity_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.6,
+      "element_layout": 4.9,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Triangle_Congruence_Theorems",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.9,
+      "element_layout": 4.3,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Geometric_Sequence",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.9,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Arithmetic_Sequence",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.6,
+      "element_layout": 4.8,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Permutations",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.3,
+      "element_layout": 4.6,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Directrix",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.7,
+      "element_layout": 4.8,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Eccentricity",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.7,
+      "element_layout": 4.8,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Area_of_a_Rectangle",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.6,
+      "element_layout": 4.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Area_of_a_Triangle",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.5,
+      "element_layout": 4.7,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Area_of_a_Parallelogram",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.7,
+      "element_layout": 4.5,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Area_of_a_Trapezoid",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.7,
+      "element_layout": 4.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Perimeter_of_a_Rectangle",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.5,
+      "element_layout": 4.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Perimeter_of_a_Triangle",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Volume_of_a_Cube",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.7,
+      "element_layout": 4.9,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Volume_of_a_Rectangular_Prism",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.6,
+      "element_layout": 4.5,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Volume_of_a_Cylinder",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Volume_of_a_Cone",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Volume_of_a_Sphere",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.4,
+      "element_layout": 4.4,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Surface_Area_of_a_Cube",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Surface_Area_of_a_Cylinder",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.4,
+      "element_layout": 4.9,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Complementary_Angles",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.4,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Supplementary_Angles",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.8,
+      "element_layout": 4.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Vertical_Angles_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.7,
+      "element_layout": 4.8,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Parallel_Lines_Angles",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.7,
+      "element_layout": 4.4,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Exponent_Zero_Rule",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.6,
+      "element_layout": 4.9,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Exponent_Negative_Rule",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Square_Root_Property",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Sum_of_Interior_Angles_Triangle",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.6,
+      "element_layout": 4.5,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Sum_of_Interior_Angles_Quadrilateral",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Exterior_Angle_Theorem",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.3,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Isosceles_Triangle_Base_Angles",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.8,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Circle_Circumference",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.9,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Circle_Area",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.6,
+      "element_layout": 4.8,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Arc_Length_Formula",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.3,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Sector_Area_Formula",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.4,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Distance_Formula_2D",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Midpoint_Formula",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Slope_Formula",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.9,
+      "element_layout": 4.6,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Point_Slope_Form",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.3,
+      "element_layout": 4.3,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Slope_Intercept_Form",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Absolute_Value_Definition",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.8,
+      "element_layout": 4.6,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Quadratic_Standard_Form",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Difference_of_Squares",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.9,
+      "element_layout": 4.7,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Distributive_Property",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.9,
+      "element_layout": 4.8,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Commutative_Property_Addition",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Commutative_Property_Multiplication",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.9,
+      "element_layout": 4.7,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Associative_Property_Addition",
+    "difficulty": "Easy",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Factor_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.2,
+      "element_layout": 3.9,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Law_of_Sines",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.6,
+      "element_layout": 4.7,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Binomial_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.6,
+      "element_layout": 4.6,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Intermediate_Value_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Law_of_Cosines",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.6,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Divergence_Test",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.4,
+      "element_layout": 4.0,
+      "visual_consistency": 3.9
+    }
+  },
+  {
+    "topic": "Squeeze_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.6,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Chain_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.2,
+      "element_layout": 4.8,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Product_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.3,
+      "element_layout": 4.4,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Quotient_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.5,
+      "element_layout": 4.7,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Power_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.9,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "u_Substitution_Substitution_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.6,
+      "element_layout": 4.1,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Disk_and_Washer_Method",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.1,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.7,
+      "element_layout": 4.5,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Extreme_Value_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.7,
+      "element_layout": 4.2,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Fermats_Theorem_Stationary_Point_Condition",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Mean_Value_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Newton_Raphson_Method",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.1,
+      "element_layout": 4.5,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Rolles_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.5,
+      "element_layout": 4.6,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Second_Derivative_Test",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.7,
+      "element_layout": 4.3,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Pappuss_Theorem_Centroid_Theorems",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.9,
+      "element_layout": 4.3,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Integration_by_Parts",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.2,
+      "element_layout": 4.3,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Partial_Fraction_Decomposition",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.0,
+      "element_layout": 4.7,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Implicit_Differentiation",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.1,
+      "element_layout": 4.2,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Related_Rates",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.3,
+      "element_layout": 4.5,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "LHopitals_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Logarithmic_Differentiation",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.6,
+      "element_layout": 4.3,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Polar_Coordinates_Conversion",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.1,
+      "element_layout": 4.5,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Parametric_Derivative",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 3.9,
+      "visual_relevance": 4.5,
+      "element_layout": 4.8,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Geometric_Mean_Theorem_Right_Triangle",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.9,
+      "element_layout": 4.2,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Angle_Bisector_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.6,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Cevas_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.0,
+      "element_layout": 4.7,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Menelaus_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.1,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.4,
+      "element_layout": 4.5,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Binomial_Probability_Formula",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.4,
+      "element_layout": 4.9,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Expected_Value_Discrete",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.1,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.5,
+      "element_layout": 4.7,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Standard_Deviation_Formula",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.1,
+      "logical_fluency": 3.9,
+      "visual_relevance": 4.6,
+      "element_layout": 4.5,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Permutation_Formula_nPr",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.5,
+      "element_layout": 4.9,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Combination_Formula_nCr",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 3.9,
+      "logical_fluency": 4.0,
+      "visual_relevance": 4.6,
+      "element_layout": 4.9,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Geometric_Series_Infinite",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.2,
+      "element_layout": 4.5,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Exponential_Growth_Decay",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.8,
+      "element_layout": 4.2,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Logarithm_Change_of_Base",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.0,
+      "visual_relevance": 4.5,
+      "element_layout": 3.9,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Conic_Sections_Standard_Form",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.2,
+      "element_layout": 4.9,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Ellipse_Standard_Equation",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.9,
+      "element_layout": 4.4,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Hyperbola_Standard_Equation",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.8,
+      "element_layout": 4.5,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Parabola_Vertex_Form",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Distance_Between_Point_and_Line",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.5,
+      "element_layout": 4.8,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Vector_Dot_Product",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.6,
+      "element_layout": 3.9,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Vector_Cross_Product_Magnitude",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.6,
+      "element_layout": 4.1,
+      "visual_consistency": 4.9
+    }
+  },
+  {
+    "topic": "Projection_of_Vector",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.9,
+      "element_layout": 4.6,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Matrix_Multiplication_Rule",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.4,
+      "element_layout": 4.2,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Determinant_of_2x2",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.9,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 3.9
+    }
+  },
+  {
+    "topic": "Inverse_of_2x2_Matrix",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.6,
+      "element_layout": 4.8,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Gaussian_Elimination",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.3,
+      "element_layout": 4.5,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Geometric_Distribution_Formula",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.8,
+      "element_layout": 4.7,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Poisson_Distribution_Formula",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.2,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Normal_Distribution_Density",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.9,
+      "element_layout": 4.9,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Central_Angle_Arc_Length",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.9,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.8,
+      "element_layout": 4.9,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Inscribed_Angle_Theorem",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.9,
+      "element_layout": 4.7,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Logistic_Function_Model",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.3,
+      "element_layout": 4.6,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Arithmetic_Sequence_nth_Term",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.4,
+      "element_layout": 4.9,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Arithmetic_Sequence_Sum",
+    "difficulty": "Medium",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.3,
+      "element_layout": 4.5,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Taylor_Polynomial",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Simpsons_Rule",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.4,
+      "element_layout": 4.0,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Velocity_Vector",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.8,
+      "element_layout": 4.8,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Double_Riemann_Sum",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.4,
+      "element_layout": 4.4,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Fubinis_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.6,
+      "element_layout": 4.3,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Jacobian_Matrix_and_Determinant",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.5,
+      "visual_relevance": 3.8,
+      "element_layout": 4.5,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Greens_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.1,
+      "element_layout": 4.4,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Stokes_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.2,
+      "element_layout": 4.4,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Burnsides_Lemma",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.0,
+      "element_layout": 4.6,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Lah_Numbers",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Ramseys_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.6,
+      "visual_relevance": 3.8,
+      "element_layout": 4.6,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Schwarz_Lemma",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.6,
+      "element_layout": 4.5,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Cauchy_Riemann_Equations",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.7,
+      "element_layout": 4.1,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Moreras_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.1,
+      "logical_fluency": 4.1,
+      "visual_relevance": 3.9,
+      "element_layout": 4.4,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Catalan_Numbers",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.7,
+      "element_layout": 4.8,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Liouvilles_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 3.9,
+      "visual_relevance": 4.4,
+      "element_layout": 4.4,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Derangement_Formula",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.3,
+      "element_layout": 3.8,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Delian_Problem_Doubling_the_Cube",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.6,
+      "element_layout": 4.1,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Polya_Enumeration_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.1,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.3,
+      "element_layout": 4.3,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Cauchys_Theorem_Group_Theory",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.7,
+      "element_layout": 3.9,
+      "visual_consistency": 3.9
+    }
+  },
+  {
+    "topic": "Fourier_Series_Expansion",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.0,
+      "visual_relevance": 4.2,
+      "element_layout": 4.8,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Laplace_Transform",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.5,
+      "element_layout": 4.5,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Inverse_Laplace_Transform",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.3,
+      "element_layout": 4.6,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Eigenvalue_Equation",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.7,
+      "element_layout": 4.0,
+      "visual_consistency": 4.8
+    }
+  },
+  {
+    "topic": "Diagonalization_Condition",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.0,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Spectral_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 3.9,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.6,
+      "element_layout": 4.2,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Divergence_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 3.8,
+      "logical_fluency": 4.0,
+      "visual_relevance": 4.7,
+      "element_layout": 4.4,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Curl_Operator_Definition",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.3,
+      "element_layout": 4.5,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Gradient_Vector_Field",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.5,
+      "visual_relevance": 3.8,
+      "element_layout": 4.3,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Lagrange_Multipliers",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.3,
+      "visual_relevance": 4.5,
+      "element_layout": 4.3,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Euler_Lagrange_Equation",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.3,
+      "element_layout": 4.7,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Cauchy_Integral_Formula",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 3.8
+    }
+  },
+  {
+    "topic": "Residue_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 3.8,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.5,
+      "element_layout": 4.7,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Chinese_Remainder_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.4,
+      "element_layout": 4.4,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Euler_Totient_Function",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.0,
+      "visual_relevance": 4.3,
+      "element_layout": 4.6,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Generating_Function_Definition",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 3.9,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.8,
+      "element_layout": 4.4,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Inclusion_Exclusion_Principle",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.4,
+      "visual_relevance": 3.8,
+      "element_layout": 4.0,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Bayes_Theorem_General_Form",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.0,
+      "element_layout": 4.8,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Markov_Chain_Transition_Matrix",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.4,
+      "element_layout": 4.1,
+      "visual_consistency": 4.0
+    }
+  },
+  {
+    "topic": "Black_Scholes_Equation",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.6,
+      "visual_relevance": 4.4,
+      "element_layout": 4.2,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Lebesgue_Integration_Concept",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.2,
+      "element_layout": 4.0,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Uniform_Convergence_Definition",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.6,
+      "element_layout": 4.0,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Stone_Weierstrass_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.2,
+      "element_layout": 4.7,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Banach_Fixed_Point_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.3,
+      "element_layout": 4.8,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Hahn_Banach_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.0,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.3,
+      "element_layout": 4.5,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Compactness_Heine_Borel",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.2,
+      "element_layout": 4.5,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Open_Mapping_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.6,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.6,
+      "element_layout": 3.9,
+      "visual_consistency": 4.4
+    }
+  },
+  {
+    "topic": "Implicit_Function_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.7,
+      "element_layout": 4.0,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Inverse_Function_Theorem_Advanced",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.0,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.6,
+      "element_layout": 4.7,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Jordan_Canonical_Form",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.3,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.6,
+      "element_layout": 4.4,
+      "visual_consistency": 4.7
+    }
+  },
+  {
+    "topic": "Gram_Schmidt_Orthogonalization",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.4,
+      "visual_relevance": 4.4,
+      "element_layout": 4.7,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Singular_Value_Decomposition",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.1,
+      "visual_relevance": 4.2,
+      "element_layout": 4.2,
+      "visual_consistency": 4.1
+    }
+  },
+  {
+    "topic": "Poisson_Distribution",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.4,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 3.8
+    }
+  },
+  {
+    "topic": "Central_Limit_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.7,
+      "logical_fluency": 3.8,
+      "visual_relevance": 4.6,
+      "element_layout": 4.7,
+      "visual_consistency": 4.2
+    }
+  },
+  {
+    "topic": "Martingale_Definition",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.2,
+      "element_layout": 4.4,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Noethers_Theorem",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.1,
+      "element_layout": 4.7,
+      "visual_consistency": 4.6
+    }
+  },
+  {
+    "topic": "Heat_Equation",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.8,
+      "logical_fluency": 4.7,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 4.3
+    }
+  },
+  {
+    "topic": "Wave_Equation",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.2,
+      "logical_fluency": 4.5,
+      "visual_relevance": 4.4,
+      "element_layout": 4.6,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Navier_Stokes_Equation",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 3.8,
+      "logical_fluency": 4.8,
+      "visual_relevance": 4.8,
+      "element_layout": 4.3,
+      "visual_consistency": 4.5
+    }
+  },
+  {
+    "topic": "Hamiltonian_System",
+    "difficulty": "Hard",
+    "eval_times": 3,
+    "sample_score_summary": {
+      "accuracy_and_depth": 4.5,
+      "logical_fluency": 4.2,
+      "visual_relevance": 4.4,
+      "element_layout": 4.1,
+      "visual_consistency": 4.0
+    }
+  }
+]

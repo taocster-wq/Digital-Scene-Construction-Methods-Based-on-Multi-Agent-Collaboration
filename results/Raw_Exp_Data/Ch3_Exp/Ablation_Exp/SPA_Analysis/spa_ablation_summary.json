@@ -1,0 +1,26 @@
+[
+  {
+    "ablation_configuration": "Full configuration",
+    "easy_scene": 96.8,
+    "medium_scene": 92.5,
+    "hard_scene": 86.4
+  },
+  {
+    "ablation_configuration": "Remove GCCM configuration",
+    "easy_scene": 96.6,
+    "medium_scene": 92.1,
+    "hard_scene": 85.8
+  },
+  {
+    "ablation_configuration": "Remove GPCM configuration",
+    "easy_scene": 95.9,
+    "medium_scene": 90.6,
+    "hard_scene": 83.9
+  },
+  {
+    "ablation_configuration": "Only retain SSRM configuration",
+    "easy_scene": 95.2,
+    "medium_scene": 89.4,
+    "hard_scene": 82.1
+  }
+]
